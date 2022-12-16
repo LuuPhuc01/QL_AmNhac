@@ -1,0 +1,464 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="~/Theme/Styles/artist.css" rel="stylesheet" />
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Theme/Styles/bootstrap.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="~/Theme/Styles/style.css" rel="stylesheet" />
+    <link href="~/Theme/Styles/audio.css" rel="stylesheet" />
+    <!-- Graph CSS -->
+    <link href="~/Theme/Styles/font-awesome.css" rel="stylesheet" />
+    <!-- jQuery -->
+    <!-- lined-icons -->
+    <link href="~/Theme/Styles/icon-font.css" rel="stylesheet" />
+
+    <!-- //lined-icons -->
+    <!--//css index-->
+    <link href="~/Theme/Styles/index.css" rel="stylesheet" />
+
+    <!-- Meters graphs -->
+    <script src="~/Theme/Scripts/jquery-2.1.4.js"></script>
+    <!--Js index-->
+    <script defer src="~/Theme/Scripts/index.js"></script>
+
+    <link href="~/Theme/Styles/artist.css" rel="stylesheet" />
+
+    <link href="~/Theme/Styles/search.css" rel="stylesheet" />
+    <link href="~/Theme/Styles/baihat.css" rel="stylesheet" />
+    <link href="~/Theme/Styles/AlbumList.css" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/18c6f9a360.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet" />
+    <script type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href="~/Theme/Styles/audio.css" rel="stylesheet" />
+
+</head>
+<body class="sticky-header left-side-collapsed" onload="initMap()">
+    <section>
+        <!-- left side start-->
+        <div class="left-side sticky-left-side">
+
+            <!--logo and iconic logo start-->
+            <div class="logo">
+                <h1><a href="~/">Tiu<span>.mp3</span></a></h1>
+            </div>
+            <div class="logo-icon text-center">
+                <a href="~/">Tiu</a>
+            </div>
+            <!-- /w3l-agile -->
+            <!--logo and iconic logo end-->
+            <div class="left-side-inner">
+                <!--sidebar nav start-->
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li class="active">
+                        <a href="~/">
+                            <i class="lnr lnr-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    @*<li><a href="/Home/Index"><i class="camera"></i> <span>Radio</span></a></li>*@
+                    @*<li>
+            <a href="#" data-toggle="modal" data-target="#myModal1">
+                <i class="fa fa-th"></i>
+                <span>Apps</span>
+            </a>
+        </li>*@
+                    @*<li><a href="~/NgheSi/Index"><i class="lnr lnr-users"></i> <span>Nghệ sỹ</span></a></li>*@
+                    <li><a href="/User/Album/Index"><i class="lnr lnr-music-note"></i> <span>Album</span></a></li>
+                    @*<li class="menu-list">
+            <a href="/Home/Index"><i class="lnr lnr-indent-increase"></i> <span>Browser</span></a>
+            <ul class="sub-menu-list">
+                <li><a href="~/NgheSi/Index?id=1">Artists</a> </li>
+                <li><a href="404.html">Services</a> </li>
+            </ul>
+        </li>*@
+                    <li><a href="/User/Home/About"><i class="lnr lnr-book"></i><span>Về chúng tôi</span></a></li>
+                    <li><a href="/User/Personal/Index"><i class="lnr lnr-user"></i><span>Cá nhân</span></a></li>
+                    @*<li><a href="/Home/Contact"><i class="lnr lnr-pencil"></i> <span>Typography</span></a></li>*@
+                    <li class="menu-list">
+                        <a href="/User/Personal/Index"><i class="lnr lnr-heart"></i>  <span>Yêu thích</span></a>
+                        @*<ul class="sub-menu-list">
+                <li><a href="/Home/Index">All Songs</a></li>
+            </ul>*@
+                    </li>
+                    @*<li class="menu-list">
+                        <a href="/Home/Contact"><i class="fa fa-thumb-tack"></i><span>Liên hệ</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a href="/Home/contact">Vị trí</a> </li>
+                        </ul>
+                    </li>*@
+                </ul>
+                <!--sidebar nav end-->
+            </div>
+        </div>
+        <!-- /w3layouts-agile -->
+        <!-- app-->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog facebook" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="app-grids">
+                            <div class="app">
+                                <div class="col-md-5 app-left mpl">
+                                    <h3>Mosaic mobile app on your smartphone!</h3>
+                                    <p>Download and Avail Special Songs Videos and Audios.</p>
+                                    <div class="app-devices">
+                                        <h5>Gets the app from</h5>
+                                        <a href="#"><img src="~/Theme/images/1.png" alt=""></a>
+                                        <a href="#"><img src="~/Theme/images/2.png" alt=""></a>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 app-image">
+                                    <img src="~/Theme/images/apps.png" alt="">
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //app-->
+        <!-- /w3l-agile -->
+        <!-- signup -->
+        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content modal-info">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body modal-spa">
+                        <div class="sign-grids">
+                            <div class="sign">
+                                <div class="sign-left">
+                                    <ul>
+                                        <li><a class="fb" href="#"><i></i>Đăng nhập với Facebook</a></li>
+                                        <li><a class="goog" href="#"><i></i>Đăng nhập với Google</a></li>
+                                        <li><a class="linkin" href="#"><i></i>Đăng nhập với Linkedin</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sign-right">
+                                    <form action="#" method="post">
+
+                                        <h3>Tạo tài khoản</h3>
+                                        <input type="text" value="Tên " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+                                        <input type="text" value="Số điện thoại" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
+                                        <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">
+                                        <input type="password" value="Mật khẩu" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+
+                                        <input type="submit" value="TẠO TÀI KHOẢN">
+                                    </form>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //signup -->
+        <!-- /w3l-agile -->
+        <!-- left side end-->
+        <!-- main content start-->
+        <div class="main-content">
+            <!-- header-starts -->
+            <div class="header-section">
+                <!--toggle button start-->
+                <a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
+                <!--toggle button end-->
+                <!--notification menu start -->
+                <div class="menu-right">
+                    <div class="profile_details">
+                        <div class="col-md-4 serch-part">
+                            <div id="sb-search" class="sb-search sb-search-open">
+                                <form action="~/User/Timkiem/Index" method="post">
+                                    <input class="sb-search-input"
+                                           placeholder="Tìm kiếm"
+                                           type="search"
+                                           name="search"
+                                           id="search">
+                                    <input class="sb-search-submit sb-icon-search" type="submit" value="">
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        <!-- search-scripts -->
+                        <!--<script src="~/Theme/Scripts/classie.js"></script>-->
+                        <script src="~/Theme/Scripts/uisearch.js"></script>
+                        <script>
+                            new UISearch(document.getElementById('sb-search'));
+                        </script>
+                        <!-- //search-scripts -->
+                        <!---->
+
+                        <div class="col-md-4 login-pop">
+                            <div id="loginpop">
+                                <a href="#" id="loginButton">
+                                    <span>Đăng nhập <i class="arrow glyphicon glyphicon-chevron-right"></i></span>
+                                </a>
+                                <a class="top-sign" href="#" data-toggle="modal" data-target="#myModal5">
+                                    <i class="fa fa-sign-in" style=" color: white;"></i>
+                                </a>
+                                <div id="loginBox">
+                                    <form action="#" method="post" id="loginForm">
+                                        <fieldset id="body">
+                                            <fieldset>
+                                                <label for="email">Địa chỉ Email</label>
+                                                <input type="text" name="email" id="email" placeholder="Email">
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="password">Mật khẩu</label>
+                                                <input type="password" name="password" id="password" placeholder="Mật khẩu">
+                                            </fieldset>
+                                            <input type="submit" id="login" value="Sign in">
+                                            <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+                                        </fieldset>
+                                        <span><a href="#">Quên mật khẩu?</a></span>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--<div class="clearfix"> </div>-->
+                    </div>
+                    <!-------->
+                </div>
+                <!--<div class="clearfix"> </div>-->
+            </div>
+            <!--notification menu end -->
+            <!-- //header-ends -->
+            <!-- /w3l-agileits -->
+            <!-- //header-ends -->
+            <div class="main">
+                @RenderBody()
+            </div>
+            <div class="clearfix"></div>
+            <!--body wrapper end-->
+            <!-- /w3l-agile -->
+        </div>
+        <!--body wrapper end-->
+        <div class="footer">
+            <div class="footer-grid">
+                <h3>Navigation</h3>
+                <ul class="list1">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="radio.html">All Songs</a></li>
+                    <li><a href="browse.html">Albums</a></li>
+                    <li><a href="radio.html">New Collections</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-grid">
+                <h3>Our Account</h3>
+                <ul class="list1">
+                    <li><a href="#" data-toggle="modal" data-target="#myModal5">Your Account</a></li>
+                    <li><a href="#">Personal information</a></li>
+                    <li><a href="#">Addresses</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Orders history</a></li>
+                    <li><a href="#">Addresses</a></li>
+                    <li><a href="#">Search Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-grid">
+                <h3>Our Support</h3>
+                <ul class="list1">
+                    <li><a href="contact.html">Site Map</a></li>
+                    <li><a href="#">Search Terms</a></li>
+                    <li><a href="#">Advanced Search</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Addresses</a></li>
+                </ul>
+            </div>
+            <div class="footer-grid">
+                <h3>Newsletter</h3>
+                <p class="footer_desc">Nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+                <div class="search_footer">
+                    <form>
+                        <input type="text" placeholder="Email...." required="">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <div class="footer-grid footer-grid_last">
+                <h3>About Us</h3>
+                <p class="footer_desc">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat enim ad minim veniam,.</p>
+                <p class="f_text">Phone:  &nbsp;&nbsp;&nbsp;00-250-2131</p>
+                <p class="email">Email : &nbsp;<span><a href="mailto:mail@example.com">info(at)mailing.com</a></span></p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+
+        <!--footer section start-->
+        <footer>
+            <div class="music">
+                <div class="music-thumb">
+                    <img src="https://source.unsplash.com/random" alt="" />
+                </div>
+                <h3 class="music-name">Beautiful in white</h3>
+
+                <audio src="http://www.w3schools.com/html/horse.mp3" crossOrigin="anonymous" id="song"></audio>
+
+                <div class="controls">
+                    <ion-icon name="shuffle-outline" class="play-random"></ion-icon>
+                    <ion-icon name="play-back" class="play-back"></ion-icon>
+                    <div class="play">
+                        <div class="player-inner">
+                            <ion-icon name="play" class="play-icon"></ion-icon>
+                        </div>
+                    </div>
+                    <ion-icon name="play-forward" class="play-forward"></ion-icon>
+                    <ion-icon name="repeat-outline" class="play-repeat"></ion-icon>
+                    <div class="range_container">
+                        <input type="range" name="range" id="range" class="range" />
+                        <div class="timer">
+                            <div class="remaining">-3:10</div>
+                            <div class="duration">2:10</div>
+
+                        </div>
+                    </div>
+                    <div class="volume">
+                        <div class="volume-btn">
+                        <ion-icon name="volume-mute-outline" class="min-volume"></ion-icon>     
+                        <ion-icon name="volume-high-outline" class="max-volume"></ion-icon>
+                        </div>
+                        <div>
+                        <input type="range" id="volume" min="0" max="100" value="50" class="range-volume"/>
+                        </div>
+                    </div>
+                    <a href="/user/Phatnhac/Index"><ion-icon name="expand-outline" class="play-playlist"></ion-icon></a>
+                </div>
+            </div>
+            @*            <div class="row" >
+                <div class="info_song_playing col-md-4 row">
+                    <div class="img_song_playing col-md-2 ">
+                        <img src="~/Theme/images/a3.jpg" class="img-rounded" alt="Cinque Terre" width="50" height="50" />
+                    </div>
+                    <div class="detail_info_song_playing col-md-10">
+                        <headers>
+                            <h3>String 57th & 9th</h3>
+                        </headers>
+                    </div>
+                </div>
+                <div class="audio col-md-5" >
+            *@
+            <!--<div class="audio-player">
+            <audio id="audio-player" controls>
+                <source src="~/Theme/media/Blue Browne.mp3" />-->
+            @*<source src="https://www.computerhope.com/jargon/m/example.mp3" />*@
+            @*<source src="//mp3-s1-zmp3.zmdcdn.me/4b24be0fa04f4911105e/5634701110551922035?authen=exp=1667275051~acl=/4b24be0fa04f4911105e/*~hmac=892894d57d20e9d9b8de493d3236a841&amp;fs=MHx3ZWJWNXw4MS45Mi4yMTgdUngMTU3" type="audio/mp3">*@
+            @*<source src="//mp3-s1-zmp3.zmdcdn.me/4b24be0fa04f4911105e/5634701110551922035?authen=exp=1667275051~acl=/4b24be0fa04f4911105e/*~hmac=892894d57d20e9d9b8de493d3236a841&amp;fs=MHx3ZWJWNXw4MS45Mi4yMTgdUngMTU3&amp;filename=Có Chơi Có Chịu - Karik, Only C.mp3" />*@
+            <!--</audio>
+
+
+            </div>-->
+            <!---->
+            <!--<script type="text/javascript">
+                $(function () {
+                    $('#audio-player').mediaelementplayer({
+                        alwaysShowControls: true,
+                        features: ['playpause', 'progress', 'volume'],
+                        audioVolume: 'horizontal',
+                        iPadUseNativeControls: true,
+                        iPhoneUseNativeControls: true,
+                        AndroidUseNativeControls: true
+                    });
+                });
+            </script>-->
+            <!--<div class="player1">
+            <!-- Dashboard -->
+            <!--<div class="dashboard">-->
+            <!-- Header -->
+            <!-- CD -->
+            <!--@*<div class="cd">
+                <div class="cd-thumb">
+                </div>
+            </div>*@-->
+            <!-- Control -->
+            <!--<div class="control1">
+                    <div class="btn btn-repeat">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <div class="btn btn-prev">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fas fa-pause icon-pause"></i>
+                        <i class="fas fa-play icon-play"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="fas fa-random"></i>
+                    </div>
+                </div>
+
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+
+                <audio id="audio" src=""></audio>
+            </div>-->
+            <!-- Playlist -->
+            <!--<div class="playlist">
+                </div>
+            </div>-->
+            <!--audio-->
+            <!--
+            <link rel="stylesheet" type="text/Styles" media="all" href="~/Theme/Styles/audio.css">
+            -->
+            @*
+                <link href="~/Theme/Styles/audio.css" rel="stylesheet" />*@
+            <!--<script type="text/javascript" src="~/Theme/Scripts/mediaelement-and-player.min.js"></script>-->
+            <!---->
+            <!--//-->
+            <!--<ul class="next-top">
+                <li>
+                    <a class="ar" href="#">
+                        <img src="~/Theme/images/arrow.png" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a class="ar2" href="#">
+                        <img src="~/Theme/images/arrow2.png" alt="" />
+                    </a>
+                </li>
+
+            </ul>-->
+            @*                </div>
+                </div>*@
+
+        </footer>
+        <!--footer section end-->
+        <!-- /w3l-agile -->
+        <!-- main content end-->
+    </section>
+
+    <script src="~/Theme/Scripts/jquery.nicescroll.js"></script>
+    <script src="~/Theme/Scripts/scripts.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Theme/Scripts/bootstrap.js"></script>
+
+    <script src="~/Theme/Scripts/audio.js"></script>
+</body>
+</html>

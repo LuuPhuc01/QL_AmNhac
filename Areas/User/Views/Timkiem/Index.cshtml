@@ -1,0 +1,397 @@
+﻿@model IEnumerable<QLBH.Models.BaiHatLink>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
+}
+
+<div id="page-wrapper">
+    <div class="container-Timkiem">
+        <div class="container-Timkiem-item1">
+            <div class="nav-search-filter">
+                <div>
+                    <span class="nav-search-subject">
+                        Kết quả tìm kiếm
+                    </span>
+                    <span>
+                        |
+                    </span>
+                </div>
+                <div class="nav-search-selected">
+                    <a href="/User/Timkiem/Index">Tất cả</a>
+                </div>
+                <div >
+                    <a href="/User/Timkiem/Timkiem_Baihat">Bài hát</a>
+                </div>
+                <div>
+                    <a href="/User/Timkiem/Timkiem_Playlist_Album">Playlist/Album</a>
+                </div>
+                <div>
+                    <a href="/User/Timkiem/Timkiem_CaSy">Ca sỹ</a>
+                </div>
+                @*<div>
+                    <a href="~/Search/Search_NhacSy">Nhạc sỹ</a>
+                </div>*@
+            </div>
+            <hr>
+            <div class="search-result">
+
+                <div class="result-main baihat">
+                    <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" height="95px">
+                    <div>
+                        <p class="result-main-category">
+                            Bài hát
+                        </p>
+                        <p class="result-main-name">
+                            Cố giang tình
+                        </p>
+                        <p class="result-main-other">
+                            X2X
+                        </p>
+                    </div>
+                </div>
+
+                <div class="result-main nghesy">
+                    <img src="~/Theme/images/nghesi_X2X.png" height="95px">
+                    <div>
+                        <p class="result-main-category">
+                            Nhạc sỹ
+                        </p>
+                        <p class="result-main-name">
+                            X2X
+                        </p>
+                        <p class="result-main-other">
+
+                        </p>
+                    </div>
+                </div>
+                <div class="result-main album">
+                    <img src="~/Theme/images/album_CoGiangTinh.png" height="95px">
+                    <div>
+                        <p class="result-main-category">
+                            Album
+                        </p>
+                        <p class="result-main-name">
+                            Cố giang tình
+                        </p>
+                        <p class="result-main-other">
+                            X2X
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="result-subject">
+                <p class="subject">
+                    Bài hát
+                </p>
+                <p class="tatca">
+                    <span>Tất cả &nbsp;<i class="arrow glyphicon glyphicon-chevron-right"></i></span>
+                </p>
+
+            </div>
+            <div>
+                <div class="result-baihat-item item-left">
+                    @foreach (var item in Model)
+                    {
+                        <div class="result-baihat-detail">
+                            <div style="flex-basis:70%" class="result-baihat-img-name">
+                                <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" width="80px">
+                                <div class="result-baihat-img-name-detail">
+                                    <p class="result-baihat-name">
+                                        @Html.DisplayFor(modelItem => item.TENBAIHAT)
+                                    </p>
+                                    <p class="result-baihat-name-other">
+                                        @Html.DisplayFor(modelItem => item.Casi[0].TenNS)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="result-baihat-time-option">
+                                <p>
+                                    @Html.DisplayFor(modelItem => item.THOILUONG)
+                                </p>
+                                <span id="icon-option" class="icon-main"><i class="fa-solid fa-ellipsis"></i></span>
+                            </div>
+                        </div>
+                    }
+                    
+
+                </div>
+                <div class="result-baihat-item item-right">
+                    <div class="result-baihat-detail">
+                        <div style="flex-basis:70%" class="result-baihat-img-name">
+                            <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" width="80px">
+                            <div class="result-baihat-img-name-detail">
+                                <p class="result-baihat-name">
+                                    Cố giang tình
+                                </p>
+                                <p class="result-baihat-name-other">
+                                    X2X
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="result-baihat-time-option">
+                            <p>
+                                03:57
+                            </p>
+                            <span id="icon-option" class="icon-main"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                    </div>
+                    <div class="result-baihat-detail">
+                        <div style="flex-basis:70%" class="result-baihat-img-name">
+                            <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" width="80px">
+                            <div class="result-baihat-img-name-detail">
+                                <p class="result-baihat-name">
+                                    Cố giang tình
+                                </p>
+                                <p class="result-baihat-name-other">
+                                    X2X
+                                </p>
+                            </div>
+                        </div>
+                        <div class="result-baihat-time-option">
+                            <p>
+                                03:57
+                            </p>
+                            <span id="icon-option" class="icon-main"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                    </div>
+                    <div class="result-baihat-detail">
+                        <div style="flex-basis:70%" class="result-baihat-img-name">
+                            <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" width="80px">
+                            <div class="result-baihat-img-name-detail">
+                                <p class="result-baihat-name">
+                                    Cố giang tình
+                                </p>
+                                <p class="result-baihat-name-other">
+                                    X2X
+                                </p>
+                            </div>
+                        </div>
+                        <div class="result-baihat-time-option">
+                            <p>
+                                03:57
+                            </p>
+                            <span id="icon-option" class="icon-main"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+
+                </div>
+            </div>
+
+            <div class="result-subject">
+                <p class="subject">
+                    Playlist/Album
+                </p>
+                <p class="tatca">
+                    <span>Tất cả &nbsp;<i class="arrow glyphicon glyphicon-chevron-right"></i></span>
+                </p>
+            </div>
+            <div class="result-album-content">
+                <div class="result-album-item">
+                    <img src="~/Theme/images/playlist1.jpg" height="200px">
+                    <div>
+                        <p class="result-album-name">
+                            My Relax Music
+                        </p>
+                        <p class="result-album-other">
+                            Tran Tien
+                        </p>
+                    </div>
+                </div>
+                <div class="result-album-item">
+                    <img src="~/Theme/images/maxresdefault.jpg" height="200px">
+                    <div>
+                        <p class="result-album-name">
+                            Cố giang tình ver.2
+                        </p>
+                        <p class="result-album-other">
+                            X2X
+                        </p>
+                    </div>
+                </div>
+                <div class="result-album-item">
+                    <img src="~/Theme/images/maxresdefault.jpg" height="200px">
+                    <div>
+                        <p class="result-album-name">
+                            Cố giang tình ver.1
+                        </p>
+                        <p class="result-album-other">
+                            X2X
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-other">
+                <div class="result-other-content">
+                    <div class="result-subject">
+                        <p class="subject">
+                            Ca sỹ
+                        </p>
+                        <p class="tatca">
+                            <span>Tất cả &nbsp;<i class="arrow glyphicon glyphicon-chevron-right"></i></span>
+                        </p>
+                    </div>
+                    <div class="search-result-wrap">
+                        <div class="result-other-detail">
+                            <img src="~/Theme/images/nghesi_X2X.png" width="150px">
+                            <p class="result-nghesy-name">
+                                X2X
+                            </p>
+                            <p class="result-nghesy-quantam">
+                                48 quan tâm
+                            </p>
+                            <p id="btn-quantam" class="quantam-btn">
+                                Quan tâm &nbsp;<span><i class="fa-solid fa-user-plus"></i></span>
+                            </p>
+                        </div>
+                        <div class="result-other-detail">
+                            <img src="~/Theme/images/nghesi_X2X.png" width="150px">
+                            <p class="result-nghesy-name">
+                                X2X
+                            </p>
+                            <p class="result-nghesy-quantam">
+                                48 quan tâm
+                            </p>
+                            <p id="btn-quantam" class="quantam-btn-selected">
+                                Nghe nhạc &nbsp;<span><i class="fa-solid fa-music"></i></span>
+                            </p>
+                        </div>
+                        <div class="result-other-detail">
+                            <img src="~/Theme/images/nghesi_X2X.png" width="150px">
+                            <p class="result-nghesy-name">
+                                X2X
+                            </p>
+                            <p class="result-nghesy-quantam">
+                                48 quan tâm
+                            </p>
+                            <p id="btn-quantam" class="quantam-btn">
+                                Quan tâm &nbsp;<span><i class="fa-solid fa-user-plus"></i></span>
+                            </p>
+                        </div>
+                        <div class="result-other-detail">
+                            <img src="~/Theme/images/nghesi_X2X.png" width="150px">
+                            <p class="result-nghesy-name">
+                                X2X
+                            </p>
+                            <p class="result-nghesy-quantam">
+                                48 quan tâm
+                            </p>
+                            <p id="btn-quantam" class="quantam-btn">
+                                Quan tâm &nbsp;<span><i class="fa-solid fa-user-plus"></i></span>
+                            </p>
+                        </div>
+                        <div class="result-other-detail">
+                            <img src="~/Theme/images/nghesi_X2X.png" width="150px">
+                            <p class="result-nghesy-name">
+                                X2X
+                            </p>
+                            <p class="result-nghesy-quantam">
+                                48 quan tâm
+                            </p>
+                            <p id="btn-quantam" class="quantam-btn-selected">
+                                Nghe nhạc &nbsp;<span><i class="fa-solid fa-music"></i></span>
+                            </p>
+                        </div>
+                        <div class="result-other-detail">
+                            <img src="~/Theme/images/nghesi_X2X.png" width="150px">
+                            <p class="result-nghesy-name">
+                                X2X
+                            </p>
+                            <p class="result-nghesy-quantam">
+                                48 quan tâm
+                            </p>
+                            <p id="btn-quantam" class="quantam-btn">
+                                Quan tâm &nbsp;<span><i class="fa-solid fa-user-plus"></i></span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                @*<div class="result-other-content">
+                    <div class="result-subject">
+                        <p class="subject">
+                            Nhạc sỹ
+                        </p>
+                        <p class="tatca">
+                            <span>Tất cả &nbsp;<i class="arrow glyphicon glyphicon-chevron-right"></i></span>
+                        </p>
+                    </div>
+                    <div class="result-other-item">
+                        <div class="result-other-detail">
+                            <img src="~/Theme/images/nghesi_X2X.png">
+                            <p>
+                                X2X
+                            </p>
+                        </div>
+                        <div class="result-other-detail">
+                            <img src="~/Theme/images/nghesi_X2X.png">
+                            <p>
+                                Nhạc sỹ khác
+                            </p>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>*@
+            </div>
+        </div>
+        <div class="container-Timkiem-item2">
+            <div class="ChuDe-subject">
+                Chủ đề
+            </div>
+            <div>
+                <div class="ChuDe-content ChuDe-content-item1">
+                    <img src="https://media.istockphoto.com/photos/summer-romance-picture-id1128009064?k=6&m=1128009064&s=170667a&w=0&h=6gcaMXWIZRZojN36OxYDbsu7NjFEt6Q7gEVpDT9oxCY="/>
+                    <span class="ChuDe-detail">
+                        ROMANCE
+                    </span>
+                </div>
+                <div class="ChuDe-content ChuDe-content-item2">
+                    <span class="ChuDe-detail">
+                        DANCE
+                    </span>
+                </div>
+                <div class="ChuDe-content ChuDe-content-item3">
+                    <span class="ChuDe-detail">
+                        SLEEP
+                    </span>
+                </div>
+                <div class="ChuDe-content ChuDe-content-item4">
+                    <span class="ChuDe-detail">
+                        CHILDREN
+                    </span>
+                </div>
+                <div class="ChuDe-content ChuDe-content-item5">
+                    <span class="ChuDe-detail">
+                        OTHER
+                    </span>
+                </div>
+            </div>
+            
+            <div class="ChuDe-subject">
+                Quốc gia
+            </div>
+            <div class="quocgia-content">
+                <ul>
+                    <li class="quocgia-content-item">
+                        V-Pop
+                    </li>
+                    <li class="quocgia-content-item">
+                        K-Pop
+                    </li>
+                    <li class="quocgia-content-item">
+                        Trung Hoa
+                    </li>
+                    <li class="quocgia-content-item">
+                        US - UK
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>

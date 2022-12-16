@@ -1,0 +1,147 @@
+﻿@*@model List<QLBH.ViewModel.baiHatViewModel>*@
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
+    //int id = ViewBag.id;
+}
+
+<div class="padding-top">
+    <div class="header-artist">
+        <div class="mask  ">
+            <div class="artist-info-general padding">
+                <h1 class="artist-title">Mono</h1>
+                <p>
+                    Nguyễn Việt Hoàng (sinh ngày 21 tháng 1 năm 2000) thường được biết đến với nghệ danh MONO là nam ca sĩ trẻ người Việt Nam,
+                    sinh ra và lớn lên tại tỉnh Thái Bình. MONO là em trai của ca, nhạc sĩ Sơn Tùng M-TP.<br />
+                    Tháng 8 năm 2022, MONO chính thức ra mắt đĩa đơn đầu tiên là ca khúc Quên Anh Đi. Hai tuần sau đó, MONO ra mắt album đầu tay
+                    với tên 22 và ca khúc Waiting For You trong album trở thành hit lớn.
+                </p>
+                <button class="play-all">
+                    <i class="fa-solid fa-play"></i>
+                    <span>Phát Nhạc</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div id="page-wrapper">
+        <div class="sings">
+            <div class="tittle-head">
+                <h3 class="tittle">Bài hát</h3>
+                <div class="clearfix"></div>
+            </div>
+            <div class="list-song scrollbar widget-side" id="style-7">
+                <ul class="songs list1">
+
+                    <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
+                        <div class="row">
+                            <div class="col-md-5 main-song-title">
+                                <div class="main-song-cover">
+                                    <img class="main-song-img " src="https://i.ytimg.com/vi/CHw1b_1LVBA/maxresdefault.jpg" />
+                                    <div class="main-song-play mini-song-play"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <div class="main-song-text">
+                                    <p>Waiting for you</p>
+                                    <p><a href="#" class="caSi">MONO</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <span class="middle">Album 22 - Track No.10</span>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div id="song-1" class="icons">
+                                    <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
+                                    <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
+                                    <span class="middle thoiluong">04:28</span>
+                                    <span class="middle"><i class="fa-solid fa-download"></i></span>
+                                    <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
+                        <div class="row">
+                            <div class="col-md-5 main-song-title">
+                                <div class="main-song-cover">
+                                    <img class="main-song-img " src="https://lyricvn.com/wp-content/uploads/2022/08/e772358978fef8a02eefd34f6a4ca6f3-6.jpg" />
+                                    <div class="main-song-play mini-song-play"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <div class="main-song-text">
+                                    <p>Do you</p>
+                                    <p><a href="#" class="caSi">MONO, Rein, Onionn</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <span class="middle">Album 22 - Track No.10</span>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div id="song-1" class="icons">
+                                    <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
+                                    <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
+                                    <span class="middle thoiluong">04:30</span>
+                                    <span class="middle"><i class="fa-solid fa-download"></i></span>
+                                    <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
+                        <div class="row">
+                            <div class="col-md-5 main-song-title">
+                                <div class="main-song-cover">
+                                    <img class="main-song-img " src="https://lyricvn.com/wp-content/uploads/2022/08/e772358978fef8a02eefd34f6a4ca6f3-6.jpg" />
+                                    <div class="main-song-play mini-song-play"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <div class="main-song-text">
+                                    <p>Em là</p>
+                                    <p><a href="#" class="caSi">MONO</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <span class="middle">Album 22 - Track No.10</span>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div id="song-1" class="icons">
+                                    <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
+                                    <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
+                                    <span class="middle thoiluong">04:15</span>
+                                    <span class="middle"><i class="fa-solid fa-download"></i></span>
+                                    <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="albums-artist">
+            <div class="tittle-head">
+                <h3 class="tittle">Albums</h3>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="albums-content">
+                <ul class="ul-albums">
+
+                    <li class="main-album">
+                        <div class="img-contain hover-img">
+                            <div class="mask">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                            <img class="main-album-img " src="https://hypeddit-gates-prod.s3.amazonaws.com/q10azb_coverartmanual" />
+                        </div>
+                        <div>
+                            <p class="title-album">Album 22 - Track No.10</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+

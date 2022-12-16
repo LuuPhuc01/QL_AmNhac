@@ -1,0 +1,53 @@
+﻿.genres h2{
+    margin-bottom: 20px;
+    /*border-bottom: 1px solid black;*/
+}
+.add-genre {
+    width: 80%;
+    margin: 0 auto;
+}
+table.table{
+    width: 95%;
+    margin: 80px 10px 0px 30px;
+}
+.genres .col-lg-4{
+    position: fixed;
+    float: right;
+    right: 0px;
+}
+.genres .col-lg-7 h2{
+    position: fixed;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    width: 50%;
+}
+/*genre table thead {
+    position: fixed;
+    background-color: white;
+    top: 50px;
+    width: 100%;
+}*/
+/*Sửa thể loại*/
+.repair-genre {
+    width: 50%;
+    margin: 50px auto;
+}
+.submit-repair{
+    display: flex;
+    gap: 20%;
+}
+.submit-repair input {
+    width: 30%;
+}
+.submit-repair a{
+    margin-top: 5px;
+}
+.title-add {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .title-add .btn {
+        margin: 20px 0;
+    }

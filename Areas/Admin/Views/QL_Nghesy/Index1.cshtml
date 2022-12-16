@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row genres">
+    <div class="col-lg-10 ">
+        <div class="title-add">
+            <h2>
+                Danh sách Nghệ sỹ
+            </h2>
+            <a href="~/Admin/NguoiDung/ThemNguoiDung"><button type="submit" class="btn btn-success">Thêm mới</button></a>
+        </div>
+        <div class="genre">
+            <table id="dtDynamicVerticalScrollExample" class=" table table-hover table table-striped table-bordered table-sm" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã Nghệ Sỹ</th>
+                        <th>Tên Nghệ sỹ</th>
+                        <th>Ảnh Nghệ sỹ</th>
+                        <th>Giới thiệu</th>
+                        <th class="withHanhDong">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <th>01</th>
+                        <th>Phuc</th>
+                        <th>.....</th>
+                        <th>.....</th>
+                        <th class="withHanhDong">Hành động</th>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    @*<div class="col-lg-4">
+    <h2>Thêm mới</h2>
+    <form method="get" class="add-genre">
+    <div class="form-group">
+    <label for="username">Tên người dùng</label>
+    <input class="form-control" name="username" type="text" value="" id="username">
+    </div>
+    <div class="form-group">
+    <label for="password">Mật khẩu</label>
+    <input class="form-control" name="password" type="password" value="" id="password">
+    </div>
+    <input id="submit" class="btn btn-lg btn-success btn-block" type="submit" value="Thêm">
+    </form>
+    </div>*@
+</div>
+
+

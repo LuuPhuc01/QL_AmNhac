@@ -1,0 +1,212 @@
+﻿@{
+    ViewBag.Title = "Tìm kiếm";
+    Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
+}
+
+<div id="page-wrapper">
+    <div class="container-Timkiem">
+        <div class="container-Timkiem-item1">
+            <div class="nav-search-filter">
+                <div>
+                    <span class="nav-search-subject">
+                        Kết quả tìm kiếm
+                    </span>
+                    <span>
+                        |
+                    </span>
+                </div>
+                <div>
+                    <a href="/User/Timkiem/Index">Tất cả</a>
+                </div>
+                <div class="nav-search-selected">
+                    <a href="/User/Timkiem/Timkiem_Baihat">Bài hát</a>
+                </div>
+                <div>
+                    <a href="/User/Timkiem/Timkiem_Playlist_Album">Playlist/Album</a>
+                </div>
+                <div>
+                    <a href="/User/Timkiem/Timkiem_CaSy">Ca sỹ</a>
+                </div>
+                @*<div>
+                <a href="~/Search/Search_NhacSy">Nhạc sỹ</a>
+                </div>*@
+            </div>
+            <hr>
+            <div class="search-result">
+                <div class="search-result-nowrap">
+                    <div class="result-baihat-detail">
+                        <div class="result-baihat-img-name">
+                            <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" width="110px">
+                            <div class="result-baihat-img-name-detail">
+                                <p class="result-baihat-name">
+                                    Cố giang tình
+                                </p>
+                                <p class="result-baihat-name-other">
+                                    X2X
+                                </p>
+                                <p class="result-baihat-luotnghe">
+                                    772,135,762 lượt nghe
+                                </p>
+                            </div>
+                        </div>
+                        <div class="result-baihat-album">
+                            <p>
+                                Cố giang tình ver.2
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <div id="song-1" class="icons">
+                                <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
+                                <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
+                                <span class="middle thoiluong">00:11</span>
+                                <span class="middle"><i class="fa-solid fa-download"></i></span>
+                                <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-baihat-detail">
+                        <div class="result-baihat-img-name">
+                            <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" width="110px">
+                            <div class="result-baihat-img-name-detail">
+                                <p class="result-baihat-name">
+                                    Cố giang tình
+                                </p>
+                                <p class="result-baihat-name-other">
+                                    X2X
+                                </p>
+                                <p class="result-baihat-luotnghe">
+                                    772,135,762 lượt nghe
+                                </p>
+                            </div>
+                        </div>
+                        <div class="result-baihat-album">
+                            <p>
+                                Cố giang tình ver.2
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <div id="song-1" class="icons">
+                                <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
+                                <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
+                                <span class="middle thoiluong">00:11</span>
+                                <span class="middle"><i class="fa-solid fa-download"></i></span>
+                                <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-baihat-detail">
+                        <div class="result-baihat-img-name">
+                            <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" width="110px">
+                            <div class="result-baihat-img-name-detail">
+                                <p class="result-baihat-name">
+                                    Cố giang tình
+                                </p>
+                                <p class="result-baihat-name-other">
+                                    X2X
+                                </p>
+                                <p class="result-baihat-luotnghe">
+                                    772,135,762 lượt nghe
+                                </p>
+                            </div>
+                        </div>
+                        <div class="result-baihat-album">
+                            <p>
+                                Cố giang tình ver.2
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <div id="song-1" class="icons">
+                                <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
+                                <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
+                                <span class="middle thoiluong">00:11</span>
+                                <span class="middle"><i class="fa-solid fa-download"></i></span>
+                                <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-baihat-detail">
+                        <div class="result-baihat-img-name">
+                            <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" width="110px">
+                            <div class="result-baihat-img-name-detail">
+                                <p class="result-baihat-name">
+                                    The Greatest
+                                </p>
+                                <p class="result-baihat-name-other">
+                                    Sia
+                                </p>
+                                <p class="result-baihat-luotnghe">
+                                    772,135,762 lượt nghe
+                                </p>
+                            </div>
+                        </div>
+                        <div class="result-baihat-album">
+                            <p>
+                                Cố giang tình ver.2
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <div id="song-1" class="icons">
+                                <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
+                                <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
+                                <span class="middle thoiluong">00:11</span>
+                                <span class="middle"><i class="fa-solid fa-download"></i></span>
+                                <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-Timkiem-item2">
+            <div class="ChuDe-subject">
+                Chủ đề
+            </div>
+            <div class="ChuDe-content ChuDe-content-item1">
+                <span class="ChuDe-detail">
+                    ROMANCE
+                </span>
+            </div>
+            <div class="ChuDe-content ChuDe-content-item2">
+                <span class="ChuDe-detail">
+                    DANCE
+                </span>
+            </div>
+            <div class="ChuDe-content ChuDe-content-item3">
+                <span class="ChuDe-detail">
+                    SLEEP
+                </span>
+            </div>
+            <div class="ChuDe-content ChuDe-content-item4">
+                <span class="ChuDe-detail">
+                    CHILDREN
+                </span>
+            </div>
+            <div class="ChuDe-content ChuDe-content-item5">
+                <span class="ChuDe-detail">
+                    OTHER
+                </span>
+            </div>
+            <div class="ChuDe-subject">
+                Quốc gia
+            </div>
+            <div class="quocgia-content">
+                <ul>
+                    <li class="quocgia-content-item">
+                        V-Pop
+                    </li>
+                    <li class="quocgia-content-item">
+                        K-Pop
+                    </li>
+                    <li class="quocgia-content-item">
+                        Trung Hoa
+                    </li>
+                    <li class="quocgia-content-item">
+                        US - UK
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>

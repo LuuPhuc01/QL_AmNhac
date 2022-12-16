@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="~/Theme/Admin/CSS/style.css" rel="stylesheet" />
+    <link href="~/Theme/Admin/CSS/genre.css" rel="stylesheet" />
+    <link href="~/Theme/Admin/CSS/ql-bh_album.css" rel="stylesheet" />
+    <script src="~/Theme/Scripts/bootstrap.js"></script>
+    <script defer src="~/Theme/Admin/Scripts/Script.js"></script>
+
+
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="/">
+                        TIU.mp3
+                    </a>
+                </li>
+              @*  <li>
+                    <a href="~/admin/QL">Home</a>
+                </li>*@
+                <li>
+                    <a href="~/admin/QL_Baihat/Index">Quản lý Bài hát</a>
+                </li>
+                <li>
+                    <a href="~/admin/QL_Album/Index">Quản lý Album</a>
+                </li>
+                <li>
+                    <a href="~/admin/Ql_Nghesy/Index">Quản lý Nghệ sỹ</a>
+                </li>
+                <li>
+                    <a href="~/admin/QL_Theloai/Index">Quản lý Thể loại</a>
+                </li>
+                <li>
+                    <a href="~/admin/QL_Nguoidung">Quản lý Người dùng</a>
+                </li>
+                <li>
+                    <a href="~/admin/QL_Quocgia/Index">Quản lý Quốc gia</a>
+                </li>
+                <li>
+                    <a href="~/admin/QL/DangXuat">Đăng xuất</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+
+            <div class="container">
+                        <div>
+                            @RenderBody()
+                        </div>
+                
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+﻿@model IEnumerable<QLBH.Models.BaiHatLink>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row genres">
+    <div class="col-lg-12 ">
+        <div class="title-add">
+            <h2>
+                Danh sách Bài hát
+            </h2>
+            <a href="~/Admin/QL_BaiHat/ThemBaiHat"><button type="submit" class="btn btn-success">Thêm mới</button></a>
+        </div>
+        <div class="genre">
+            <table id="dtDynamicVerticalScrollExample" class=" table table-hover table table-striped table-bordered table-sm" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Id)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TENBAIHAT)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LOIBAIHAT)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LUOTYEUTHICH)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LUOTNGHE)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.THOILUONG)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ANHBH)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LINKBH)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LINKANHPN)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        var i = 0;
+                    }
+                    @foreach (var item in Model)
+                    {
+                        i++;
+                        <tr>
+                            <td>@i</td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TENBAIHAT)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LOIBAIHAT)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LUOTYEUTHICH)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LUOTNGHE)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.THOILUONG)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ANHBH)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LINKBH)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LINKANHPN)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new {  id=item.Id  }) |
+                                @Html.ActionLink("ChiTietBaiHat", "ChiTietBaiHat", new { id=item.Id  }) |
+                                @Html.ActionLink("Delete", "Delete", new { id=item.Id  })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+

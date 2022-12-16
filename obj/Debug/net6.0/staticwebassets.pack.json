@@ -1,0 +1,981 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\QLBH.bundle.scp.css",
+      "PackagePath": "staticwebassets\\QLBH.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Admin\\CSS\\Dangnhap.css",
+      "PackagePath": "staticwebassets\\Theme\\Admin\\CSS\\Dangnhap.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Admin\\CSS\\genre.css",
+      "PackagePath": "staticwebassets\\Theme\\Admin\\CSS\\genre.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Admin\\CSS\\ql-bh_album.css",
+      "PackagePath": "staticwebassets\\Theme\\Admin\\CSS\\ql-bh_album.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Admin\\CSS\\style.css",
+      "PackagePath": "staticwebassets\\Theme\\Admin\\CSS\\style.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Admin\\Scripts\\Danhnhap.js",
+      "PackagePath": "staticwebassets\\Theme\\Admin\\Scripts\\Danhnhap.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Admin\\Scripts\\Script.js",
+      "PackagePath": "staticwebassets\\Theme\\Admin\\Scripts\\Script.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\artist.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\artist.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\audio.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\audio.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\bootstrap.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\classie.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\classie.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\easyResponsiveTabs.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\easyResponsiveTabs.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\index.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\index.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jplayer.playlist.min.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jplayer.playlist.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery-2.1.4.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-2.1.4.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.intellisense.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.intellisense.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.min.map",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.min.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.slim.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.slim.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.slim.min.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.slim.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.slim.min.map",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.slim.min.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery.flexisel.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.flexisel.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery.jplayer.min.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.jplayer.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery.magnific-popup.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.magnific-popup.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery.nicescroll.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.nicescroll.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery.validate-vsdoc.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.validate-vsdoc.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\mediaelement-and-player.min.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\mediaelement-and-player.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\modernizr-2.8.3.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\modernizr-2.8.3.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\phatnhac.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\phatnhac.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\responsiveslides.min.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\responsiveslides.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\scripts.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\scripts.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Scripts\\uisearch.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\uisearch.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\AlbumList.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\AlbumList.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\aboutUs.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\aboutUs.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\artist.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\artist.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\audio.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\audio.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\baihat.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\baihat.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\easy-responsive-tabs.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\easy-responsive-tabs.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\font-awesome.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\font-awesome.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\general.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\general.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\icon-font.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\icon-font.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\index.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\index.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\jplayer.blue.monday.min.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\jplayer.blue.monday.min.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\personal.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\personal.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\personalplaylist.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\personalplaylist.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\phatnhac.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\phatnhac.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\popuo-box.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\popuo-box.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\search.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\search.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\Styles\\style.css",
+      "PackagePath": "staticwebassets\\Theme\\Styles\\style.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\Lato-Regular.ttf",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\Lato-Regular.ttf"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\MavenPro-Bold.ttf",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\MavenPro-Bold.ttf"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\MavenPro-Regular.ttf",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\MavenPro-Regular.ttf"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\WeatherIcons-Regular.otf",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\WeatherIcons-Regular.otf"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\digital-7-webfont.eot",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7-webfont.eot"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\digital-7-webfont.svg",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7-webfont.svg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\digital-7-webfont.ttf",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7-webfont.ttf"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\digital-7-webfont.woff",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7-webfont.woff"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\digital-7_italic-webfont.eot",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_italic-webfont.eot"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\digital-7_italic-webfont.svg",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_italic-webfont.svg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\digital-7_italic-webfont.ttf",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_italic-webfont.ttf"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\digital-7_italic-webfont.woff",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_italic-webfont.woff"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\digital-7_mono-webfont.eot",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_mono-webfont.eot"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\digital-7_mono-webfont.svg",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_mono-webfont.svg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\digital-7_mono-webfont.ttf",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_mono-webfont.ttf"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\digital-7_mono-webfont.woff",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_mono-webfont.woff"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\weathericons-regular-webfont.eot",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\weathericons-regular-webfont.eot"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\weathericons-regular-webfont.svg",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\weathericons-regular-webfont.svg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\weathericons-regular-webfont.ttf",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\weathericons-regular-webfont.ttf"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\fonts\\weathericons-regular-webfont.woff",
+      "PackagePath": "staticwebassets\\Theme\\fonts\\weathericons-regular-webfont.woff"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\1.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\1.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\11.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\11.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\2.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\2.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\22.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\22.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\33.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\33.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\6.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\6.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\Sia-Chandelier.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\Sia-Chandelier.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\Sia-CheapThrills.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\Sia-CheapThrills.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\Sia-Unstoppable.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\Sia-Unstoppable.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\a1.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\a1.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\a10.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\a10.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\a11.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\a11.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\a12.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\a12.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\a2.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\a2.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\a3.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\a3.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\a4.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\a4.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\a5.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\a5.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\a6.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\a6.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\a7.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\a7.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\a8.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\a8.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\a9.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\a9.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\album_CoGiangTinh.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\album_CoGiangTinh.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\another.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\another.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\apps.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\apps.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\arrow.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\arrow.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\arrow2.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\arrow2.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\c1.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\c1.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\c2.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\c2.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\c3.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\c3.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\c4.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\c4.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\c5.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\c5.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\c6.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\c6.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\children.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\children.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\dance.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\dance.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\dot.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\dot.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\jplayer.blue.monday.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\jplayer.blue.monday.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\jplayer.blue.monday.video.play.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\jplayer.blue.monday.video.play.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\lock.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\lock.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\maxresdefault.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\maxresdefault.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\mucsic_CoGiangTinh.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\mucsic_CoGiangTinh.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\nghesi_X2X.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\nghesi_X2X.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\pic_error.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\pic_error.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\play.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\play.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\play1.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\play1.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\play2.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\play2.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\play4.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\play4.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\play5.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\play5.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\playlist1.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\playlist1.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\radio.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\radio.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\radio1.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\radio1.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\romance.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\romance.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\search.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\search.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\sleep.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\sleep.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\so.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\so.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\social.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\social.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\tick.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\tick.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\user.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\user.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\usuk.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\usuk.png"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v1.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v1.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v10.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v10.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v11.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v11.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v2.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v2.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v21.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v21.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v22.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v22.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v3.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v3.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v33.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v33.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v4.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v4.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v44.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v44.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v5.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v5.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v55.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v55.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v6.jpeg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v6.jpeg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v6.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v6.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v66.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v66.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v7.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v7.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v77.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v77.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v8.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v8.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v88.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v88.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v9.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v9.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\images\\v99.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\v99.jpg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\Blue Browne.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\Blue Browne.mp3"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\Blue Browne.ogg",
+      "PackagePath": "staticwebassets\\Theme\\media\\Blue Browne.ogg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\Dinhmenh.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\Dinhmenh.mp3"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\Georgia.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\Georgia.mp3"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\Georgia.ogg",
+      "PackagePath": "staticwebassets\\Theme\\media\\Georgia.ogg"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\Sia-Chandelier.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\Sia-Chandelier.mp3"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\Sia-Cheap-Thrills.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\Sia-Cheap-Thrills.mp3"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\Sia-Move-Your-Body-Audio.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\Sia-Move-Your-Body-Audio.mp3"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\Sia-The-Greatest.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\Sia-The-Greatest.mp3"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\Sia-Unstoppable.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\Sia-Unstoppable.mp3"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\anhchuathuongem.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\anhchuathuongem.mp3"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\anhnhora.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\anhnhora.mp3"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\doanketmoi.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\doanketmoi.mp3"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\xuanthi.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\xuanthi.mp3"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\Theme\\media\\yeunguoicouocmo.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\yeunguoicouocmo.mp3"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\project Framework\\frontend_New\\FrontEnd_QLBH\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.QLBH.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.QLBH.props",
+      "PackagePath": "build\\QLBH.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.QLBH.props",
+      "PackagePath": "buildMultiTargeting\\QLBH.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.QLBH.props",
+      "PackagePath": "buildTransitive\\QLBH.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

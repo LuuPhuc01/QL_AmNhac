@@ -1,0 +1,63 @@
+﻿@model IEnumerable<QLBH.Models.QuocGia>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@*<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+
+<div class="row genres">
+    <div class="col-lg-10 ">
+        <div class="title-add">
+            <h2>
+                Danh sách Quốc gia
+            </h2>
+            <a href="#"><button type="submit" class="btn btn-success">Thêm mới</button></a>
+        </div>
+        <div class="genre">
+            <table id="dtDynamicVerticalScrollExample" class=" table table-hover table table-striped table-bordered table-sm" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Id)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TenQG)
+                        </th>
+
+                        <th class="withHanhDong">Hành động</th>
+                    </tr>
+                <tbody>
+                        @{
+                            int i = 0;
+                        }
+                    @foreach (var item in Model)
+                    {
+                            i++;
+                            <tr>
+                            <th>@i</th>
+                            <th>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </th>
+                            <th>
+                                @Html.DisplayFor(modelItem => item.TenQG)
+                            </th>
+                            <th>
+                                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                            </th>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

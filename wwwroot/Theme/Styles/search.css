@@ -1,0 +1,353 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-Timkiem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-Timkiem a {
+    color:white;
+    text-decoration:none;
+}
+
+.container-Timkiem-item1 {
+    flex-basis: 76%;
+}
+
+.nav-search-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .nav-search-filter > div {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+
+.nav-search-subject {
+    margin-right: 20px;
+    font-size: 23px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.nav-search-selected {
+    background-color: rgb(85, 165, 255);
+    padding: 1px 12px;
+    border-radius: 13px;
+    color:black;
+}
+.nav-search-selected>a{
+    color:black;
+}
+
+hr {
+    margin-top: 0;
+    height: 0.5px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.search-result {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-result-nowrap {
+    flex: 1;
+}
+
+.search-result-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.search-album-item {
+    flex-basis: 25%;
+    padding: 0px 10px 15px 10px;
+}
+
+.result-main {
+    display: flex;
+    padding: 0;
+    flex-basis: 30%;
+    background-color: #424257;
+    padding: 9px 12px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px rgb(70, 69, 69);
+}
+
+.result-main-category {
+    font-size: 13px;
+    margin: 4px 0 4px 12px;
+}
+
+.result-main-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 0 4px 12px;
+}
+
+.result-main-other {
+    font-size: 11px;
+    margin: 0 0 0 12px;
+}
+
+.result-subject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.subject {
+    font-size: 22px;
+}
+
+.result-baihat-item {
+    width: 45%;
+}
+
+.item-left {
+    float: left;
+}
+
+.item-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.result-baihat-img-name {
+    display: flex;
+    flex-basis:30%;
+}
+
+.result-baihat-img-name-detail {
+    margin-left: 9px;
+}
+
+.result-baihat-name {
+    margin: 10px 0 7px;
+    font-size: 15px;
+}
+
+.result-baihat-name-other {
+    font-size: 11px;
+}
+
+.result-baihat-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0 15px;
+    width: 100%;
+}
+
+.result-baihat-time-option > p {
+    margin: 0;
+    font-size: 13px;
+    color: rgb(194, 194, 194);
+    text-align: right;
+}
+
+.result-baihat-luotnghe {
+    font-size: 11px;
+    color: #bebebe;
+}
+
+.icon-main {
+    margin-right: 2px;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+#icon-heart {
+    color: red;
+}
+
+.result-album-content {
+    display: flex;
+}
+
+.result-album-item {
+    margin-right: 25px;
+}
+
+.result-album-name {
+    margin: 5px 0;
+}
+
+.result-album-other {
+    margin: 0;
+    font-size: 11px;
+}
+
+.result-other {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.result-other-content {
+    flex-basis: 100%;
+}
+
+.result-other-item {
+    display: flex;
+}
+
+.result-other-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 15px 10px;
+    flex-basis: 25%;
+    align-items: center;
+    /* background-color:black; */
+}
+
+.container-Timkiem-item2 {
+    flex-basis: 10%;
+}
+
+.ChuDe-subject {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ChuDe-content {
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 0 0 20px;
+    position: relative;
+}
+
+.ChuDe-content-item1 {
+    /*background-image: url("https://media.istockphoto.com/photos/summer-romance-picture-id1128009064?k=6&m=1128009064&s=170667a&w=0&h=6gcaMXWIZRZojN36OxYDbsu7NjFEt6Q7gEVpDT9oxCY=");*/
+    /*padding: 77px 85px;*/
+}
+
+    .ChuDe-content-item1 > .ChuDe-detail {
+        background-color: #4400d4;
+        padding: 10px 13px;
+        opacity: 0.70;
+        border-radius: 22px;
+        font-weight: bold;
+        top: 77px;
+        left: 85px;
+        position:absolute;
+    }
+
+.ChuDe-content-item2 {
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.xb0Ye6S5IOuwscHRFYIP7wHaHa&pid=Api&P=0");
+    padding: 77px 100px;
+}
+
+    .ChuDe-content-item2 > .ChuDe-detail {
+        background-color: red;
+        padding: 10px 13px;
+        opacity: 0.75;
+        border-radius: 22px;
+        font-weight: bold;
+    }
+
+.ChuDe-content-item3 {
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.Z5iFfaIQ8RVmz8k3kRZGfwHaDt&pid=Api&P=0");
+    padding: 77px 103px;
+}
+
+    .ChuDe-content-item3 > .ChuDe-detail {
+        background-color: rgb(0, 143, 105);
+        padding: 10px 13px;
+        opacity: 0.75;
+        border-radius: 22px;
+        font-weight: bold;
+    }
+
+.ChuDe-content-item4 {
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.r1r4DdeiXMK-e6BgQFnXLQHaE8&pid=Api&P=0");
+    padding: 77px 90px;
+}
+
+    .ChuDe-content-item4 > .ChuDe-detail {
+        background-color: #fb00c4;
+        padding: 10px 13px;
+        opacity: 0.75;
+        border-radius: 22px;
+        font-weight: bold;
+    }
+
+.ChuDe-content-item5 {
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP._Jpj6VFopIqJHBX6r8eu_gHaE7&pid=Api&P=0");
+    padding: 77px 104px;
+}
+
+    .ChuDe-content-item5 > .ChuDe-detail {
+        background-color: #0e0e0e;
+        padding: 10px 13px;
+        opacity: 0.75;
+        border-radius: 22px;
+        font-weight: bold;
+    }
+
+.quocgia-content-item {
+    margin: 10px 0 20px 0px;
+    padding: 10px 0px 10px 30px;
+    background-color: #30304d;
+}
+
+.result-album-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.result-nghesy-quantam {
+    font-size: 11px;
+    color: #bebebe;
+    margin-bottom: 0;
+}
+
+.result-nghesy-name {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.quantam-btn {
+    background-color: rgb(251, 89, 89);
+    width: 70%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 6px;
+    font-size: 15px;
+    border-radius: 25px;
+}
+
+.quantam-btn-selected {
+    width: 70%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 6px;
+    font-size: 15px;
+    border-radius: 25px;
+    border-color: white;
+    border-style: solid;
+}
+
+.result-baihat-album * {
+    text-align: center;
+    margin: 0;
+}
