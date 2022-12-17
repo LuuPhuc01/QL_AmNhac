@@ -16,6 +16,25 @@ const volumeMax = volumeButton.querySelector(".max-volume");
 const volumeMin = volumeButton.querySelector(".min-volume");
 const volumeCur = document.querySelector(".range-volume");
 
+const playAudio = document.querySelectorAll(".play_audio");
+const updateAudio = document.querySelector(".update_playlist_audio");
+const nameAudio = document.querySelectorAll(".name_audio");
+const imgAudio = document.querySelectorAll(".img_audio");
+
+for (var i = 0; i < playAudio.length; i++) {
+ 
+    playAudio[i].onclick = function (e) {
+        var Check = e.target.closest('.play_song').getAttribute("data-index") - 1
+            indexSong = Check
+/*            song.setAttribute("src", `${musics[Check].file}`);*/
+            init(Check);
+            isPlaying = true;
+            playPause();
+    }
+}
+const playSong = document.querySelectorAll(".play_song");
+
+
 
 volumeMin.style.display = 'none';
 let isPlaying = true;
@@ -23,50 +42,33 @@ let indexSong = 0;
 let isRepeat = false;
 let isRandom = false;
 //const musics = ["holo.mp3", "summer.mp3", "spark.mp3", "home.mp3"];
-const musics = [
+
+
+const musics = new Array(
     {
         id: 1,
         title: "Định Mệnh",
-        file: "dinhmenh.mp3",
+        file: "../../theme/media/dinhmenh.mp3",
         image:
             "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     },
     {
         id: 2,
-        title: "Anh Chưa Thương Em Đến Vậy Đâu",
-        file: "anhchuathuongem.mp3",
+        title: "Xuân Thì",
+        file: "../../theme/media/xuanthi.mp3",
         image:
             "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
     },
     {
         id: 3,
         title: "Anh Nhớ Ra",
-        file: "anhnhora.mp3",
+        file: "../../theme/media/anhnhora.mp3",
         image:
             "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     },
-    {
-        id: 4,
-        title: "Đoạn Kết Mới",
-        file: "doanketmoi.mp3",
-        image:
-            "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    },
-    {
-        id: 5,
-        title: "Yêu Người Có Ước Mơ",
-        file: "yeunguoicouocmo.mp3",
-        image:
-            "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    },
-    {
-        id: 6,
-        title: "Xuân Thì",
-        file: "xuanthi.mp3",
-        image:
-            "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    },
-];
+)
+
+
 /**
  * Music
  * id: 1
@@ -77,6 +79,37 @@ const musics = [
 let timer;
 let repeatCount = 0;
 let randomCount = 0;
+var idSong;
+var i = 0;
+updateAudio.addEventListener("click", update_playlist_audio)
+function update_playlist_audio(){ 
+    for (var i = 0; i < playAudio.length; i++) {
+
+        musics[i].file = playAudio[i].getAttribute("name");
+        musics[i].title = nameAudio[i].textContent;
+        musics[i].image = imgAudio[i].getAttribute("src");
+        if (musics.length < playAudio.length) {
+            const addLink = playAudio[i].getAttribute("name");
+            const addTitle = nameAudio[i].textContent;
+            const addImg = imgAudio[i].getAttribute("src");
+            const id = musics.length +1;
+            const obj = {};
+            obj['id'] = id;
+            obj['title'] = addTitle;
+            obj['file'] = addLink;
+            obj['image'] = addImg;
+            musics.push(obj);
+        }
+       
+    }
+    console.log(musics)
+}
+function play_Audio(i) {
+    console.log("OK");
+    song.setAttribute("src", `${musics[i].file}`);
+    playPause();
+    
+}
 playRepeat.addEventListener("click", function () {
     if (isRepeat) {
         isRepeat = false;
@@ -175,7 +208,7 @@ function changeSong(dir) {
         isPlaying = true;
     }
     init(indexSong);
-    //song.setAttribute("src", `./music/${musics[indexSong].file}`);
+    //song.setAttribute("src", `../them/music/${musics[indexSong].file}`);
 
     playPause();
 }
@@ -196,6 +229,9 @@ function playPause() {
     }
     console.log(musics);
 }
+
+/*testPlay[indexSong].addEventListener("click", play_Test);*/
+
 function displayTimer() {
     const { duration, currentTime } = song;
     rangeBar.max = duration;
@@ -218,7 +254,7 @@ function handleChangeBar() {
     song.currentTime = rangeBar.value;
 }
 function init(indexSong) {
-    song.setAttribute("src", `../../theme/media/${musics[indexSong].file}`);
+    song.setAttribute("src", `${musics[indexSong].file}`);
     musicImage.setAttribute("src", musics[indexSong].image);
     musicName.textContent = musics[indexSong].title;
 }
