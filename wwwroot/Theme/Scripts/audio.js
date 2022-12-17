@@ -52,13 +52,13 @@ const musics = new Array(
         image:
             "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     },
-    {
+/*    {
         id: 2,
         title: "Xuân Thì",
         file: "../../theme/media/xuanthi.mp3",
         image:
             "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
-    },
+    },*/
 /*    {
         id: 3,
         title: "Anh Nhớ Ra",
@@ -92,7 +92,7 @@ function update_playlist_audio(){
             const addLink = playAudio[i].getAttribute("name");
             const addTitle = nameAudio[i].textContent;
             const addImg = imgAudio[i].getAttribute("src");
-            const id = i + 2;
+            const id = musics.length +1;
             const obj = {};
             obj['id'] = id;
             obj['title'] = addTitle;
@@ -104,17 +104,6 @@ function update_playlist_audio(){
     }
     console.log(musics)
 }
-/*function con() {
-    console.log("Đay là hàm console")
-}
-for (var i = 0; i < playAudio.length; i++) {
-    playSong[i].addEventListener("click", con)
-}*/
-/*for (var i = 0; i < playAudio.length; i++) {
-    if (true) {
-        console.log(playSong[i].getAttribute("data-index")-1)
-    }
-}*/
 function play_Audio(i) {
     console.log("OK");
     song.setAttribute("src", `${musics[i].file}`);
@@ -277,8 +266,6 @@ function randomSong() {
     indexSong = newIndexSong;
 
 }
-
-
 displayTimer();
 init(indexSong);
 
