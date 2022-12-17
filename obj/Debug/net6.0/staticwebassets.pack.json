@@ -1,979 +1,979 @@
 {
   "Files": [
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\QLBH.bundle.scp.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\QLBH.bundle.scp.css",
       "PackagePath": "staticwebassets\\QLBH.bundle.scp.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Admin\\CSS\\Dangnhap.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Admin\\CSS\\Dangnhap.css",
       "PackagePath": "staticwebassets\\Theme\\Admin\\CSS\\Dangnhap.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Admin\\CSS\\genre.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Admin\\CSS\\genre.css",
       "PackagePath": "staticwebassets\\Theme\\Admin\\CSS\\genre.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Admin\\CSS\\ql-bh_album.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Admin\\CSS\\ql-bh_album.css",
       "PackagePath": "staticwebassets\\Theme\\Admin\\CSS\\ql-bh_album.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Admin\\CSS\\style.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Admin\\CSS\\style.css",
       "PackagePath": "staticwebassets\\Theme\\Admin\\CSS\\style.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Admin\\Scripts\\Danhnhap.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Admin\\Scripts\\Danhnhap.js",
       "PackagePath": "staticwebassets\\Theme\\Admin\\Scripts\\Danhnhap.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Admin\\Scripts\\Script.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Admin\\Scripts\\Script.js",
       "PackagePath": "staticwebassets\\Theme\\Admin\\Scripts\\Script.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\artist.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\artist.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\artist.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\audio.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\audio.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\audio.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\bootstrap.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\bootstrap.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\bootstrap.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\bootstrap.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\classie.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\classie.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\classie.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\easyResponsiveTabs.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\easyResponsiveTabs.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\easyResponsiveTabs.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\index.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\index.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\index.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jplayer.playlist.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jplayer.playlist.min.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jplayer.playlist.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-2.1.4.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-2.1.4.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-2.1.4.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.intellisense.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.intellisense.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.intellisense.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.min.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.min.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.min.map",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.min.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.slim.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.slim.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.slim.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.slim.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.slim.min.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.slim.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.slim.min.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery-3.4.1.slim.min.map",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery-3.4.1.slim.min.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.flexisel.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.flexisel.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.flexisel.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.jplayer.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.jplayer.min.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.jplayer.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.magnific-popup.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.magnific-popup.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.magnific-popup.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.nicescroll.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.nicescroll.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.nicescroll.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.validate-vsdoc.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.validate-vsdoc.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.validate-vsdoc.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.validate.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.validate.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.validate.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.validate.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\login.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\login.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\login.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\mediaelement-and-player.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\mediaelement-and-player.min.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\mediaelement-and-player.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\modernizr-2.8.3.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\modernizr-2.8.3.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\modernizr-2.8.3.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\phatnhac.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\phatnhac.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\phatnhac.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\responsiveslides.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\responsiveslides.min.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\responsiveslides.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\scripts.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\scripts.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\scripts.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\uisearch.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Scripts\\uisearch.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\uisearch.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\AlbumList.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\AlbumList.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\AlbumList.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\aboutUs.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\aboutUs.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\aboutUs.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\artist.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\artist.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\artist.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\audio.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\audio.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\audio.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\baihat.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\baihat.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\baihat.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\bootstrap.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\bootstrap.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\bootstrap.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\easy-responsive-tabs.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\easy-responsive-tabs.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\easy-responsive-tabs.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\font-awesome.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\font-awesome.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\font-awesome.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\general.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\general.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\general.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\icon-font.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\icon-font.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\icon-font.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\index.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\index.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\index.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\jplayer.blue.monday.min.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\jplayer.blue.monday.min.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\jplayer.blue.monday.min.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\login.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\login.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\login.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\personal.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\personal.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\personal.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\personalplaylist.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\personalplaylist.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\personalplaylist.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\phatnhac.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\phatnhac.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\phatnhac.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\popuo-box.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\popuo-box.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\popuo-box.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\search.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\search.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\search.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\style.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\Styles\\style.css",
       "PackagePath": "staticwebassets\\Theme\\Styles\\style.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\FontAwesome.otf",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\FontAwesome.otf",
       "PackagePath": "staticwebassets\\Theme\\fonts\\FontAwesome.otf"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\Lato-Regular.ttf",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\Lato-Regular.ttf",
       "PackagePath": "staticwebassets\\Theme\\fonts\\Lato-Regular.ttf"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\MavenPro-Bold.ttf",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\MavenPro-Bold.ttf",
       "PackagePath": "staticwebassets\\Theme\\fonts\\MavenPro-Bold.ttf"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\MavenPro-Regular.ttf",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\MavenPro-Regular.ttf",
       "PackagePath": "staticwebassets\\Theme\\fonts\\MavenPro-Regular.ttf"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\WeatherIcons-Regular.otf",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\WeatherIcons-Regular.otf",
       "PackagePath": "staticwebassets\\Theme\\fonts\\WeatherIcons-Regular.otf"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7-webfont.eot",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7-webfont.eot",
       "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7-webfont.eot"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7-webfont.svg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7-webfont.svg",
       "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7-webfont.svg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7-webfont.ttf",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7-webfont.ttf",
       "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7-webfont.ttf"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7-webfont.woff",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7-webfont.woff",
       "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7-webfont.woff"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_italic-webfont.eot",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_italic-webfont.eot",
       "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_italic-webfont.eot"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_italic-webfont.svg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_italic-webfont.svg",
       "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_italic-webfont.svg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_italic-webfont.ttf",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_italic-webfont.ttf",
       "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_italic-webfont.ttf"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_italic-webfont.woff",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_italic-webfont.woff",
       "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_italic-webfont.woff"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_mono-webfont.eot",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_mono-webfont.eot",
       "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_mono-webfont.eot"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_mono-webfont.svg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_mono-webfont.svg",
       "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_mono-webfont.svg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_mono-webfont.ttf",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_mono-webfont.ttf",
       "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_mono-webfont.ttf"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_mono-webfont.woff",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\digital-7_mono-webfont.woff",
       "PackagePath": "staticwebassets\\Theme\\fonts\\digital-7_mono-webfont.woff"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\fontawesome-webfont.eot",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\fontawesome-webfont.eot",
       "PackagePath": "staticwebassets\\Theme\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\fontawesome-webfont.svg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\fontawesome-webfont.svg",
       "PackagePath": "staticwebassets\\Theme\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\fontawesome-webfont.ttf",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\fontawesome-webfont.ttf",
       "PackagePath": "staticwebassets\\Theme\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\fontawesome-webfont.woff",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\fontawesome-webfont.woff",
       "PackagePath": "staticwebassets\\Theme\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.eot",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.eot",
       "PackagePath": "staticwebassets\\Theme\\fonts\\glyphicons-halflings-regular.eot"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.svg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.svg",
       "PackagePath": "staticwebassets\\Theme\\fonts\\glyphicons-halflings-regular.svg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.ttf",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.ttf",
       "PackagePath": "staticwebassets\\Theme\\fonts\\glyphicons-halflings-regular.ttf"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.woff",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.woff",
       "PackagePath": "staticwebassets\\Theme\\fonts\\glyphicons-halflings-regular.woff"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.woff2",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\glyphicons-halflings-regular.woff2",
       "PackagePath": "staticwebassets\\Theme\\fonts\\glyphicons-halflings-regular.woff2"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\weathericons-regular-webfont.eot",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\weathericons-regular-webfont.eot",
       "PackagePath": "staticwebassets\\Theme\\fonts\\weathericons-regular-webfont.eot"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\weathericons-regular-webfont.svg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\weathericons-regular-webfont.svg",
       "PackagePath": "staticwebassets\\Theme\\fonts\\weathericons-regular-webfont.svg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\weathericons-regular-webfont.ttf",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\weathericons-regular-webfont.ttf",
       "PackagePath": "staticwebassets\\Theme\\fonts\\weathericons-regular-webfont.ttf"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\weathericons-regular-webfont.woff",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\fonts\\weathericons-regular-webfont.woff",
       "PackagePath": "staticwebassets\\Theme\\fonts\\weathericons-regular-webfont.woff"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\1.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\1.png",
       "PackagePath": "staticwebassets\\Theme\\images\\1.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\11.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\11.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\11.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\2.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\2.png",
       "PackagePath": "staticwebassets\\Theme\\images\\2.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\22.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\22.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\22.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\33.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\33.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\33.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\6.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\6.png",
       "PackagePath": "staticwebassets\\Theme\\images\\6.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\HaAnhTuan.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\HaAnhTuan.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\HaAnhTuan.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Noo.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Noo.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\Noo.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Sia-Chandelier.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Sia-Chandelier.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\Sia-Chandelier.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Sia-CheapThrills.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Sia-CheapThrills.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\Sia-CheapThrills.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Sia-Unstoppable.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Sia-Unstoppable.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\Sia-Unstoppable.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a1.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a1.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\a1.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a10.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a10.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\a10.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a11.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a11.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\a11.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a12.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a12.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\a12.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a2.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a2.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\a2.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a3.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a3.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\a3.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a4.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a4.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\a4.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a5.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a5.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\a5.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a6.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a6.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\a6.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a7.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a7.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\a7.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a8.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a8.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\a8.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a9.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a9.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\a9.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\album_CoGiangTinh.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\album_CoGiangTinh.png",
       "PackagePath": "staticwebassets\\Theme\\images\\album_CoGiangTinh.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\another.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\another.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\another.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\apps.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\apps.png",
       "PackagePath": "staticwebassets\\Theme\\images\\apps.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\arrow.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\arrow.png",
       "PackagePath": "staticwebassets\\Theme\\images\\arrow.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\arrow2.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\arrow2.png",
       "PackagePath": "staticwebassets\\Theme\\images\\arrow2.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\c1.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\c1.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\c1.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\c2.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\c2.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\c2.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\c3.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\c3.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\c3.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\c4.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\c4.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\c4.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\c5.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\c5.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\c5.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\c6.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\c6.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\c6.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\children.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\children.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\children.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\dance.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\dance.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\dance.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\dot.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\dot.png",
       "PackagePath": "staticwebassets\\Theme\\images\\dot.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\jplayer.blue.monday.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\jplayer.blue.monday.png",
       "PackagePath": "staticwebassets\\Theme\\images\\jplayer.blue.monday.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\jplayer.blue.monday.video.play.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\jplayer.blue.monday.video.play.png",
       "PackagePath": "staticwebassets\\Theme\\images\\jplayer.blue.monday.video.play.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\lock.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\lock.png",
       "PackagePath": "staticwebassets\\Theme\\images\\lock.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\maxresdefault.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\maxresdefault.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\maxresdefault.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\mucsic_CoGiangTinh.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\mucsic_CoGiangTinh.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\mucsic_CoGiangTinh.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\nghesi_X2X.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\nghesi_X2X.png",
       "PackagePath": "staticwebassets\\Theme\\images\\nghesi_X2X.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\pic_error.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\pic_error.png",
       "PackagePath": "staticwebassets\\Theme\\images\\pic_error.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\play.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\play.png",
       "PackagePath": "staticwebassets\\Theme\\images\\play.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\play1.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\play1.png",
       "PackagePath": "staticwebassets\\Theme\\images\\play1.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\play2.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\play2.png",
       "PackagePath": "staticwebassets\\Theme\\images\\play2.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\play4.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\play4.png",
       "PackagePath": "staticwebassets\\Theme\\images\\play4.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\play5.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\play5.png",
       "PackagePath": "staticwebassets\\Theme\\images\\play5.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\playlist1.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\playlist1.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\playlist1.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\radio.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\radio.png",
       "PackagePath": "staticwebassets\\Theme\\images\\radio.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\radio1.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\radio1.png",
       "PackagePath": "staticwebassets\\Theme\\images\\radio1.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\romance.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\romance.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\romance.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\search.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\search.png",
       "PackagePath": "staticwebassets\\Theme\\images\\search.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\sleep.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\sleep.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\sleep.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\so.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\so.png",
       "PackagePath": "staticwebassets\\Theme\\images\\so.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\social.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\social.png",
       "PackagePath": "staticwebassets\\Theme\\images\\social.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\tick.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\tick.png",
       "PackagePath": "staticwebassets\\Theme\\images\\tick.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\user.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\user.png",
       "PackagePath": "staticwebassets\\Theme\\images\\user.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\usuk.png",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\usuk.png",
       "PackagePath": "staticwebassets\\Theme\\images\\usuk.png"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v1.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v1.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v1.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v10.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v10.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v10.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v11.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v11.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v11.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v2.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v2.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v2.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v21.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v21.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v21.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v22.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v22.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v22.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v3.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v3.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v3.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v33.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v33.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v33.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v4.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v4.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v4.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v44.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v44.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v44.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v5.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v5.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v5.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v55.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v55.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v55.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v6.jpeg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v6.jpeg",
       "PackagePath": "staticwebassets\\Theme\\images\\v6.jpeg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v6.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v6.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v6.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v66.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v66.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v66.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v7.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v7.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v7.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v77.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v77.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v77.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v8.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v8.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v8.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v88.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v88.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v88.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v9.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v9.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v9.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v99.jpg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v99.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v99.jpg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Blue Browne.mp3",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Blue Browne.mp3",
       "PackagePath": "staticwebassets\\Theme\\media\\Blue Browne.mp3"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Blue Browne.ogg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Blue Browne.ogg",
       "PackagePath": "staticwebassets\\Theme\\media\\Blue Browne.ogg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Dinhmenh.mp3",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Dinhmenh.mp3",
       "PackagePath": "staticwebassets\\Theme\\media\\Dinhmenh.mp3"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Georgia.mp3",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Georgia.mp3",
       "PackagePath": "staticwebassets\\Theme\\media\\Georgia.mp3"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Georgia.ogg",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Georgia.ogg",
       "PackagePath": "staticwebassets\\Theme\\media\\Georgia.ogg"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Sia-Chandelier.mp3",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Sia-Chandelier.mp3",
       "PackagePath": "staticwebassets\\Theme\\media\\Sia-Chandelier.mp3"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Sia-Cheap-Thrills.mp3",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Sia-Cheap-Thrills.mp3",
       "PackagePath": "staticwebassets\\Theme\\media\\Sia-Cheap-Thrills.mp3"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Sia-Move-Your-Body-Audio.mp3",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Sia-Move-Your-Body-Audio.mp3",
       "PackagePath": "staticwebassets\\Theme\\media\\Sia-Move-Your-Body-Audio.mp3"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Sia-The-Greatest.mp3",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Sia-The-Greatest.mp3",
       "PackagePath": "staticwebassets\\Theme\\media\\Sia-The-Greatest.mp3"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Sia-Unstoppable.mp3",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Sia-Unstoppable.mp3",
       "PackagePath": "staticwebassets\\Theme\\media\\Sia-Unstoppable.mp3"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\anhchuathuongem.mp3",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\anhchuathuongem.mp3",
       "PackagePath": "staticwebassets\\Theme\\media\\anhchuathuongem.mp3"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\anhnhora.mp3",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\anhnhora.mp3",
       "PackagePath": "staticwebassets\\Theme\\media\\anhnhora.mp3"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\doanketmoi.mp3",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\doanketmoi.mp3",
       "PackagePath": "staticwebassets\\Theme\\media\\doanketmoi.mp3"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\xuanthi.mp3",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\xuanthi.mp3",
       "PackagePath": "staticwebassets\\Theme\\media\\xuanthi.mp3"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\yeunguoicouocmo.mp3",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\yeunguoicouocmo.mp3",
       "PackagePath": "staticwebassets\\Theme\\media\\yeunguoicouocmo.mp3"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\css\\site.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\favicon.ico",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\js\\site.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github - QLBH\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

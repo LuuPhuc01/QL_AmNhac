@@ -36,11 +36,11 @@ namespace QLBH.Areas.User.Controllers
                     //Console.WriteLine(bh);
                     //_contextAccessor.HttpContext.Session.SetString("token", bh);
                     HttpContext.Session.SetString("token", bh);
-                    return RedirectToAction("index");
+                    return Redirect("User/Home/Index");
                 }
                 else
                 {
-                    Console.WriteLine("error");
+                    return RedirectToAction("Index");
                 }
 
             }
