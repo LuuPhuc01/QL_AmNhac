@@ -10,6 +10,11 @@ namespace QLBH.Areas.User.Controllers
         [Area("user")]
         public async Task<IActionResult> Index()
         {
+            var Usertoken = HttpContext.Session.GetString("tokenUser");
+            if(Usertoken== null)
+            {
+				return RedirectToAction("Index", "Login", new { area = "User" });
+			}
             IList<BaiHatLink> bh = new List<BaiHatLink>();
             using (var client = new HttpClient())
             {

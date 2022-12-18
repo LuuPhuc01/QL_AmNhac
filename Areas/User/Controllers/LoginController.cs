@@ -34,9 +34,10 @@ namespace QLBH.Areas.User.Controllers
 
                     var bh = JsonConvert.DeserializeObject<string>(result);
                     //Console.WriteLine(bh);
-                    //_contextAccessor.HttpContext.Session.SetString("token", bh);
-                    HttpContext.Session.SetString("token", bh);
-                    return Redirect("User/Home/Index");
+                    HttpContext.Session.SetString("tokenUser", bh);
+                    Console.WriteLine(HttpContext.Session.GetString("tokenUser"));
+
+                    return RedirectToAction("Index", "Home", new { area = "User" });
                 }
                 else
                 {
@@ -44,7 +45,43 @@ namespace QLBH.Areas.User.Controllers
                 }
 
             }
-            return View();
+            //return View();
+        }
+        [Area("User")]
+
+        public async Task<IActionResult> Register(NguoiDung nd)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7032/");
+
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                var response = client.PostAsJsonAsync<NguoiDung>("Auth/register", nd);
+
+                response.Wait();
+                Console.WriteLine(response.Result);
+
+                //var test = response.Result;
+
+                if (response.Result.IsSuccessStatusCode)
+                {
+                    //var result = await response.Result.Content.ReadAsStringAsync();
+
+                    //var bh = JsonConvert.DeserializeObject<string>(result);
+                    //Console.WriteLine(bh);
+                    //_contextAccessor.HttpContext.Session.SetString("token", bh);
+                    //HttpContext.Session.SetString("token", bh);
+                    return RedirectToAction("Index", "Home", new { area = "User" });
+                }
+                else
+                {
+                    return RedirectToAction("Index");
+                }
+
+            }
+
         }
     }
 }
