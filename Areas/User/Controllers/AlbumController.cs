@@ -33,5 +33,54 @@ namespace QLBH.Areas.User.Controllers
                 return View();
             }
         }
+        [Area("user")]
+        public async Task<IActionResult> ChiTietAlbum(int id)
+        {
+            HomeModel pm = new HomeModel();
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7032/api/");
+
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+
+
+                //ALbum
+                HttpResponseMessage getDataALbum = await client.GetAsync($"Album/{id}");
+
+
+                if (getDataALbum.IsSuccessStatusCode)
+                {
+                    string results = getDataALbum.Content.ReadAsStringAsync().Result;
+                    //Console.WriteLine(results);
+                    pm.AlbumLink = JsonConvert.DeserializeObject<AlbumLink>(results);
+                }
+                else
+                {
+                    Console.WriteLine("Error calling web API");
+                }
+
+                //bai hat yeu thich
+
+                HttpResponseMessage getData = await client.GetAsync($"Album/GetBaiHatAlbum/{id}");
+
+
+                if (getData.IsSuccessStatusCode)
+                {
+                    string results = getData.Content.ReadAsStringAsync().Result;
+                    pm.TopBaiHats = JsonConvert.DeserializeObject<List<BaiHatLink>>(results);
+                }
+                else
+                {
+                    Console.WriteLine("Error calling web API");
+                }
+
+                ViewData.Model = pm;
+
+            }
+            return View();
+        }
     }
 }
