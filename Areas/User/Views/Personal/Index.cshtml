@@ -10,11 +10,6 @@
     <div class="main_container" style="position:relative">
         <div class="header_section">
             <div class="text_header">Thư viện</div>
-            <button class="button_play_header">
-                <span class="material-symbols-outlined">
-                    play_circle
-                </span>
-            </button>
         </div>
         <div class="review-slider">
             <div class="tittle-head">
@@ -112,24 +107,35 @@
         <div class="playlist_section">
             <div class="container_baihatyeuthich">
                 <div class="text">
-                    <div class="tittle-head">
-                        <h3 class="tittle" style="color:white;">BÀI HÁT YÊU THÍCH </h3>
+                    <div class="tittle-head ">
+                        <h3 class="tittle" style="color:white; margin-right: 20px">BÀI HÁT YÊU THÍCH </h3>
+                        <div class="button update_playlist_audio">
+                            <button class="button_play_header ">
+                                <span class="material-symbols-outlined">
+                                    play_circle
+                                </span>
+                            </button>
+                        </div> 
                         <div class="clearfix"> </div>
                     </div>
                     <div class="list-song scrollbar widget-side" id="style-7">
-                        <div class="update_playlist_audio">
+                        @{
+                            var i = 0;
+                        }
                         @foreach (var item in Model.BaiHats)
                         {
-
-                            <ul class="songs list1">
+                                i++;
+                                <ul class="songs list1">
                          
                                 <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
                                     <div class="row">
 
                                         <div class="col-md-5 main-song-title">
-                                                <div  class="play_audio main-song-cover" name=" @Html.DisplayFor(modelItem => item.LINKBH)">
-                                                    <img class="img_audio main-song-img " src="@item.ANHBH"/>
-                                                    <div class=" main-song-play mini-song-play"><i class="play_song fa-solid fa-play" data-index="@item.Id"></i></div>
+                                                    <div  class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">
+                                                    <img class="img_audio main-song-img" src="@item.ANHBH"/>
+                                                    <div class=" main-song-play mini-song-play">
+                                                        <i class="play_song fa-solid fa-play" ></i>
+                                                    </div>
                                                 </div>
 
                                             <div class="main-song-text">
@@ -156,7 +162,7 @@
                             
                             </ul>
                         }
-                        </div>
+
                         @*<ul class="songs list1">
 
                             <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">

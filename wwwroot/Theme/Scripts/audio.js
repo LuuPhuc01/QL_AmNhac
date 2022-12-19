@@ -17,23 +17,14 @@
     const volumeMin = volumeButton.querySelector(".min-volume");
     const volumeCur = document.querySelector(".range-volume");
 
-    const playAudio = document.querySelectorAll(".play_audio");
-    const updateAudio = document.querySelector(".update_playlist_audio");
-    const nameAudio = document.querySelectorAll(".name_audio");
-    const imgAudio = document.querySelectorAll(".img_audio");
+const playAudio = document.querySelectorAll(".play_audio");
+const updateAudio = document.querySelector(".update_playlist_audio");
+const nameAudio = document.querySelectorAll(".name_audio");
+const imgAudio = document.querySelectorAll(".img_audio");
+const playSong = document.querySelectorAll(".play_song");
 
-    for (var i = 0; i < playAudio.length; i++) {
 
-        playAudio[i].onclick = function (e) {
-            var Check = e.target.closest('.play_song').getAttribute("data-index") - 1
-            indexSong = Check
-            /*            song.setAttribute("src", `${musics[Check].file}`);*/
-            init(Check);
-            isPlaying = true;
-            playPause();
-        }
-    }
-    const playSong = document.querySelectorAll(".play_song");
+
 
 
 
@@ -45,92 +36,170 @@
     //const musics = ["holo.mp3", "summer.mp3", "spark.mp3", "home.mp3"];
 
 
-    const musics = new Array(
-        {
-            id: 1,
-            title: "Định Mệnh",
-            file: "../../theme/media/dinhmenh.mp3",
-            image:
-                "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        },
-        {
-            id: 2,
-            title: "Xuân Thì",
-            file: "../../theme/media/xuanthi.mp3",
-            image:
-                "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
-        },
-        {
-            id: 3,
-            title: "Anh Nhớ Ra",
-            file: "../../theme/media/anhnhora.mp3",
-            image:
-                "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        },
-    )
+const musics = new Array(
+    {
+        id: 0,
+        title: "Định Mệnh",
+        file: "../../theme/media/dinhmenh.mp3",
+        image:
+            "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    },
+
+    {
+        id: 1,
+        title: "Anh Nhớ Ra",
+        file: "../../theme/media/anhnhora.mp3",
+        image:
+            "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    },
+    {
+        id: 2,
+        title: "Xuân Thì",
+        file: "../../theme/media/xuanthi.mp3",
+        image:
+            "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
+    },
+)
 
 
-    /**
-     * Music
-     * id: 1
-     * title: Holo
-     * file: holo.mp3
-     * image: unsplash
-     */
-    let timer;
-    let repeatCount = 0;
-    let randomCount = 0;
-    var idSong;
-    var i = 0;
-    updateAudio.addEventListener("click", update_playlist_audio)
-    function update_playlist_audio() {
-        for (var i = 0; i < playAudio.length; i++) {
+/**
+ * Music
+ * id: 1
+ * title: Holo
+ * file: holo.mp3
+ * image: unsplash
+ */
+let timer;
+let repeatCount = 0;
+let randomCount = 0;
+var isEqual;
+var isCheckExist;
 
-            musics[i].file = playAudio[i].getAttribute("name");
+// Update new playlist
+updateAudio.addEventListener("click", update_playlist_audio)
+function update_playlist_audio() {
+    for (var i = 0; i < playAudio.length; i++) {
+        if (musics.length >= playAudio.length) {
+            musics.length = playAudio.length;
+            musics[i].file = playAudio[i].getAttribute("link");
             musics[i].title = nameAudio[i].textContent;
             musics[i].image = imgAudio[i].getAttribute("src");
-            if (musics.length < playAudio.length) {
-                const addLink = playAudio[i].getAttribute("name");
-                const addTitle = nameAudio[i].textContent;
-                const addImg = imgAudio[i].getAttribute("src");
-                const id = musics.length + 1;
+        }
+        else if (musics.length < playAudio.length) {
+            const addLink = playAudio[i].getAttribute("link");
+            const addTitle = nameAudio[i].textContent;
+            const addImg = imgAudio[i].getAttribute("src");
+            const id = musics.length +1;
+            const obj = {};
+            obj['id'] = id;
+            obj['title'] = addTitle;
+            obj['file'] = addLink;
+            obj['image'] = addImg;
+            musics.push(obj);
+        }
+        
+       
+    }
+
+    randomSong();
+    init(indexSong);
+    isPlaying = true;
+    playPause();
+    compareArr();
+}
+
+compareArr();
+
+
+for (var i = 0; i < playAudio.length; i++) {
+
+    playAudio[i].onclick = function (e) {
+        compareArr();
+        if (isEqual === true) {
+            var Check = e.target.closest('.play_audio').getAttribute("id") - 1
+            indexSong = Check
+        }
+        else if (isEqual === false) {
+            var CheckLink = e.target.closest('.play_audio').getAttribute("link")
+            CheckExist(CheckLink);
+            if (isCheckExist === false) {
+                var Link = e.target.closest('.play_audio').getAttribute("link")
+                var Img = e.target.closest('.play_audio').getAttribute("img")
+                var Title = e.target.closest('.play_audio').getAttribute("name")
+                var ID = musics.length;
                 const obj = {};
-                obj['id'] = id;
-                obj['title'] = addTitle;
-                obj['file'] = addLink;
-                obj['image'] = addImg;
+                obj['id'] = ID;
+                obj['title'] = Title;
+                obj['file'] = Link;
+                obj['image'] = Img;
                 musics.push(obj);
+                indexSong = ID;
             }
 
         }
-        console.log(musics)
-    }
-    function play_Audio(i) {
-        console.log("OK");
-        song.setAttribute("src", `${musics[i].file}`);
+        init(indexSong);
+        isPlaying = true;
         playPause();
-
+ 
     }
-    playRepeat.addEventListener("click", function () {
-        if (isRepeat) {
-            isRepeat = false;
-            playRepeat.removeAttribute("style");
-        } else {
-            isRepeat = true;
-            playRepeat.style.color = "#ffb86c";
+}
+
+
+
+
+function compareArr() {
+    if (musics.length !== playAudio.length) {
+        isEqual = false;
+    }
+    else {
+        for (let i = 0; i < musics.length; i++) {
+            if (musics[i].file !== playAudio[i].getAttribute("link")) {
+                isEqual = false;
+                break;
+            }
+            isEqual = true;
         }
-    });
-    playRandom.addEventListener("click", function () {
-        if (isRandom) {
-            isRandom = false;
-            playRandom.removeAttribute("style");
-        } else {
-            isRandom = true;
-            playRandom.style.color = "#ffb86c";
+    }
+    console.log( "Hai mang giong nhau " + isEqual);
+}
+function CheckExist(CheckLink) {
+    for (let i = 0; i < musics.length; i++) {
+        if (CheckLink == musics[i].file) {
+              isCheckExist = true;
+              break;
         }
-    });
-    let prevolume;
-    volumeButton.addEventListener("click", function () {
+        isCheckExist = false;
+    }
+    console.log(" Có tôn tại không? "+ isCheckExist);
+}
+
+
+function play_Audio(i) {
+    console.log("OK");
+    song.setAttribute("src", `${musics[i].file}`);
+    playPause();
+    
+}
+playRepeat.addEventListener("click", function () {
+    if (isRepeat) {
+        isRepeat = false;
+        playRepeat.removeAttribute("style");
+    } else {
+        isRepeat = true;
+        playRepeat.style.color = "#ffb86c";
+    }
+});
+playRandom.addEventListener("click", function () {
+    if (isRandom) {
+        isRandom = false;
+        playRandom.removeAttribute("style");
+    } else {
+        isRandom = true;
+        playRandom.style.color = "#ffb86c";
+    }
+});
+let prevolume;
+volumeButton.addEventListener("click", function () {
 
         song.muted = !song.muted;
         if (song.muted) {
