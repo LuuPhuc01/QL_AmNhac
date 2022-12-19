@@ -148,6 +148,7 @@ img {
 }
 .btn-playlist,
 .playlist-expand,
+.playlist-close,
 .play-playlist,
 .play-random,
 .play-repeat {
@@ -181,7 +182,55 @@ img {
 	margin-left: 20px;
 	color: #FFF;
 }
+.playlist-close,
 .playlist-expand {
 	margin-left: 20px;
 	color: #FFF;
+}
+.modal-playlist{
+	position:fixed;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background: rgba(0,0,0,0.4);
+	display:none;	
+}
+.modal-playlist-main {
+	position: absolute;
+	/*	z-index: 0;*/
+	right: 0;
+	bottom: 80px;
+	width: 400px;
+	border-bottom: none;
+	background-color: #280d63;
+	animation: modalFadeIn ease 2;
+	/*	border-left: 1px solid var(--border-primary);*/
+}
+.modal-container {
+	height: calc(100vh - 90px);
+	max-height: calc(100vh - 90px);
+	bottom: 0;
+	right: 0;
+	top: 70px;
+	position: relative;
+	border-radius: inherit;
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+
+}
+.modal-playlist.open{
+	display:flex;
+}
+
+@keyframes modalFadeIn {
+	from {
+		opacity:0;
+		transform:translateX(400px);
+	}
+	to {
+		opacity:1;
+		transform: translateX(0);
+	}
 }

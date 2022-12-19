@@ -45,13 +45,13 @@
     font-size:26px;
     margin:10px;
 }
-#sidebar img{
-    display : block;  
+#sidebar img {
+    display: block;
     /*margin-top: 50px;*/
-    margin-left : auto;  
-    margin-right : auto;
+    margin-left: auto;
+    margin-right: auto;
     height: 400px;
-    width: auto;
+    width: 400px;
     align-items: center;
     border-radius: 5px;
 }
