@@ -32,7 +32,11 @@
                     <h3 style="text-align:center">@item.TENAL</h3>
 @*                    <p>Lượt quan tâm : @item.LUOTQUANTAM</p>
                     <p>Ngày tạo : @item.THOIGIANPH</p>*@
-                    <p><a href="#" class="btn btn-primary btn-block" role="button">Xem thêm</a> </p>
+                    <p>
+                                @Html.ActionLink("Xem thêm", "ChiTietAlbum","Album" , new { id=item.Id  }, new{ @class="btn btn-primary btn-block"})
+
+                        @*<a href="#" class="btn btn-primary btn-block" role="button">Xem thêm</a>*@
+                        </p>
                   </div>
                 </div>
               </div>

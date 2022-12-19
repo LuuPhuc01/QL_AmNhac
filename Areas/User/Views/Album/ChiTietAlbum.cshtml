@@ -1,6 +1,6 @@
-﻿@model QLBH.Models.PersonalModel;
+﻿@model QLBH.Models.HomeModel;
 @{
-    ViewBag.Title = "Danh sách cá nhân";
+    ViewBag.Title = "album";
     Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
 }
 
@@ -16,13 +16,13 @@
 <div class="main">
     <div class="containers">
         <div id="header">
-            <h2 class="text-center">DANH SÁCH PHÁT</h2>
+            <h2 class="text-center">@Model.AlbumLink.TENAL</h2>
         </div>
         <div id="wp-content" class="d-flex">
             <div id="sidebar">
-                <img src="https://nld.mediacdn.vn/2018/7/8/hat-6-15310139568281582745769.jpg" />
+                <img src="@Model.AlbumLink.ANHAL" />
                 <div class="text-details">
-                    <div>@Model.Playlist.TENPLAYLIST</div>
+                    <div>@Model.AlbumLink.TENAL</div>
                     <div>Người Tạo</div>
                     <a class="btn  btn-phatnhac" href="#" role="button">Phát ngẫu nhiên</a>
                 </div>
@@ -31,7 +31,7 @@
             <div id="content">
                 <div class="list-song  widget-side" id="style-7">
                     <ul class="songs list1">
-                        @foreach (var item in Model.BaiHats)
+                        @foreach (var item in Model.TopBaiHats)
                         {
                             <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
                                 <div class="row">

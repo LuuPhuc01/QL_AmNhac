@@ -211,13 +211,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                         <div class="col-md-4 login-pop">
                             <div id="loginpop">
-                                <a href="~user/login/index" id="loginButton">
-                                    <span>Đăng nhập <i class="arrow glyphicon glyphicon-chevron-right"></i></span>
+
+                                <a id="loginButton" href="/user/login/index">
+                                    <span>
+                                    Đăng nhập <i class="arrow glyphicon glyphicon-chevron-right"></i>
+                                    </span>
                                 </a>
-                                <a class="top-sign" href="#" data-toggle="modal" data-target="#myModal5">
+                                <a class="top-sign" href="/user/login/index" 
+                                @*data-toggle="modal" data-target="#myModal5"*@
+                                >
                                     <i class="fa fa-sign-in" style=" color: white;"></i>
                                 </a>
-                                <div id="loginBox">
+                               @* <div id="loginBox">
                                     <form action="#" method="post" id="loginForm">
                                         <fieldset id="body">
                                             <fieldset>
@@ -233,7 +238,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         </fieldset>
                                         <span><a href="#">Quên mật khẩu?</a></span>
                                     </form>
-                                </div>
+                                </div>*@
                             </div>
 
                         </div>
