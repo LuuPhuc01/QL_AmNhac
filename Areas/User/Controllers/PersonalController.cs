@@ -18,6 +18,7 @@ namespace QLBH.Areas.User.Controllers
 				return RedirectToAction("Index", "Login", new { area = "User" });
 			}
             PersonalModel pm = new PersonalModel();
+            pm.userToken = Usertoken;
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri("https://localhost:7032/api/");

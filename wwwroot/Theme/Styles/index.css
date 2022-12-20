@@ -737,3 +737,6 @@ body {
     /*opacity: 0.8;*/
     background-color: rgba(29,55,90,0.8);
 }
+.color_black{
+    color: black;
+}

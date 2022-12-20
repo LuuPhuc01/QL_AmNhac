@@ -44,6 +44,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script nomodule
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link href="~/Theme/Styles/audio.css" rel="stylesheet" />
+    @*//bootstrap 4.0*@
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </head>
 <body class="sticky-header left-side-collapsed" onload="initMap()">
@@ -104,77 +109,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <!--sidebar nav end-->
             </div>
         </div>
-        <!-- /w3layouts-agile -->
-        <!-- app-->
-        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog facebook" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="app-grids">
-                            <div class="app">
-                                <div class="col-md-5 app-left mpl">
-                                    <h3>Mosaic mobile app on your smartphone!</h3>
-                                    <p>Download and Avail Special Songs Videos and Audios.</p>
-                                    <div class="app-devices">
-                                        <h5>Gets the app from</h5>
-                                        <a href="#"><img src="~/Theme/images/1.png" alt=""></a>
-                                        <a href="#"><img src="~/Theme/images/2.png" alt=""></a>
-                                        <div class="clearfix"> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 app-image">
-                                    <img src="~/Theme/images/apps.png" alt="">
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- //app-->
-        <!-- /w3l-agile -->
-        <!-- signup -->
-        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content modal-info">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body modal-spa">
-                        <div class="sign-grids">
-                            <div class="sign">
-                                <div class="sign-left">
-                                    <ul>
-                                        <li><a class="fb" href="#"><i></i>Đăng nhập với Facebook</a></li>
-                                        <li><a class="goog" href="#"><i></i>Đăng nhập với Google</a></li>
-                                        <li><a class="linkin" href="#"><i></i>Đăng nhập với Linkedin</a></li>
-                                    </ul>
-                                </div>
-                                <div class="sign-right">
-                                    <form action="#" method="post">
 
-                                        <h3>Tạo tài khoản</h3>
-                                        <input type="text" value="Tên " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-                                        <input type="text" value="Số điện thoại" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-                                        <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">
-                                        <input type="password" value="Mật khẩu" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
-
-                                        <input type="submit" value="TẠO TÀI KHOẢN">
-                                    </form>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- //signup -->
         <!-- /w3l-agile -->
         <!-- left side end-->
         <!-- main content start-->
@@ -187,7 +122,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <!--notification menu start -->
                 <div class="menu-right">
                     <div class="profile_details">
-                        <div class="col-md-4 serch-part">
+                        <div class="col-md-9 serch-part">
                             <div id="sb-search" class="sb-search sb-search-open">
                                 <form action="~/User/Timkiem/Index" method="post">
                                     <input class="sb-search-input"
@@ -209,36 +144,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <!-- //search-scripts -->
                         <!---->
 
-                        <div class="col-md-4 login-pop">
+                        <div class="col-md-3 login-pop">
                             <div id="loginpop">
 
-                                <a id="loginButton" href="/user/login/index">
+                                <a id="loginButton" href="/user/login/index" style="display: none">
                                     <span>
                                     Đăng nhập <i class="arrow glyphicon glyphicon-chevron-right"></i>
                                     </span>
                                 </a>
-                                <a class="top-sign" href="/user/login/index" 
-                                @*data-toggle="modal" data-target="#myModal5"*@
-                                >
+
+                                <a href="/user/login/index" id="loginButton">
+                                    <span>
+                                        Đăng nhập <i class="arrow glyphicon glyphicon-chevron-right"></i>
+                                    </span>
+                                </a>
+                                @*//dang xuat*@
+                                <a class="top-sign" href="/user/login/LogOut">
                                     <i class="fa fa-sign-in" style=" color: white;"></i>
                                 </a>
-                               @* <div id="loginBox">
-                                    <form action="#" method="post" id="loginForm">
-                                        <fieldset id="body">
-                                            <fieldset>
-                                                <label for="email">Địa chỉ Email</label>
-                                                <input type="text" name="email" id="email" placeholder="Email">
-                                            </fieldset>
-                                            <fieldset>
-                                                <label for="password">Mật khẩu</label>
-                                                <input type="password" name="password" id="password" placeholder="Mật khẩu">
-                                            </fieldset>
-                                            <input type="submit" id="login" value="Sign in">
-                                            <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
-                                        </fieldset>
-                                        <span><a href="#">Quên mật khẩu?</a></span>
-                                    </form>
-                                </div>*@
+                                
                             </div>
 
                         </div>

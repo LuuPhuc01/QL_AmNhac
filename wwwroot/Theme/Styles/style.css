@@ -2190,7 +2190,7 @@ li.list-group-item1 {
 .modal-header {
     min-height: 16.43px;
     padding: 12px 32px;
-    border-bottom:none!important;
+    /*border-bottom:none!important;*/
 }
 .modal-content {
     background-color: rgb(255, 255, 255);
@@ -4546,3 +4546,14 @@ h4.tittle.two{
 .main{
 	margin-top: 0px !important;
 }
+
+
+/*    add playlist */
+/*.modal-contentl {
+	background-color: #173b45;
+}
+
+	.modal-contentl input {
+		border-radius: 1px solid hsla(0,0%,100%,0.1);
+		background-color: hsla(0,0%,100%,0.1);
+	}*/
