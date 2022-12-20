@@ -6,5 +6,7 @@
 		public List<BaiHatLink>? BaiHats { get; set; }
 
 		public Playlist? Playlist { get; set; }
+
+		public string? userToken { get; set; }
 	}
 }

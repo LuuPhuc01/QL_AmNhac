@@ -37,7 +37,7 @@ namespace QLBH.Areas.User.Controllers
                     HttpContext.Session.SetString("tokenUser", bh);
                     Console.WriteLine(HttpContext.Session.GetString("tokenUser"));
 
-                    return RedirectToAction("Index", "Home", new { area = "User" });
+                    return RedirectToAction("Index", "Personal", new { area = "User" });
                 }
                 else
                 {
@@ -67,13 +67,29 @@ namespace QLBH.Areas.User.Controllers
 
                 if (response.Result.IsSuccessStatusCode)
                 {
-                    //var result = await response.Result.Content.ReadAsStringAsync();
+                    
+                    //return RedirectToAction("Index", "Home", new { area = "User" });
 
-                    //var bh = JsonConvert.DeserializeObject<string>(result);
-                    //Console.WriteLine(bh);
-                    //_contextAccessor.HttpContext.Session.SetString("token", bh);
-                    //HttpContext.Session.SetString("token", bh);
-                    return RedirectToAction("Index", "Home", new { area = "User" });
+                    var responselogin = client.PostAsJsonAsync<NguoiDung>("Auth/login", nd);
+
+                    response.Wait();
+
+                    var test = responselogin.Result;
+
+                    if (test.IsSuccessStatusCode)
+                    {
+                        var result = await responselogin.Result.Content.ReadAsStringAsync();
+
+                        var bh = JsonConvert.DeserializeObject<string>(result);
+                        //Console.WriteLine(bh);
+                        HttpContext.Session.SetString("tokenUser", bh);
+
+                        return RedirectToAction("Index", "Personal", new { area = "User" });
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index");
+                    }
                 }
                 else
                 {
@@ -81,6 +97,20 @@ namespace QLBH.Areas.User.Controllers
                 }
 
             }
+
+        }
+        [Area("User")]
+
+        public ActionResult LogOut()
+        {
+            HttpContext.Session.Remove("tokenUser");
+            if (HttpContext.Session.GetString("tokenUser") == null)
+            {
+                return RedirectToAction("Index", "Home", new { area = "User" });
+
+            }
+            return RedirectToAction("Index", "Personal", new { area = "User" });
+
 
         }
     }
