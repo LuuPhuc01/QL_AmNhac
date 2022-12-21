@@ -1,0 +1,84 @@
+﻿@model IEnumerable<QLBH.Models.BaiHatLink>
+
+@{
+    ViewData["Title"] = "Index1";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Index1</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TENBAIHAT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LOIBAIHAT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LUOTYEUTHICH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LUOTNGHE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.THOILUONG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ANHBH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LINKBH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LINKANHPN)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TENBAIHAT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LOIBAIHAT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LUOTYEUTHICH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LUOTNGHE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.THOILUONG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ANHBH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LINKBH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LINKANHPN)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

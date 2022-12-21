@@ -1,0 +1,255 @@
+﻿@model QLBH.Models.HomeModel
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
+
+}
+
+<div id="page-wrapper" class="index_main">
+    @*<h1>home</h1>*@
+
+    <div class="demo-cont slide_show">
+        <!-- slider start -->
+        <div class="fnc-slider example-slider">
+            <div class="fnc-slider__slides">
+                <!-- slide start -->
+                <div class="fnc-slide m--blend-green m--active-slide">
+                    <div class="fnc-slide__inner">
+                        <div class="fnc-slide__mask">
+                            <div class="fnc-slide__mask-inner"></div>
+                        </div>
+                        <div class="fnc-slide__content">
+                            <h2 class="fnc-slide__heading">
+                                <div class="fnc-slide__heading-line">
+                                    <span>Có chơi có chịu</span>
+                                </div>
+                                <div class="fnc-slide__heading-line">
+                                    <span>Karik, Only C</span>
+                                </div>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
+                <!-- slide start -->
+                <div class="fnc-slide m--blend-dark">
+                    <div class="fnc-slide__inner">
+                        <div class="fnc-slide__mask">
+                            <div class="fnc-slide__mask-inner"></div>
+                        </div>
+                        <div class="fnc-slide__content">
+                            <h2 class="fnc-slide__heading">
+                                <div class="fnc-slide__heading-line">
+                                    <span>Cong</span>
+                                </div>
+                                <div class="fnc-slide__heading-line">
+                                    <span>Tóc Tiên</span>
+                                </div>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
+                <!-- slide start -->
+                <div class="fnc-slide m--blend-red">
+                    <div class="fnc-slide__inner">
+                        <div class="fnc-slide__mask">
+                            <div class="fnc-slide__mask-inner"></div>
+                        </div>
+                        <div class="fnc-slide__content">
+                            <h2 class="fnc-slide__heading">
+                                <div class="fnc-slide__heading-line">
+                                    <span>Tell me why</span>
+                                </div>
+                                <div class="fnc-slide__heading-line">
+                                    <span>Taylor Swift</span>
+                                </div>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
+                <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                    <div class="fnc-slide__inner">
+                        <div class="fnc-slide__mask">
+                            <div class="fnc-slide__mask-inner"></div>
+                        </div>
+                        <div class="fnc-slide__content">
+                            <h2 class="fnc-slide__heading">
+                                <div class="fnc-slide__heading-line">
+                                    <span>Vẽ đường cong</span>
+                                </div>
+                                <div class="fnc-slide__heading-line">
+                                    <span>Trúc Nhân</span>
+                                </div>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide end -->
+            </div>
+            <nav class="fnc-nav">
+                <div class="fnc-nav__bgs">
+                    <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+                    <div class="fnc-nav__bg m--navbg-dark"></div>
+                    <div class="fnc-nav__bg m--navbg-red"></div>
+                    <div class="fnc-nav__bg m--navbg-blue"></div>
+                </div>
+                <div class="fnc-nav__controls">
+                    <button class="fnc-nav__control">
+                        Có chơi
+                        <br />có chịu
+                        <span class="fnc-nav__control-progress"></span>
+                    </button>
+                    <button class="fnc-nav__control">
+                        Cong
+                        <span class="fnc-nav__control-progress"></span>
+                    </button>
+                    <button class="fnc-nav__control">
+                        Tell me why
+                        <span class="fnc-nav__control-progress"></span>
+                    </button>
+                    <button class="fnc-nav__control">
+                        Vẽ đường cong
+                        <span class="fnc-nav__control-progress"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <!-- slider end -->
+    </div>
+    <!--//discover-view-->
+
+    <div class="albums second">
+        <div class="tittle-head">
+
+            <h3 class="tittle">Top 100 <span class="new">View</span></h3>
+            <a href="index.html">
+                <h4 class="tittle two">
+                    Xem tất cả
+                    <i class="arrow glyphicon glyphicon-chevron-right"></i>
+                </h4>
+            </a>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="row_sing">
+            @foreach (var item in Model.TopAlbums)
+            {
+                <div class="col-md-3 content-grid">
+                    <a href="single.html"><img src="@item.ANHAL" title="@item.TENAL"></a>
+                    <div class="inner-info">
+                        @*<a href="single.html"><h5>Xem thêm</h5></a>*@
+                        <h5>
+                            @Html.ActionLink("Xem thêm", "ChiTietAlbum","Album" , new { id=item.Id  })
+
+                        </h5>
+
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <!--//discover-view-->
+    <!--body wrapper start-->
+    <div class="new-song">
+        <div class="tittle-head">
+            <h3 class="tittle">Mới phát hành <span class="new">New</span></h3>
+            <a href="index.html">
+                <h4 class="tittle two">
+                    Xem tất cả
+                    <i class="arrow glyphicon glyphicon-chevron-right"></i>
+                </h4>
+            </a>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="list-song widget-side">
+            <ul class="row ">
+                @foreach (var item in Model.TopBaiHats)
+                {
+                    <li class="col-sm-4" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
+                        <div>
+                            <div>
+                                <div class="main-song-cover">
+                                    <img class="song-img" src="@item.ANHBH" />
+                                    <div class="main-song-play max-song-play"><i class="fa-solid fa-play"></i></div>
+                                </div>
+
+                            </div>
+                            <div class="song-text">
+                                <a style="color:white" href="/User/Baihat/Index">
+                                    <p>@item.TENBAIHAT</p>
+                                    <p>
+                                        <a href="/User/NgheSy/Index/@item.Casi[0].Id">
+                                        <span>
+                                            @Html.DisplayFor(modelItem => item.Casi[0].TenNS)
+
+                                        </span>
+                                        </a>
+                                    </p>
+                                    <p><span>@Html.DisplayFor(modelItem => item.Album.THOIGIANPH)</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                }
+                
+            </ul>
+        </div>
+    </div>
+    <div class="review-slider">
+        <div class="tittle-head">
+            <h3 class="tittle">Albums nổi bật <span class="new"> New</span></h3>
+            <div class="clearfix"> </div>
+        </div>
+        <ul id="flexiselDemo1">
+            @foreach (var item in Model.AlbumsNoiBat)
+            {
+                <li>
+                    <a href="single.html"><img src="@item.ANHAL" alt="" /></a>
+                    <div class="slide-title"><h4>@item.TENAL</h4> </div>
+                    <div class="date-city">
+@*                        <h5>@item.NgheSi.TenNS</h5>*@
+                        <div class="buy-tickets">
+                            @Html.ActionLink("Xem thêm", "ChiTietAlbum","Album" , new { id=item.Id  })
+
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+        <script type="text/javascript">
+            $(window).load(function () {
+
+                $("#flexiselDemo1").flexisel({
+                    visibleItems: 5,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 3000,
+                    pauseOnHover: false,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: {
+                        portrait: {
+                            changePoint: 480,
+                            visibleItems: 2
+                        },
+                        landscape: {
+                            changePoint: 640,
+                            visibleItems: 3
+                        },
+                        tablet: {
+                            changePoint: 800,
+                            visibleItems: 4
+                        }
+                    }
+                });
+            });
+        </script>
+        <script type="text/javascript" src="~/Theme/Scripts/jquery.flexisel.js"></script>
+    </div>
+
+    <div class="clearfix"></div>
+    <!--body wrapper end-->
+</div>

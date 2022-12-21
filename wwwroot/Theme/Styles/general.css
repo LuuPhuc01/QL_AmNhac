@@ -1,0 +1,32 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.black-icon {
+    font-size: 20px;
+    color: black;
+}
+
+.icon-main {
+    margin-right: 2px;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+#icon-heart {
+    color: red;
+}
+
+.item-left {
+    float: left;
+}
+
+.item-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}

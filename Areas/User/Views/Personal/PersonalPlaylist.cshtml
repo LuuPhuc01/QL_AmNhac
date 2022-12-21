@@ -1,0 +1,75 @@
+﻿@model QLBH.Models.PersonalModel;
+@{
+    ViewBag.Title = "Danh sách cá nhân";
+    Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<link href="~/Theme/Styles/personalplaylist.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link href="~/Theme/Styles/bootstrap.css" rel="stylesheet" />
+<link href="~/Theme/Styles/index.css" rel="stylesheet" />
+<link href="~/Theme/Styles/style.css" rel="stylesheet" />
+
+<div class="main">
+    <div class="containers">
+        <div id="header">
+            <h2 class="text-center">DANH SÁCH PHÁT</h2>
+        </div>
+        <div id="wp-content" class="d-flex">
+            <div id="sidebar">
+                <img src="@Model.BaiHats[0].ANHBH" />
+                <div class="text-details">
+                    <div>@Model.Playlist.TENPLAYLIST</div>
+                    <div class="btn  btn-phatnhac update_playlist_audio" href="#" role="button">Phát ngẫu nhiên</div>
+                </div>
+
+            </div>
+            <div id="content">
+                <div class="list-song  widget-side" id="style-7">
+                    <ul class="songs list1">
+                        @{
+                            var i = 0;
+                        }
+                        @foreach (var item in Model.BaiHats)
+                        {   
+                            i++;
+                            <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
+                                <div class="row">
+                                    <div class="col-md-5 main-song-title">
+                                            <div  class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">
+                                                    <img class="main-song-img img_audio" src="@item.ANHBH"/>
+                                            <div class="main-song-play mini-song-play"><i class="fa-solid fa-play"></i></div>
+                                        </div>
+                                        <div class="main-song-text">
+                                            <p class="name_audio">@item.TENBAIHAT</p>
+                                            <p><a href="/User/NgheSy/index/@item.Casi[0].Id" class="caSi">@item.Casi[0].TenNS</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <span class="middle">@item.LUOTNGHE</span>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div id="song-1" class="icons">
+                                            <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
+                                            <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
+                                            <span class="middle thoiluong">@item.THOILUONG</span>
+                                            <span class="middle"><i class="fa-solid fa-download"></i></span>
+                                            <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row genres">
+    <div class="col-lg-7 ">
+        <h2>
+            Danh sách album
+        </h2>
+        <div class="genre">
+            <table id="dtDynamicVerticalScrollExample" class=" table table-hover table table-striped table-bordered table-sm" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã album</th>
+                        <th>Tên album</th>
+                        <th>Ca sỹ</th>
+                        <th>Lượt quan tâm</th>
+                        <th>Thời gian phát hành</th>
+                        <th class="withHanhDong">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>AL01</td>
+                        <td>Chanderlia No.1</td>
+                        <td>Sia</td>
+                        <td>5,295</td>
+                        <td>2020</td>
+                        <td class="hanhdong justify-center">
+                            <button class="SuaDoiTuong">Sửa</button>
+                            <button class="XoaDoiTuong">Xóa</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <h2>Thêm mới</h2>
+        <form method="get" class="add-genre">
+            <div class="form-group">
+                <label for="tenalbum" ">Tên album</label>
+                <input class="form-control" name="tenalbum" type="text" value="" id="username">
+            </div>
+            <div class="form-group">
+                <label for="casy">Ca sỹ</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="luotquantam">Lượt quan tâm</label>
+                <input class="form-control" name="luotquantam" type="number" value="" id="password">
+            </div>
+            <div class="form-group">
+                <label for="tgphathanh">Thời gian phát hành</label>
+                <input class="form-control" name="tgphathanh" type="number" value="" id="password">
+            </div>
+            <input id="submit" class="btn btn-lg btn-success btn-block" type="submit" value="Thêm">
+        </form>
+    </div>
+</div>
+

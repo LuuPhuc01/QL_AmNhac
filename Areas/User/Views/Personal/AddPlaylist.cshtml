@@ -1,0 +1,69 @@
+﻿@model QLBH.Models.Playlist
+@{
+    ViewData["Title"] = "AddPlaylist";
+    Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
+}
+
+@*<div  style="margin:50px 100px 500px 100px" >
+<h2>
+    Thêm Playlist mới
+</h2>
+<div class="row">
+    <div class="col-md-2 ">
+        <form action="" method="POST" id="form-id" >
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TENBAIHAT" class="control-label">TENBAIHAT</label>
+                <input asp-for="TENBAIHAT" class="form-control" id="TENBAIHAT" name="TENBAIHAT" />
+                <span asp-validation-for="TENBAIHAT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" name="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+*@
+@*<script>
+    async function uploadFile(file) {
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('upload_preset', 't1pu4dpc');
+      formData.append('cloud_name', 'dccswqs2m');
+      const res = await fetch(
+        'https://api.cloudinary.com/v1_1/dccswqs2m/upload',
+        {
+          method: 'POST',
+          body: formData,
+        }
+      );
+      const data = await res.json();
+      return data;
+    }
+    form.addEventListener('submit', (e) => {
+      //e.preventDefault();
+      console.log(e);
+    });
+</script>
+</div>*@
+
+
+<div style="margin:50px 100px 500px 100px">
+    <h2>
+        Thêm Playlist mới
+    </h2>
+    <div class="row">
+        <div class="col-md-2 ">
+            <form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="TENPLAYLIST" class="control-label">TENPLAYLIST</label>
+                    <input asp-for="TENPLAYLIST" class="form-control" id="TENPLAYLIST" name="TENPLAYLIST" />
+                    <span asp-validation-for="TENPLAYLIST" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>

@@ -1,0 +1,236 @@
+
+input,
+textarea,
+select,
+button {
+	outline: none;
+}
+
+input {
+	line-height: normal;
+}
+
+label,
+button {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+
+	max-width: 100%;
+}
+
+
+.music {
+	display: flex;
+	max-width: 100%;
+	background-color:#111;
+	border-radius: 12px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	height:80px;
+}
+
+.music-thumb {
+	display:inline-block;
+	float:left;
+	width: 40px;
+	height: 40px;
+	margin-top:20px;;
+	margin-left:20px;
+}
+
+	.music-thumb.is-playing {
+		animation: spinner 5s infinite linear;
+	}
+
+	.music-thumb img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 100rem;
+		box-shadow: 0 0 0 3px #ffb86c, 0 0 0 6px white, 0 0 0 9px #ff6bcb;
+	}
+
+.music-name {
+	display:inline-block;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: left;
+	margin-left:50px;
+	width:400px;
+	margin-top:10px;
+}
+
+.timer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+	color: #999;
+	margin-bottom: 40px;
+	margin-top: 7px;
+}
+
+.controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0 40px;
+	margin-left: 50px;
+}
+
+.play {
+	position: relative;
+}
+
+	.play:before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-image: linear-gradient(to right bottom, #ff6bcb, #ffb86c);
+		transform: scale(1.5);
+		border-radius: 100rem;
+	}
+
+.player-inner {
+	width: 30px;
+	height: 30px;
+	border-radius: 100rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	font-size: 20px;
+	position: relative;
+	z-index: 2;
+}
+.play-random,
+.play-repeat,
+.play-back,
+.play-forward {
+	cursor: pointer;
+}
+
+.range {
+	-webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+	width: 100%; /* Specific width is required for Firefox. */
+	background: transparent; /* Otherwise white in Chrome */
+	
+	
+}
+
+	.range::-webkit-slider-runnable-track {
+		width: 100%;
+		height: 4px;
+		background-color: #eeee;
+	}
+
+	.range::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		background-color: #20e3b2;
+		width: 15px;
+		height: 15px;
+		border-radius: 100rem;
+		margin-top: -5px;
+		box-shadow: 0 0 0 3px white, 0 0 0 6px rgba(100, 100, 111, 0.05);
+	}
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
+.btn-playlist,
+.playlist-expand,
+.playlist-close,
+.play-playlist,
+.play-random,
+.play-repeat {
+	font-size: 20px;
+}
+.range_container{
+	display:inline-block;
+	margin-top: 60px;
+	width:500px;
+	margin-left:80px;
+}
+
+
+.volume {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0 30px;
+	margin-left: 30px;
+}
+
+	.volume .min-volume, .max-volume {
+		font-size: 20px;
+	}
+.expand {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.play-expand {
+	margin-left: 20px;
+	color: #FFF;
+}
+.playlist-close,
+.playlist-expand {
+	margin-left: 20px;
+	color: #FFF;
+}
+.modal-playlist{
+	position:fixed;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background: rgba(0,0,0,0.4);
+	display:none;	
+}
+.modal-playlist-main {
+	position: absolute;
+	/*	z-index: 0;*/
+	right: 0;
+	bottom: 80px;
+	width: 400px;
+	border-bottom: none;
+	background-color: #280d63;
+	animation: modalFadeIn ease 2;
+	/*	border-left: 1px solid var(--border-primary);*/
+}
+.modal-container {
+	height: calc(100vh - 90px);
+	max-height: calc(100vh - 90px);
+	bottom: 0;
+	right: 0;
+	top: 70px;
+	position: relative;
+	border-radius: inherit;
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+
+}
+.modal-playlist.open{
+	display:flex;
+}
+
+@keyframes modalFadeIn {
+	from {
+		opacity:0;
+		transform:translateX(400px);
+	}
+	to {
+		opacity:1;
+		transform: translateX(0);
+	}
+}

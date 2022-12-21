@@ -1,0 +1,189 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>
+    Thêm bài hát mới
+</h2>
+<div class="form-them">
+    <div>
+        <form method="get" action="">
+            <div class="form-group">
+                <label for="tenbh">Tên bài hát</label>
+                <input type="text" class="form-control" id="tenbh" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="linkbh">Link bài hát</label>
+                <input type="file" class="form-control" id="linkbh" placeholder="">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 select-option">
+                    <label for="inputState">Nhạc sỹ</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6 select-option">
+                    <label for="inputState">Thời lượng</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4 select-option">
+                    <label for="inputState">Thể loại</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4 select-option">
+                    <label for="inputState">Quốc gia</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4 select-option">
+                    <label for="inputState">Album</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 select-option">
+                    <label for="inputState">Lượt nghe</label>
+                    <input type="number" class="form-control" id="linkbh" placeholder="">
+                </div>
+                <div class="form-group col-md-6 select-option">
+                    <label for="inputState">Lượt yêu thích</label>
+                    <input type="number" class="form-control" id="linkbh" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="tenbh">Link lời bài hát</label>
+                <input type="text" class="form-control" id="tenbh" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="linkbh">Link ảnh bài hát</label>
+                <input type="file" class="form-control" id="linkbh" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="linkbh">Link ảnh phát bài hát</label>
+                <input type="file" class="form-control" id="linkbh" placeholder="">
+            </div>
+
+            <input id="submit" class="btn btn-lg btn-success btn-block" type="submit" value="Thêm">
+        </form>
+    </div>
+</div>
+
+<h2>
+    Danh sách các bài hát
+</h2>
+<div class="row genres" style="overflow-x: auto;">
+    <div class="col-lg-7 ">
+        <div class="genre">
+            <table id="dtDynamicVerticalScrollExample" class=" table table-hover table table-striped table-bordered table-sm">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã bài hát</th>
+                        <th>Tên bài hát</th>
+                        <th>Thể loại</th>
+                        <th>Ca sỹ</th>
+                        <th>Nhạc sỹ</th>
+                        <th>Quốc gia</th>
+                        <th>Album</th>
+                        <th>Lượt yêu thích</th>
+                        <th>Lượt nghe</th>
+                        <th>Thời lượng</th>
+                        <th style="max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; ">Link bài hát</th>
+                        <th width="10px">Link lời bài hát</th>
+                        <th>Link ảnh bài hát</th>
+                        <th class="withHanhDong">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>BH01</td>
+                        <td>Chandelier</td>
+                        <td>Pop</td>
+                        <td>Sia</td>
+                        <td>Sia</td>
+                        <td>USUK</td>
+                        <td>Chandelier</td>
+                        <td>19,873</td>
+                        <td>543,936,893</td>
+                        <td>04:27</td>
+                        <td style="max-width: 250px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap; ">
+                            https://i.pinimg.com/736x/c2/f7/88/c2f788197471e6596e94ac1f1df1cf37.jpghttps://i.pinimg.com/736x/c2/f7/88/c2f788197471e6596e94ac1f1df1cf37.jpg
+                        </td>
+                        <td style="max-width: 250px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap; ">
+                            https://i.pinimg.com/736x/c2/f7/88/c2f788197471e6596e94ac1f1df1cf37.jpghttps://i.pinimg.com/736x/c2/f7/88/c2f788197471e6596e94ac1f1df1cf37.jpg
+                        </td>
+                        <td style="max-width: 250px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap; ">
+                            https://i.pinimg.com/736x/c2/f7/88/c2f788197471e6596e94ac1f1df1cf37.jpg
+                        </td>
+                        <td class="hanhdong">
+                            <button class="SuaDoiTuong" style="margin-right:10px">Sửa</button>
+                            <button class="XoaDoiTuong">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>BH02</td>
+                        <td>Cheap Thrills</td>
+                        <td>Pop</td>
+                        <td>Sia</td>
+                        <td>Sia</td>
+                        <td>USUK</td>
+                        <td>Cheap Thrills Album</td>
+                        <td>9,873</td>
+                        <td>1,710,826,253</td>
+                        <td>04:12</td>
+                        <td style="max-width: 250px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap; ">
+                            https://i.pinimg.com/736x/c2/f7/88/c2f788197471e6596e94ac1f1df1cf37.jpghttps://i.pinimg.com/736x/c2/f7/88/c2f788197471e6596e94ac1f1df1cf37.jpg
+                        </td>
+                        <td style="max-width: 250px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap; ">
+                            https://i.pinimg.com/736x/c2/f7/88/c2f788197471e6596e94ac1f1df1cf37.jpghttps://i.pinimg.com/736x/c2/f7/88/c2f788197471e6596e94ac1f1df1cf37.jpg
+                        </td>
+                        <td style="max-width: 250px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap; ">
+                            https://i.pinimg.com/736x/c2/f7/88/c2f788197471e6596e94ac1f1df1cf37.jpg
+                        </td>
+                        <td class="hanhdong">
+                            <button class="SuaDoiTuong" style="margin-right:10px">Sửa</button>
+                            <button class="XoaDoiTuong">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

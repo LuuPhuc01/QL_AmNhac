@@ -1,0 +1,195 @@
+﻿@{
+    ViewBag.Title = "Tìm kiếm";
+    Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
+}
+
+<div id="page-wrapper">
+    <div class="container-Timkiem">
+        <div class="container-Timkiem-item1">
+            <div class="nav-search-filter">
+                <div>
+                    <span class="nav-search-subject">
+                        Kết quả tìm kiếm
+                    </span>
+                    <span>
+                        |
+                    </span>
+                </div>
+                <div>
+                    <a href="/User/Timkiem/Index">Tất cả</a>
+                </div>
+                <div>
+                    <a href="/User/Timkiem/Timkiem_Baihat">Bài hát</a>
+                </div>
+                <div class="nav-search-selected">
+                    <a href="/User/Timkiem/Timkiem_Playlist_Album">Playlist/Album</a>
+                </div>
+                <div>
+                    <a href="/User/Timkiem/Timkiem_CaSy">Ca sỹ</a>
+                </div>
+                @*<div>
+                <a href="~/Search/Search_NhacSy">Nhạc sỹ</a>
+                </div>*@
+            </div>
+            <hr>
+            <div class="search-result">
+                <div class="search-result-wrap">
+                    <div class="search-album-item">
+                        <img src="~/Theme/images/playlist1.jpg" width="100%">
+                        <div>
+                            <p class="result-album-name">
+                                My Relax Music
+                            </p>
+                            <p class="result-album-other">
+                                Tran Tien
+                            </p>
+                        </div>
+                    </div>
+                    <div class="search-album-item">
+                        <img src="~/Theme/images/maxresdefault.jpg" width="100%">
+                        <div class="result-album-detail">
+                            <div>
+                                <p class="result-album-name">
+                                    Cố giang tình ver.2
+                                </p>
+                                <p class="result-album-other">
+                                    X2X
+                                </p>
+                            </div>
+                            @*<div class="result-album-heart">
+                            <span id="icon-heart" class="icon-main">
+                            <i class="fa-regular fa-heart"></i>
+                            </span>
+                            </div>*@
+                        </div>
+                    </div>
+                    <div class="search-album-item">
+                        <img src="~/Theme/images/playlist1.jpg" width="100%">
+                        <div>
+                            <div>
+                                <p class="result-album-name">
+                                    My Relax Music
+                                </p>
+                                <p class="result-album-other">
+                                    Tran Tien
+                                </p>
+                            </div>
+                            <div class="result-album-heart">
+                                <!-- <span id="icon-heart" class="icon-main">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span> -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-album-item">
+                        <img src="~/Theme/images/maxresdefault.jpg" width="100%">
+                        <div class="result-album-detail">
+                            <div>
+                                <p class="result-album-name">
+                                    Cố giang tình ver.2
+                                </p>
+                                <p class="result-album-other">
+                                    X2X
+                                </p>
+                            </div>
+                            @*<div class="result-album-heart">
+                            <span id="icon-heart" class="icon-main">
+                            <i class="fa-solid fa-heart"></i>
+                            </span>
+                            </div>*@
+                        </div>
+                    </div>
+                    <div class="search-album-item">
+                        <img src="~/Theme/images/maxresdefault.jpg" width="100%">
+                        <div class="result-album-detail">
+                            <div>
+                                <p class="result-album-name">
+                                    Cố giang tình ver.2
+                                </p>
+                                <p class="result-album-other">
+                                    X2X
+                                </p>
+                            </div>
+                            @*<div class="result-album-heart">
+                            <span id="icon-heart" class="icon-main">
+                            <i class="fa-regular fa-heart"></i>
+                            </span>
+                            </div>*@
+                        </div>
+                    </div>
+                    <div class="search-album-item">
+                        <img src="~/Theme/images/maxresdefault.jpg" width="100%">
+                        <div class="result-album-detail">
+                            <div>
+                                <p class="result-album-name">
+                                    Cố giang tình ver.2
+                                </p>
+                                <p class="result-album-other">
+                                    X2X
+                                </p>
+                            </div>
+                            @*<div class="result-album-heart">
+                            <span id="icon-heart" class="icon-main">
+                            <i class="fa-regular fa-heart"></i>
+                            </span>
+                            </div>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-Timkiem-item2">
+            <div class="ChuDe-subject">
+                Chủ đề
+            </div>
+            <div class="ChuDe-content ChuDe-content-item1">
+                <span class="ChuDe-detail">
+                    ROMANCE
+                </span>
+            </div>
+            <div class="ChuDe-content ChuDe-content-item2">
+                <span class="ChuDe-detail">
+                    DANCE
+                </span>
+            </div>
+            <div class="ChuDe-content ChuDe-content-item3">
+                <span class="ChuDe-detail">
+                    SLEEP
+                </span>
+            </div>
+            <div class="ChuDe-content ChuDe-content-item4">
+                <span class="ChuDe-detail">
+                    CHILDREN
+                </span>
+            </div>
+            <div class="ChuDe-content ChuDe-content-item5">
+                <span class="ChuDe-detail">
+                    OTHER
+                </span>
+            </div>
+            <div class="ChuDe-subject">
+                Quốc gia
+            </div>
+            <div class="quocgia-content">
+                <ul>
+                    <li class="quocgia-content-item">
+                        V-Pop
+                    </li>
+                    <li class="quocgia-content-item">
+                        K-Pop
+                    </li>
+                    <li class="quocgia-content-item">
+                        Trung Hoa
+                    </li>
+                    <li class="quocgia-content-item">
+                        US - UK
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+

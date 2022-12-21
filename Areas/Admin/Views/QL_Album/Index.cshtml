@@ -1,0 +1,66 @@
+﻿@model IEnumerable<QLBH.Models.AlbumLink>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<div class="row genres">
+    <div class="col-lg-12 ">
+        <h2>
+            Danh sách album
+        </h2>
+        <div class="genre">
+            <table id="dtDynamicVerticalScrollExample" class=" table table-hover table table-striped table-bordered table-sm" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã album</th>
+                        <th>Tên album</th>
+                        <th>Ca sỹ</th>
+                        <th>Lượt quan tâm</th>
+                        <th>Thời gian phát hành</th>
+                        <th>Ảnh Album</th>
+                        <th class="withHanhDong">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{var i = 0;}
+                    @foreach (var item in Model)
+                    {
+                        i++;
+                        <tr>
+                            <td>@i</td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TENAL)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NgheSi.TenNS)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LUOTQUANTAM)
+                            </td>
+                            
+                            <td>
+                                @Html.DisplayFor(modelItem => item.THOIGIANPH)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ANHAL)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

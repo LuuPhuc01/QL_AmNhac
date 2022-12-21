@@ -1,0 +1,72 @@
+﻿@*@model List<QLBH.Models.THELOAI>*@
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="row genres">
+
+    <div class="col-lg-10">
+        <div class="title-add">
+            <h2>
+                Danh sách Thể loại
+            </h2>
+            <a href="#"><button type="submit" class="btn btn-success">Thêm mới</button></a>
+        </div>
+        <div class="genre">
+            <table id="dtDynamicVerticalScrollExample" class=" table table-hover table table-striped table-bordered table-sm" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã thể loại</th>
+                        <th>Tên thể loại</th>
+                        <th class="withHanhDong">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+@*                    @foreach (var item in Model)*@
+@*                    {*@
+@*                        var i = 1;*@
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Dance</td>
+                            <td class="hanhdong">
+                                <a href="#" class="btn  SuaDoiTuong">
+                                    Sửa
+                                </a>
+                                @*<button class="XoaDoiTuong">Xóa</button>*@
+                                <button type="button" class="btn  XoaDoiTuong" data-toggle="modal" data-target="#myModal">Xóa</button>
+                            </td>
+                        </tr>
+@*                        i++;*@
+@*                    }*@
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+<div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Thông báo!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Bạn chắc chắn muốn xóa thể loại <span class="aler-del">Hip-Hop</span> không?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
