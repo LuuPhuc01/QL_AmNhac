@@ -18,13 +18,13 @@ namespace QLBH.Areas.User.Controllers
 				return RedirectToAction("Index", "Login", new { area = "User" });
 			}
             PersonalModel pm = new PersonalModel();
+            pm.userToken = Usertoken;
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri("https://localhost:7032/api/");
 
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
 
 
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Usertoken);
@@ -50,6 +50,7 @@ namespace QLBH.Areas.User.Controllers
 				if (getData.IsSuccessStatusCode)
                 {
                     string results = getData.Content.ReadAsStringAsync().Result;
+                    //Console.WriteLine(results);
                     pm.BaiHats = JsonConvert.DeserializeObject<List<BaiHatLink>>(results);
                 }
                 else
@@ -115,16 +116,12 @@ namespace QLBH.Areas.User.Controllers
             }
             return View();
         }
-        /*        [Area("user")]
-                public IActionResult AddPlaylist()
-                {
-                    return View();
-                }*/
-        [Area("User")]
-        public async Task<IActionResult> AddPlaylist()
-        {
-            return View();
-        }
+
+        //[Area("User")]
+        //public async Task<IActionResult> AddPlaylist()
+        //{
+        //    return View();
+        //}
         [Area("User")]
 
         [HttpPost]
@@ -147,10 +144,10 @@ namespace QLBH.Areas.User.Controllers
 
                 var response = client.PostAsJsonAsync<Playlist>("my/Playlist", playlist);
                 response.Wait();
-                Console.WriteLine(response);
+                //Console.WriteLine(response);
 
                 var test = response.Result;
-                Console.WriteLine(test.StatusCode);
+                //Console.WriteLine(test.StatusCode);
                 if (test.IsSuccessStatusCode)
                 {
                     return RedirectToAction("Index", "Personal", new { area = "User" });
@@ -162,6 +159,83 @@ namespace QLBH.Areas.User.Controllers
 
             }
             
+        }
+
+        [Area("User")]
+        [HttpPost]
+        public async Task<IActionResult> AddBaiHatYeuThich(int id)
+        {
+            var Usertoken = HttpContext.Session.GetString("tokenUser");
+            if (Usertoken == null)
+            {
+                return RedirectToAction("Index", "Login", new { area = "User" });
+            }
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7032/api/");
+
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Usertoken);
+
+                var response = client.PostAsJsonAsync($"my/BaihatUser/?id={id}", id);
+                response.Wait();
+                //Console.WriteLine(response);
+
+                var test = response.Result;
+                //Console.WriteLine(test.StatusCode);
+                if (test.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index", "Personal", new { area = "User" });
+                }
+                else
+                {
+                    Console.WriteLine("error calling API");
+                    return RedirectToAction("Index", "Home", new { area = "User" });
+                }
+
+            }
+
+        }
+
+        [Area("User")]
+        [HttpPost]
+        public async Task<IActionResult> DelBaiHatYeuThich(int id)
+        {
+            var Usertoken = HttpContext.Session.GetString("tokenUser");
+            //if (Usertoken == null)
+            //{
+            //    return RedirectToAction("Index", "Login", new { area = "User" });
+            //}
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7032/api/");
+
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Usertoken);
+
+                var response = client.DeleteAsync($"my/BaihatUser/{id}");
+                response.Wait();
+                //Console.WriteLine(response);
+
+                var test = response.Result;
+                //Console.WriteLine(test.StatusCode);
+                if (test.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index", "Personal", new { area = "User" });
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Home", new { area = "User" });
+                }
+
+            }
+
         }
     }
 

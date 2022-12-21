@@ -10,17 +10,60 @@
     <div class="main_container" style="position:relative">
         <div class="header_section">
             <div class="text_header">Thư viện</div>
+            <input id="usertoken" value="@Model.userToken" hidden/>
         </div>
         <div class="review-slider">
             <div class="tittle-head">
                 <h3 class="tittle" style="color:white;">PLAYLIST </h3>
-                <button type="button" class="btn btn-danger" style="margin-left:20px;">
+                @*<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter" style="margin-left:20px;">
                     <a href="/User/Personal/AddPlaylist">
                         <span class="material-symbols-outlined">
                             add
                         </span>
                     </a>
+                </button>*@
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter" style="margin-left:20px;">
+                    <!-- <a href="/User/Personal/AddPlaylist"> -->
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                    <!-- </a> -->
                 </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content" style=" background-color: #173b45; ">
+                            <div class="modal-header" style="    border-bottom: 1px solid #173b20;">
+                                <h5 class="modal-title color_black" id="exampleModalLongTitle">Tạo Playlist mới</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                    <div class="form-group">
+                                        <label class="control-label color_black">Tên Playlist</label>
+                                        <input style="border-radius: 5px;
+                                                    border: 1px solid hsla(0,0%,100%,0.1);
+                                                    background-color: #173b49;"
+                                               class="form-control" id="TENPLAYLIST" name="TENPLAYLIST" placeholder="Tên Playlist" />
+                                        <span  class="text-danger"></span>
+                                    </div>
+                                    <div class="modal-footer" style="border-top: 1px solid #173b20">
+                                        @*<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>*@
+                                        <input type="submit" name="submit" value="Tạo mới" class=" btn" style="background-color: #158370 " />
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
                 <div class="clearfix"> </div>
             </div>
             <div class="row">
@@ -82,7 +125,7 @@
 
                                             <div class="main-song-text">
                                                 <p class="name_audio">@item.TENBAIHAT</p>
-                                
+                                                <p><a href="/User/NgheSy/Index/@item.Casi[0].Id" class="caSi" style="color: white;">@item.Casi[0].TenNS</a></p>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -91,8 +134,14 @@
 
                                         <div class="col-md-3">
                                             <div id="song-1" class="icons">
-                                                <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
-                                                <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
+                                                
+                                                <form action="~/User/Personal/DelBaiHatYeuThich" method="POST">
+                                                    <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
+                                                    <button type="submit" name="submit" class="btn_hidden">
+                                                        <span class="middle"><i class="fa-solid fa-heart"></i></span>
+                                                    </button>
+                                                </form>
+                                                
                                                 <span class="middle thoiluong">@item.THOILUONG</span>
                                                 <span class="middle"><i class="fa-solid fa-download"></i></span>
                                                 <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>

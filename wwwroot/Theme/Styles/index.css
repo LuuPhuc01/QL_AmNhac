@@ -3,6 +3,10 @@
   and then simply add classes like .m--blend-$colorName to .fnc-slide 
   to apply specific color for mask blend mode */
 }
+.btn_hidden {
+    background: inherit;
+    border: 0px;
+}
 
 .fnc-slider {
     overflow: hidden;
@@ -736,4 +740,7 @@ body {
 .new-song ul li:hover {
     /*opacity: 0.8;*/
     background-color: rgba(29,55,90,0.8);
+}
+.color_black{
+    color: black;
 }
