@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 <div  id="page-wrapper">
+<div  id="page-wrapper">
     <div class="main_container" style="position:relative">
         <div class="header_section">
             <div class="text_header">Thư viện</div>
@@ -82,12 +83,12 @@
                                 //    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2Bzg9a5mY5GEuTu75CSG8NM-JCp5z8PWWQ&usqp=CAU" alt="">
                                 //}
                                 try{
-                                    <img src="@item.BaiHats[0].ANHBH" alt="">
+                                            <img src="@item.BaiHats[0].ANHBH" alt="">
 
                                 }
                                 catch 
                                 {
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2Bzg9a5mY5GEuTu75CSG8NM-JCp5z8PWWQ&usqp=CAU" alt="">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2Bzg9a5mY5GEuTu75CSG8NM-JCp5z8PWWQ&usqp=CAU" alt="">
 
                                 }
                             }
@@ -160,7 +161,19 @@
                                                 
                                                 <span class="middle thoiluong">@item.THOILUONG</span>
                                                 <span class="middle"><i class="fa-solid fa-download"></i></span>
-                                                <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
+                                                <div class="middle">
+                                                    <div class="main-dropdown" style="margin-top:15px;">    
+@*                                                          <div class="dropdown">*@
+                                                          <button class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa-solid fa-ellipsis"></i>
+                                                          </button>
+                                                              <ul class="dropdown-menu">
+                                                                <li><div class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">Thêm vào danh sách phát</div></li>
+                                                                <li><div href="#">CSS</div></li>
+                                                                <li><div href="#">JavaScript</div></li>
+                                                              </ul>
+                                                      @*    </div>*@
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                    
