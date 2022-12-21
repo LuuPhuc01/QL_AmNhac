@@ -21,7 +21,28 @@
         </div>
         <div id="wp-content" class="d-flex">
             <div id="sidebar">
-                <img src="@Model.BaiHats[0].ANHBH" />
+                @{
+                    //if (Model.BaiHats != null)
+                    //{
+                    ////<img src="@item.BaiHats[0].ANHBH" alt="">
+                    //    <p style="color: black">trinh</p>
+                    //}
+                    //else
+                    //{
+                    //    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2Bzg9a5mY5GEuTu75CSG8NM-JCp5z8PWWQ&usqp=CAU" alt="">
+                    //}
+                    try
+                    {
+                        <img src="@Model.BaiHats[0].ANHBH" alt="">
+
+                    }
+                    catch
+                    {
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2Bzg9a5mY5GEuTu75CSG8NM-JCp5z8PWWQ&usqp=CAU" alt="">
+
+                    }
+                }
+                @*<img src="@Model.BaiHats[0].ANHBH" />*@
                 <div class="text-details">
                     <div class="name-playlist">@Model.Playlist.TENPLAYLIST</div>
                     <div class="btn  btn-phatnhac update_playlist_audio" href="#" role="button">Phát ngẫu nhiên</div>
