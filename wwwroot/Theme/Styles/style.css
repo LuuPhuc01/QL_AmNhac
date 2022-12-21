@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
-p {margin: 0;}
+p {margin: !important 0;}
 
 html, body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -2190,7 +2190,7 @@ li.list-group-item1 {
 .modal-header {
     min-height: 16.43px;
     padding: 12px 32px;
-    border-bottom:none!important;
+    /*border-bottom:none!important;*/
 }
 .modal-content {
     background-color: rgb(255, 255, 255);
@@ -4546,3 +4546,14 @@ h4.tittle.two{
 .main{
 	margin-top: 0px !important;
 }
+
+
+/*    add playlist */
+/*.modal-contentl {
+	background-color: #173b45;
+}
+
+	.modal-contentl input {
+		border-radius: 1px solid hsla(0,0%,100%,0.1);
+		background-color: hsla(0,0%,100%,0.1);
+	}*/
