@@ -28,7 +28,7 @@
     const closePlaylist = document.querySelector(".playlist-close");
     const modalPlaylist = document.querySelector(".modal-playlist");
     const modalMain = document.querySelector(".modal-playlist-main");
-    
+
     closePlaylist.style.display = 'none';
     volumeMin.style.display = 'none';
     let isPlaying = true;
@@ -347,6 +347,11 @@ var isCheckExist;
         } else {
             durationTime.textContent = formatTimer(duration);
         }
+
+        //Luu currentTime vao localStorage
+        let tempDangphat = localStorage.getItem('dangphat') ? JSON.parse(localStorage.getItem('dangphat')) : [];
+        tempDangphat[0].tg = currentTime;
+        localStorage.setItem('dangphat', JSON.stringify(tempDangphat));
     }
     function formatTimer(number) {
         const minutes = Math.floor(number / 60);
@@ -362,6 +367,14 @@ var isCheckExist;
         song.setAttribute("src", `${musics[indexSong].file}`);
         musicImage.setAttribute("src", musics[indexSong].image);
         musicName.textContent = musics[indexSong].title;
+
+        //Luu bai hat dang phat vao localStorage
+        let dangphat = [];
+        dangphat.push({
+            linkbh: song.getAttribute("src"),
+            tg: null,
+        })
+        localStorage.setItem('dangphat', JSON.stringify(dangphat));
     }
     function randomSong() {
         let newIndexSong;
@@ -371,7 +384,57 @@ var isCheckExist;
         indexSong = newIndexSong;
 
     }
-    displayTimer();
-    init(indexSong);
+
+
+    /*    init(indexSong);*/
+    function Khoitao() {
+        let dangphats = JSON.parse(localStorage.getItem('dangphat')) ? true : false;
+        console.log('ket qua: ' + dangphats);
+        if (dangphats) {
+            let dangphats = JSON.parse(localStorage.getItem('dangphat'));
+
+            dangphats.forEach((dangphat, index) => {
+                index++;
+                srcBaihat = dangphat.linkbh;
+                tg = dangphat.tg;
+            })
+            song.setAttribute("src", srcBaihat);
+            song.currentTime = tg;
+            //isPlaying = true;
+            //song.play();
+            playPause();
+        }
+        else {
+            displayTimer();
+            init(indexSong);
+        }
+    }
+    Khoitao();
+
+
+    ////Luu userToken
+    //let user = localStorage.setItem('user', null);
+    function userToken() {
+        var check = document.getElementById("usertoken");
+        if (check != null) {
+            sessionStorage.setItem('userToken', check.value);
+        }
+
+        const logoutButton = document.getElementById("logoutButton");
+        const loginButton = document.getElementById("loginButton2");
+
+        logoutButton.addEventListener("click", function () {
+            sessionStorage.removeItem('userToken');
+        })
+
+        let user = sessionStorage.getItem('userToken') ? true : false;
+        if (user) {
+            loginButton.style.display = 'none';
+        } else {
+            logoutButton.style.display = 'none';
+        }
+    }
+    userToken();
 
 })
+
