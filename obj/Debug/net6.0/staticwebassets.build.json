@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "K2B5IhwCjfzROELnHDmB8ymK4g/zZ/8kxERY60mtQek=",
+  "Hash": "LtdCZHzxbChNSOdgD7awR8Zm/ePE2Ti80xW52NrzvEg=",
   "Source": "QLBH",
   "BasePath": "_content/QLBH",
   "Mode": "Default",
@@ -2244,6 +2244,23 @@
       "OriginalItemSpec": "wwwroot\\Theme\\images\\HaAnhTuan.jpg"
     },
     {
+      "Identity": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Hanhi.jpg",
+      "SourceId": "QLBH",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\",
+      "BasePath": "_content/QLBH",
+      "RelativePath": "Theme/images/Hanhi.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\images\\Hanhi.jpg"
+    },
+    {
       "Identity": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\jplayer.blue.monday.png",
       "SourceId": "QLBH",
       "SourceType": "Discovered",
@@ -2669,6 +2686,23 @@
       "OriginalItemSpec": "wwwroot\\Theme\\images\\tick.png"
     },
     {
+      "Identity": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Trungquan.png",
+      "SourceId": "QLBH",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\",
+      "BasePath": "_content/QLBH",
+      "RelativePath": "Theme/images/Trungquan.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\images\\Trungquan.png"
+    },
+    {
       "Identity": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\user.png",
       "SourceId": "QLBH",
       "SourceType": "Discovered",
@@ -3092,6 +3126,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Theme\\media\\anhnhora.mp3"
+    },
+    {
+      "Identity": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Anhtudonhungcodon.mp3",
+      "SourceId": "QLBH",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\",
+      "BasePath": "_content/QLBH",
+      "RelativePath": "Theme/media/Anhtudonhungcodon.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\media\\Anhtudonhungcodon.mp3"
     },
     {
       "Identity": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Blue Browne.mp3",

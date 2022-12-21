@@ -183,7 +183,7 @@
 
                                             <div class="main-song-text">
                                                 <p class="name_audio">@item.TENBAIHAT</p>
-                                                <p><a href="#" class="caSi">@item.TheLoai</a></p>
+                                                <p><a href="/User/NgheSy/Index/@item.Casi[0].Id" class="caSi" style="color: white;">@item.Casi[0].TenNS</a></p>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -192,8 +192,14 @@
 
                                         <div class="col-md-3">
                                             <div id="song-1" class="icons">
-                                                <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
-                                                <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
+                                                
+                                                <form action="~/User/Personal/DelBaiHatYeuThich" method="POST">
+                                                    <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
+                                                    <button type="submit" name="submit" class="btn_hidden">
+                                                        <span class="middle"><i class="fa-solid fa-heart"></i></span>
+                                                    </button>
+                                                </form>
+                                                
                                                 <span class="middle thoiluong">@item.THOILUONG</span>
                                                 <span class="middle"><i class="fa-solid fa-download"></i></span>
                                                 <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
