@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LUUPHUC\\19522034\\HK7\\C#\\QLAN\\QLBH.csproj": {}
+    "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\QLBH.csproj": {}
   },
   "projects": {
-    "D:\\LUUPHUC\\19522034\\HK7\\C#\\QLAN\\QLBH.csproj": {
+    "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\QLBH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LUUPHUC\\19522034\\HK7\\C#\\QLAN\\QLBH.csproj",
+        "projectUniqueName": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\QLBH.csproj",
         "projectName": "QLBH",
-        "projectPath": "D:\\LUUPHUC\\19522034\\HK7\\C#\\QLAN\\QLBH.csproj",
-        "packagesPath": "C:\\Users\\phucl\\.nuget\\packages\\",
-        "outputPath": "D:\\LUUPHUC\\19522034\\HK7\\C#\\QLAN\\obj\\",
+        "projectPath": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\QLBH.csproj",
+        "packagesPath": "C:\\Users\\maitr\\.nuget\\packages\\",
+        "outputPath": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\phucl\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\maitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

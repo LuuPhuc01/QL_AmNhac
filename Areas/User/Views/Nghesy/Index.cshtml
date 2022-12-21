@@ -49,10 +49,6 @@
 
                                 <div class="col-md-3">
                                     <div id="song-1" class="icons">
-                                        @*<form>
-                                            <span typeof="submit" class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
-
-                                        </form>*@
                                         @{
                                             if(Model.BaiHatYeuThichs != null)
                                             {
@@ -74,13 +70,6 @@
                                                             <span class="middle"><i class="fa-solid fa-heart"></i></span>
                                                         </button>
                                                     }
-                                                    //<form action="~/User/Personal/DelBaiHatYeuThich" method="POST">
-                                                    //    <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
-                                                    //    <button type="submit" name="submit" class="btn_hidden">
-                                                    //        <span class="middle"><i class="fa-solid fa-heart"></i></span>
-                                                    //    </button>
-                                                    //</form>
-                                                    //<span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
                                                 }
                                                 else
                                                 {
@@ -91,12 +80,6 @@
                                                                <span class="middle "><i class="fa-regular fa-heart "></i></span>
                                                         </button>
                                                     }
-                                                    //<form action="~/User/Personal/AddBaiHatYeuThich" method="POST">
-                                                    //    <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
-                                                    //    <button type="submit" name="submit" class="btn_hidden">
-                                                    //        <span class="middle " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
-                                                    //    </button>
-                                                    //</form>
                                                 }
                                             }
                                             else
@@ -108,13 +91,6 @@
                                                         <span class="middle "><i class="fa-regular fa-heart "></i></span>
                                                     </button>
                                                 }
-                                                //<form action="~/User/Personal/AddBaiHatYeuThich" method="POST">
-                                                //    <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
-                                                //    <button type="submit" name="submit" class="btn_hidden">
-                                                //        <span class="middle " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
-                                                //    </button>
-                                                //</form>
-
                                             }
 
                                         }

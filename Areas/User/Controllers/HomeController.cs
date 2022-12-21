@@ -39,6 +39,7 @@ namespace QLBH.Areas.User.Controllers
                 if (getDataAlbumNB.IsSuccessStatusCode)
                 {
                     string results = getDataAlbumNB.Content.ReadAsStringAsync().Result;
+                    //Console.WriteLine(results);
                     homeModel.AlbumsNoiBat = JsonConvert.DeserializeObject<List<AlbumLink>>(results);
                 }
                 else
