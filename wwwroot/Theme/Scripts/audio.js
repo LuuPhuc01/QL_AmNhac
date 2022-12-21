@@ -23,12 +23,16 @@
     const imgAudios = document.querySelectorAll(".img_audio");
     const playSong = document.querySelectorAll(".play_song");
 
+    const detailSong = document.querySelector(".play-expand");
+
 
     const expandPlaylist = document.querySelector(".playlist-expand");
     const closePlaylist = document.querySelector(".playlist-close");
     const modalPlaylist = document.querySelector(".modal-playlist");
     const modalMain = document.querySelector(".modal-playlist-main");
-    
+
+
+
     closePlaylist.style.display = 'none';
     volumeMin.style.display = 'none';
     let isPlaying = true;
@@ -38,11 +42,11 @@
     //const musics = ["holo.mp3", "summer.mp3", "spark.mp3", "home.mp3"];
 
 
-    const musics = new Array(
+    const musics = [
         {
             id: 0,
             title: "Định Mệnh",
-            file: "../../theme/media/dinhmenh.mp3",
+            file: "../../../theme/media/dinhmenh.mp3",
             image:
                 "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         },
@@ -50,28 +54,28 @@
         {
             id: 1,
             title: "Anh Nhớ Ra",
-            file: "../../theme/media/anhnhora.mp3",
+            file: "../../../theme/media/anhnhora.mp3",
             image:
                 "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         },
         {
             id: 2,
             title: "Xuân Thì",
-            file: "../../theme/media/xuanthi.mp3",
+            file: "../../../theme/media/xuanthi.mp3",
             image:
                 "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
         },
-    )
-
+    ]
 let timer;
 let repeatCount = 0;
 let randomCount = 0;
 var isEqual;
 var isCheckExist;
 
-
-    for (var i = 0; i < musics.length; i++) {
-
+    //Detail Song
+    detailSong.addEventListener('click', detailSongs)
+    function detailSongs() {
+        detailSong.setAttribute('href','/user/Phatnhac/Index/')
     }
 
     //Open ModalPlaylist
@@ -93,6 +97,8 @@ var isCheckExist;
     modalMain.addEventListener('click', function (event) {
         event.stopPropagation()
     })
+
+    compareArr();
     // Update new playlist
     updateAudio.addEventListener("click", update_playlist_audio)
     function update_playlist_audio() {
@@ -104,10 +110,13 @@ var isCheckExist;
                 musics[i].image = imgAudios[i].getAttribute("src");
             }
             else if (musics.length < playAudios.length) {
+                musics[i].file = playAudios[i].getAttribute("link");
+                musics[i].title = nameAudios[i].textContent;
+                musics[i].image = imgAudios[i].getAttribute("src");
                 const addLink = playAudios[i].getAttribute("link");
                 const addTitle = nameAudios[i].textContent;
                 const addImg = imgAudios[i].getAttribute("src");
-                const id = musics.length +1;
+                const id = musics.length + 1;
                 const obj = {};
                 obj['id'] = id;
                 obj['title'] = addTitle;
@@ -126,7 +135,6 @@ var isCheckExist;
         compareArr();
     }
 
-    compareArr();
     const indexLength = musics.length -1
     for (var i = 0; i < playAudios.length; i++) {
 
@@ -139,7 +147,7 @@ var isCheckExist;
 
             }
             else if (isEqual === false) {
-                var CheckLink = e.target.closest('.play_audio').getAttribute("link")
+                var CheckLink = e.target.closest('.play_audio').getAttribute("name")
                 CheckExist(CheckLink);
                 if (isCheckExist === false) {
                     var Link = e.target.closest('.play_audio').getAttribute("link")
@@ -199,7 +207,7 @@ var isCheckExist;
     }
     function CheckExist(CheckLink) {
         for (let i = 0; i < musics.length; i++) {
-            if (CheckLink == musics[i].file) {
+            if (CheckLink == musics[i].title) {
                   isCheckExist = true;
                   break;
             }

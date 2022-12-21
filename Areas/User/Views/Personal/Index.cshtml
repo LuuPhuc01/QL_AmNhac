@@ -43,66 +43,6 @@
                         </div>
                 }
              </div>
-@*            <ul id="flexiselDemo1">
-                <li>
-                    <a href="single.html"><img src="~/Theme/images/v3.jpg" alt="" /></a>
-                    <div class="slide-title"><h4> Playlist1 </div>
-                    <div class="date-city">
-                        <h5>Jan-02-16</h5>
-                        <div class="buy-tickets">
-                            <a href="single.html">Xem thêm</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="single.html"><img src="~/Theme/images/v5.jpg" alt="" /></a>
-                    <div class="slide-title"><h4>Playlist2 </h4></div>
-                    <div class="date-city">
-                        <h5>Jan-02-16</h5>
-                        <div class="buy-tickets">
-                            <a href="/User/Personal/PersonalPlaylist">Xem thêm</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="single.html"><img src="~/Theme/images/v4.jpg" alt="" /></a>
-                    <div class="slide-title"><h4>Playlist3 </h4></div>
-                    <div class="date-city">
-                        <h5>Jan-02-16</h5>
-                        <div class="buy-tickets">
-                            <a href="/User/Personal/PersonalPlaylist">Xem thêm</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <script type="text/javascript">
-                $(window).load(function () {
-
-                    $("#flexiselDemo1").flexisel({
-                        visibleItems: 5,
-                        animationSpeed: 1000,
-                        autoPlay: true,
-                        autoPlaySpeed: 3000,
-                        pauseOnHover: false,
-                        enableResponsiveBreakpoints: true,
-                        responsiveBreakpoints: {
-                            portrait: {
-                                changePoint: 480,
-                                visibleItems: 2
-                            },
-                            landscape: {
-                                changePoint: 640,
-                                visibleItems: 3
-                            },
-                            tablet: {
-                                changePoint: 800,
-                                visibleItems: 4
-                            }
-                        }
-                    });
-                });
-            </script>
-            <script type="text/javascript" src="~/Theme/Scripts/jquery.flexisel.js"></script>*@
         </div>
         <div class="playlist_section">
             <div class="container_baihatyeuthich">
@@ -110,11 +50,13 @@
                     <div class="tittle-head ">
                         <h3 class="tittle" style="color:white; margin-right: 20px">BÀI HÁT YÊU THÍCH </h3>
                         <div class="button update_playlist_audio">
+                            <div  class=" ">
                             <button class="button_play_header ">
                                 <span class="material-symbols-outlined">
                                     play_circle
                                 </span>
                             </button>
+                            </div>
                         </div> 
                         <div class="clearfix"> </div>
                     </div>
@@ -140,7 +82,7 @@
 
                                             <div class="main-song-text">
                                                 <p class="name_audio">@item.TENBAIHAT</p>
-                                                <p><a href="#" class="caSi">@item.TheLoai</a></p>
+                                
                                             </div>
                                         </div>
                                         <div class="col-md-4">
