@@ -10,6 +10,9 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QLBH
 build_property.RootNamespace = QLBH
 <<<<<<< HEAD
+build_property.ProjectDir = c:\frontEndFramework\Frontend_\QL_AmNhac_FontEnd\
+=======
+<<<<<<< HEAD
 build_property.ProjectDir = D:\LUUPHUC\19522034\HK7\C#\QLAN\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
@@ -196,189 +199,194 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/LUUPHUC/19522034/HK7/C\#/QLAN/Views/Shared/_Layout.cshtml]
 =======
 build_property.ProjectDir = C:\frontEndFramework\Frontend_\QL_AmNhac_FontEnd\
+>>>>>>> 536648a7fc23e67bc2da30a57b08c5803f4106ed
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\frontEndFramework\Frontend_\QL_AmNhac_FontEnd
+build_property.MSBuildProjectDirectory = c:\frontEndFramework\Frontend_\QL_AmNhac_FontEnd
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL/BaiHat.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL/BaiHat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxcQmFpSGF0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL/DangNhap.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL/DangNhap.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxcRGFuZ05oYXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Album/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Album/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxfQWxidW1cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Album/Index1.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Album/Index1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxfQWxidW1cSW5kZXgxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Baihat/ChiTietBaiHat.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Baihat/ChiTietBaiHat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxfQmFpaGF0XENoaVRpZXRCYWlIYXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Baihat/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Baihat/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxfQmFpaGF0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Baihat/Index1.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Baihat/Index1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxfQmFpaGF0XEluZGV4MS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Baihat/Index2.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Baihat/Index2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxfQmFpaGF0XEluZGV4Mi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Baihat/ThemBaiHat.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Baihat/ThemBaiHat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxfQmFpaGF0XFRoZW1CYWlIYXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Nghesy/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Nghesy/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxfTmdoZXN5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Nghesy/Index1.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Nghesy/Index1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxfTmdoZXN5XEluZGV4MS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Nguoidung/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Nguoidung/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxfTmd1b2lkdW5nXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Quocgia/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Quocgia/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxfUXVvY2dpYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Theloai/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Theloai/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxfVGhlbG9haVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Theloai/Index1.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/QL_Theloai/Index1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUUxfVGhlbG9haVxJbmRleDEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Album/ChiTietAlbum.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Album/ChiTietAlbum.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xBbGJ1bVxDaGlUaWV0QWxidW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Album/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Album/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xBbGJ1bVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Baihat/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Baihat/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xCYWloYXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Home/About.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXEFib3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Home/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Home/Privacy.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXFByaXZhY3kuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Login/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xMb2dpblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Nghesy/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Nghesy/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xOZ2hlc3lcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Personal/AddPlaylist.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Personal/AddPlaylist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQZXJzb25hbFxBZGRQbGF5bGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Personal/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Personal/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQZXJzb25hbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Personal/PersonalPlaylist.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Personal/PersonalPlaylist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQZXJzb25hbFxQZXJzb25hbFBsYXlsaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Phatnhac/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Phatnhac/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQaGF0bmhhY1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Shared/Error.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Shared/_Layout.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Timkiem/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Timkiem/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xUaW1raWVtXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Timkiem/Timkiem_Baihat.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Timkiem/Timkiem_Baihat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xUaW1raWVtXFRpbWtpZW1fQmFpaGF0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Timkiem/Timkiem_Casy.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Timkiem/Timkiem_Casy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xUaW1raWVtXFRpbWtpZW1fQ2FzeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Timkiem/Timkiem_Playlist_Album.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/Timkiem/Timkiem_Playlist_Album.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xUaW1raWVtXFRpbWtpZW1fUGxheWxpc3RfQWxidW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/_ViewImports.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/_ViewStart.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Areas/User/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/Home/Index.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/Home/Privacy.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/Shared/Error.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/_ViewImports.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/_ViewStart.cshtml]
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
+[c:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/Shared/_Layout.cshtml]
+=======
 [C:/frontEndFramework/Frontend_/QL_AmNhac_FontEnd/Views/Shared/_Layout.cshtml]
 >>>>>>> 7a25c612dbb98de4a17b2a6b8a89bc5cb1a16bdf
+>>>>>>> 536648a7fc23e67bc2da30a57b08c5803f4106ed
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-j22qalkiqv
