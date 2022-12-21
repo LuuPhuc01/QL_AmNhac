@@ -287,7 +287,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
 
-            <div class="update_playlist_audio"></div>
         </footer>
         <div class="modal-playlist">
             <div class="modal-playlist-main">
@@ -296,46 +295,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <div>DANH SÁCH PHÁT</div>
                     </div>
                     <div id="update-playlist">
-@*
-                            @for(var i = 0; i < Musics.length; i++)
-                            {
-                                            <ul class="songs list1">
-
-                                            <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
-                                                <div class="row">
-
-                                                    <div class="col-md-5 main-song-title">
-                                                                <div  class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">
-                                                                <img class="img_audio main-song-img" src="@item.ANHBH"/>
-                                                                <div class=" main-song-play mini-song-play">
-                                                                    <i class="play_song fa-solid fa-play" ></i>
-                                                                </div>
-                                                            </div>
-
-                                                        <div class="main-song-text">
-                                                            <p class="name_audio">@item.TENBAIHAT</p>
-                                                            <p><a href="#" class="caSi">@item.TheLoai</a></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                                <span class="middle"> @Html.DisplayFor(modelItem => item.Album.TENAL)</span>
-                                                    </div>
-
-                                                    <div class="col-md-3">
-                                                        <div id="song-1" class="icons">
-                                                            <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
-                                                            <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
-                                                            <span class="middle thoiluong">@item.THOILUONG</span>
-                                                            <span class="middle"><i class="fa-solid fa-download"></i></span>
-                                                            <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </li>
-
-                                        </ul>
-                            }*@
                             <ul class="songs list1">
                                 <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
                                     <div class="row">
@@ -380,6 +339,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
 
+            <div class="update_playlist_audio"></div>
     </section>
 
     <script src="~/Theme/Scripts/jquery.nicescroll.js"></script>

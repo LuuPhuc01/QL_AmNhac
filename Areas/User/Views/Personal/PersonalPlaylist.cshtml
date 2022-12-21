@@ -16,6 +16,7 @@
 <div class="main">
     <div class="containers">
         <div id="header">
+            <a href="/User/Personal/" class="icon-back"><ion-icon name="arrow-back-circle-outline"></ion-icon></a>
             <h2 class="text-center">DANH SÁCH PHÁT</h2>
         </div>
         <div id="wp-content" class="d-flex">
@@ -43,13 +44,31 @@
                 }
                 @*<img src="@Model.BaiHats[0].ANHBH" />*@
                 <div class="text-details">
-                    <div>@Model.Playlist.TENPLAYLIST</div>
+                    <div class="name-playlist">@Model.Playlist.TENPLAYLIST</div>
                     <div class="btn  btn-phatnhac update_playlist_audio" href="#" role="button">Phát ngẫu nhiên</div>
                 </div>
 
             </div>
             <div id="content">
                 <div class="list-song  widget-side" id="style-7">
+                    <ul>
+                        <li>
+                            <div class="row" style="font-size:20px;">
+                                    <div class="col-md-5" >
+                                        Tên Bài Hát
+                                    </div>
+                                    <div class="col-md-4">
+                                        Lượt Nghe
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        
+                                    </div>
+                                </div>
+                        </li>
+
+                    </ul>
+
                     <ul class="songs list1">
                         @{
                             var i = 0;

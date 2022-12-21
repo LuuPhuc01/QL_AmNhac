@@ -167,20 +167,26 @@
         </div>
         <div class="list-song widget-side">
             <ul class="row ">
+                @{
+                    var i = 0;
+                }
                 @foreach (var item in Model.TopBaiHats)
                 {
+                    i++;
                     <li class="col-sm-4" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
                         <div>
                             <div>
-                                <div class="main-song-cover">
-                                    <img class="song-img" src="@item.ANHBH" />
+                                    <div  class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">
+
+                                    <img class="img_audio song-img" src="@item.ANHBH"/>
+
                                     <div class="main-song-play max-song-play"><i class="fa-solid fa-play"></i></div>
                                 </div>
 
                             </div>
                             <div class="song-text">
                                 <a style="color:white" href="/User/Baihat/Index">
-                                    <p>@item.TENBAIHAT</p>
+                                        <p  class="name_audio">@item.TENBAIHAT</p>
                                     <p>
                                         <a href="/User/NgheSy/Index/@item.Casi[0].Id">
                                         <span>
@@ -212,7 +218,7 @@
             {
                 <li>
                     <a href="single.html"><img src="@item.ANHAL" alt="" /></a>
-                    <div class="slide-title"><h4>@item.TENAL</h4> </div>
+                            <div class="slide-title" ><h4 style="height:60px">@item.TENAL</h4> </div>
                     <div class="date-city">
                         <h5>@item.NgheSi.TenNS</h5>
                         <div class="buy-tickets">
