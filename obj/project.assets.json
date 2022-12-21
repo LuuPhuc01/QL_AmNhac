@@ -9564,19 +9564,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\maitr\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\QLBH.csproj",
+      "projectUniqueName": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github\\QL_AmNhac_FontEnd\\QLBH.csproj",
       "projectName": "QLBH",
-      "projectPath": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\QLBH.csproj",
-      "packagesPath": "C:\\Users\\maitr\\.nuget\\packages\\",
-      "outputPath": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\obj\\",
+      "projectPath": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github\\QL_AmNhac_FontEnd\\QLBH.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "D:\\HK1-2022-2023\\HTTT trên Framework\\Github\\QL_AmNhac_FontEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\maitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

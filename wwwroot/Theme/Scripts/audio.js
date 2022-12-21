@@ -1,4 +1,30 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+﻿////Luu userToken
+//let user = localStorage.setItem('user', null);
+
+
+function userToken() {
+    var check = document.getElementById("usertoken");
+    if (check != null) {
+        sessionStorage.setItem('userToken', check.value);
+    }
+
+    const logoutButton = document.getElementById("logoutButton");
+    const loginButton = document.getElementById("loginButton2");
+
+    logoutButton.addEventListener("click", function () {
+        sessionStorage.removeItem('userToken');
+    })
+
+    let user = sessionStorage.getItem('userToken') ? true : false;
+    if (user) {
+        loginButton.style.display = 'none';
+    } else {
+        logoutButton.style.display = 'none';
+    }
+}
+userToken();
+
+document.addEventListener('DOMContentLoaded', () => {
     const song = document.getElementById("song");
     const playBtn = document.querySelector(".player-inner");
     const nextBtn = document.querySelector(".play-forward");
@@ -77,6 +103,22 @@ var isCheckExist;
     //Open ModalPlaylist
     expandPlaylist.addEventListener('click',showPlaylist)
 
+    function updateLocalStorage() {
+        let dsphats = [];
+        for (var i = 0; i < musics.length; i++) {
+
+
+            dsphats.push({
+                title: musics[i].title,
+                image: musics[i].image,
+                file: musics[i].file,
+            })
+
+            localStorage.setItem('dsphat', JSON.stringify(dsphats));
+        }
+    }
+    updateLocalStorage();
+
     function showPlaylist() {
         modalPlaylist.classList.add('open')
         expandPlaylist.style.display = 'none';
@@ -104,6 +146,9 @@ var isCheckExist;
                 musics[i].image = imgAudios[i].getAttribute("src");
             }
             else if (musics.length < playAudios.length) {
+                musics[i].file = playAudios[i].getAttribute("link");
+                musics[i].title = nameAudios[i].textContent;
+                musics[i].image = imgAudios[i].getAttribute("src");
                 const addLink = playAudios[i].getAttribute("link");
                 const addTitle = nameAudios[i].textContent;
                 const addImg = imgAudios[i].getAttribute("src");
@@ -115,7 +160,7 @@ var isCheckExist;
                 obj['image'] = addImg;
                 musics.push(obj);
             }
-        
+            updateLocalStorage();
        
         }
 
@@ -170,7 +215,7 @@ var isCheckExist;
             }
             isPlaying = true;
             playPause();
- 
+            updateLocalStorage();
  
         }
     }
@@ -333,6 +378,10 @@ var isCheckExist;
             clearInterval(timer);
         }
         console.log(musics);
+
+        let statusDangphat = localStorage.getItem('dangphat') ? JSON.parse(localStorage.getItem('dangphat')) : [];
+        statusDangphat[0].isPlayingStorage = isPlaying;
+        localStorage.setItem('dangphat', JSON.stringify(statusDangphat));
     }
 
     /*testPlay[indexSong].addEventListener("click", play_Test);*/
@@ -385,22 +434,52 @@ var isCheckExist;
 
     }
 
-
+    let sessionCount;
     /*    init(indexSong);*/
     function Khoitao() {
-        let dangphats = JSON.parse(localStorage.getItem('dangphat')) ? true : false;
-        console.log('ket qua: ' + dangphats);
-        if (dangphats) {
-            let dangphats = JSON.parse(localStorage.getItem('dangphat'));
+        let sessionStatus = sessionStorage.getItem('status') ? true : false;
+        if (sessionStatus) {
+            sessionCount = 1;
+            sessionStorage.setItem('status', sessionCount);
+        }
+        else {
+            sessionCount = 0;
+            sessionStorage.setItem('status', sessionCount);
+        }
+        console.log('sessioncount= ' + sessionStorage.getItem('status'));
 
+        if (sessionStorage.getItem('status') > 0) {
+            //let tam = localStorage.getItem('dangphat') ? JSON.parse(localStorage.getItem('dangphat')) : [];
+            //let tam1 = tam[0].isPlayingStorage;
+            //if (tam1 === true) {
+            //    isPlaying = false;
+            //}
+            //else isPlaying = true;
+            console.log('gd1: ' + isPlaying);
+        }
+        else {
+            let temp2 = localStorage.getItem('dangphat') ? JSON.parse(localStorage.getItem('dangphat')) : [];
+            temp2[0].isPlayingStorage = false;
+            localStorage.setItem('dangphat', JSON.stringify(temp2));
+        }
+
+        let dangphats = JSON.parse(localStorage.getItem('dangphat')) ? true : false;
+        //console.log('ket qua: ' + dangphats);
+        if (dangphats) {
+            console.log('gd2: ' + isPlaying);
+            let dangphats = JSON.parse(localStorage.getItem('dangphat'));
             dangphats.forEach((dangphat, index) => {
-                index++;
                 srcBaihat = dangphat.linkbh;
                 tg = dangphat.tg;
+                status = dangphat.isPlayingStorage;
             })
             song.setAttribute("src", srcBaihat);
             song.currentTime = tg;
-            //isPlaying = true;
+            if (status===true) {
+                isPlaying = false;
+            }
+            else isPlaying = true;
+            console.log('gd3: ' + isPlaying);
             //song.play();
             playPause();
         }
@@ -412,29 +491,6 @@ var isCheckExist;
     Khoitao();
 
 
-    ////Luu userToken
-    //let user = localStorage.setItem('user', null);
-    function userToken() {
-        var check = document.getElementById("usertoken");
-        if (check != null) {
-            sessionStorage.setItem('userToken', check.value);
-        }
-
-        const logoutButton = document.getElementById("logoutButton");
-        const loginButton = document.getElementById("loginButton2");
-
-        logoutButton.addEventListener("click", function () {
-            sessionStorage.removeItem('userToken');
-        })
-
-        let user = sessionStorage.getItem('userToken') ? true : false;
-        if (user) {
-            loginButton.style.display = 'none';
-        } else {
-            logoutButton.style.display = 'none';
-        }
-    }
-    userToken();
-
+  /*  localStorage.clear();*/
 })
 
