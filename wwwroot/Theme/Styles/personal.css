@@ -81,4 +81,19 @@
         color: #fff;
         text-decoration: none;
     }
+.dropdown-toggle::after{
+    display:none;
+}
 
+.dropdown-toggle {
+    background-color: inherit;
+    border:0px;
+    display:block;
+}
+.add-playlist{
+    cursor:pointer;
+}
+.dropdown-menu.show{
+    margin-right:0;
+    width:250px;
+}
