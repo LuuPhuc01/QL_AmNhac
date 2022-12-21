@@ -15,6 +15,9 @@
 }
 #header {
     background: #0073aa;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 #header h2 {
     font-size: 20px;
@@ -24,6 +27,13 @@
     text-transform: uppercase;
     flex: 100%;
     margin: 0px;
+}
+.icon-back {
+    display: flex;
+    align-items: center;
+    font-size:35px;
+    margin-left:35px;
+    color:white;
 }
 #wp-content {
     padding-top: 50px;
@@ -42,8 +52,11 @@
     align-items:center;
 }
 .text-details{
-    font-size:26px;
-    margin:10px;
+
+}
+.name-playlist {
+    margin: 15px 0px 15px 0px;
+    font-size: 30px
 }
 #sidebar img {
     display: block;
