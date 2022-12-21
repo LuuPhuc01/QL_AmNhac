@@ -62,7 +62,7 @@ namespace QLBH.Areas.User.Controllers
                     Console.WriteLine("Error calling web API");
                 }
 
-                //bai hat yeu thich
+                //bai hat album
 
                 HttpResponseMessage getData = await client.GetAsync($"Album/GetBaiHatAlbum/{id}");
 
@@ -75,6 +75,28 @@ namespace QLBH.Areas.User.Controllers
                 else
                 {
                     Console.WriteLine("Error calling web API");
+                }
+
+                // bai hat yeu thich
+                var Usertoken = HttpContext.Session.GetString("tokenUser");
+                //Console.WriteLine(userToken);
+                if (Usertoken != null)
+                {
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Usertoken);
+
+                    HttpResponseMessage getDatabhyt = await client.GetAsync("my/BaihatUser/GetAll");
+
+
+                    if (getDatabhyt.IsSuccessStatusCode)
+                    {
+                        string results = getDatabhyt.Content.ReadAsStringAsync().Result;
+                        //Console.WriteLine(results);
+                        pm.BaiHatYeuThichs = JsonConvert.DeserializeObject<List<BaiHat>>(results);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error calling web API");
+                    }
                 }
 
                 ViewData.Model = pm;

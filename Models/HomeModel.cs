@@ -8,7 +8,7 @@
 		public List<AlbumLink>? AlbumsNoiBat { get; set; }
 		public AlbumLink? AlbumLink { get; set; }
 		public List<BaiHatLink>? TopBaiHats { get; set; }
+        public List<BaiHat>? BaiHatYeuThichs { get; set; }
 
-
-	}
+    }
 }

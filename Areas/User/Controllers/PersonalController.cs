@@ -35,7 +35,9 @@ namespace QLBH.Areas.User.Controllers
 				if (getDataPlaylist.IsSuccessStatusCode)
 				{
 					string results = getDataPlaylist.Content.ReadAsStringAsync().Result;
+                    //Console.WriteLine(results); 
 					pm.Playlists = JsonConvert.DeserializeObject<List<PlaylistLink>>(results);
+                    //Console.WriteLine(pm.Playlists.ToString);
 				}
 				else
 				{
@@ -104,7 +106,9 @@ namespace QLBH.Areas.User.Controllers
                 if (getDataPlaylist.IsSuccessStatusCode)
                 {
                     string results = getDataBaiHat.Content.ReadAsStringAsync().Result;
-                    pm.BaiHats = JsonConvert.DeserializeObject<List<BaiHatLink>>(results);
+                    if(results != null){
+                        pm.BaiHats = JsonConvert.DeserializeObject<List<BaiHatLink>>(results);
+                    }
                 }
                 else
                 {
