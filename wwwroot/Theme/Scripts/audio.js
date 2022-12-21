@@ -23,14 +23,14 @@
     const imgAudios = document.querySelectorAll(".img_audio");
     const playSong = document.querySelectorAll(".play_song");
 
+    const addPlaylists = document.querySelectorAll(".add-playlist");
+
     const detailSong = document.querySelector(".play-expand");
-
-
     const expandPlaylist = document.querySelector(".playlist-expand");
     const closePlaylist = document.querySelector(".playlist-close");
     const modalPlaylist = document.querySelector(".modal-playlist");
     const modalMain = document.querySelector(".modal-playlist-main");
-    
+
     closePlaylist.style.display = 'none';
     volumeMin.style.display = 'none';
     let isPlaying = true;
@@ -42,35 +42,19 @@
 
     const musics = [
         {
-            id: 0,
-            title: "Định Mệnh",
-            file: "../../../theme/media/dinhmenh.mp3",
-            image:
-                "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        },
-
-        {
-            id: 1,
-            title: "Anh Nhớ Ra",
-            file: "../../../theme/media/anhnhora.mp3",
-            image:
-                "https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        },
-        {
-            id: 2,
-            title: "Xuân Thì",
-            file: "../../../theme/media/xuanthi.mp3",
-            image:
-                "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
-        },
+            id: 0, title: 'Anh Chưa Thương Em Đến Vậy Đâu',
+            file: ' http://res.cloudinary.com/dccswqs2m/video/upload/v1671346705/osakynpjqygtjpp9q8ga.mp3',
+            image: 'https://res.cloudinary.com/dsh8zkuek/image/upload/v1671456977/Myra_nyhvtl.jpg'
+        }
     ]
+
 let timer;
 let repeatCount = 0;
 let randomCount = 0;
 var isEqual;
 var isCheckExist;
     userToken();
-
+    Khoitao();
     //Detail Song
     detailSong.addEventListener('click', detailSongs)
     function detailSongs() {
@@ -135,7 +119,65 @@ var isCheckExist;
         compareArr();
     }
 
-    const indexLength = musics.length -1
+    const indexLength = musics.length - 1
+
+
+
+
+
+    //update 1 Song
+
+
+    for (const addPlaylist of addPlaylists) {
+        addPlaylist.addEventListener('click', addOneSong(addPlaylists)) 
+    }
+    
+
+    function addOneSong(a) {
+            for (var i = 0; i < playAudios.length; i++) {
+
+                a[i].onclick = function (e) {
+/*            compareArr();
+            if (isEqual === true) {
+                var Check = e.target.closest('.play_audio').getAttribute("id") - 1
+                indexSong = Check
+                init(indexSong);
+
+            }
+            else*/ if (isEqual === false) {
+                        const CheckLink = e.target.closest('.add-playlist').getAttribute("name")
+                        CheckExist(CheckLink);
+                        if (isCheckExist === false) {
+                            const Link = e.target.closest('.add-playlist').getAttribute("link")
+                            const Img = e.target.closest('.add-playlist').getAttribute("img")
+                            const Title = e.target.closest('.add-playlist').getAttribute("name")
+                            const ID = musics.length;
+                            const obj = {};
+                            obj['id'] = ID;
+                            obj['title'] = Title;
+                            obj['file'] = Link;
+                            obj['image'] = Img;
+                            musics.push(obj);
+                            indexSong = ID;
+                            console.log(musics)
+                            console.log(indexSong)
+                        }
+                    
+                        else {
+                            alert("Bài hát đã nằm trong danh sách phát")
+
+                        }
+                    }
+/*
+            isPlaying = true;
+            playPause();*/
+ 
+ 
+        }
+    }
+    }
+    //add 1 song
+
     for (var i = 0; i < playAudios.length; i++) {
 
         playAudios[i].onclick = function (e) {
@@ -165,14 +207,14 @@ var isCheckExist;
                     
                 }
                 else {
-                   /* var CheckId = e.target.closest('.play_audio').getAttribute("link")*/
+                    var CheckId = e.target.closest('.play_audio').getAttribute("link")
                     var Link = e.target.closest('.play_audio').getAttribute("link")
                     var Img = e.target.closest('.play_audio').getAttribute("img")
                     var Title = e.target.closest('.play_audio').getAttribute("name")
                     song.setAttribute("src", `${Link}`);
                     musicImage.setAttribute("src", `${Img}`);
                     musicName.textContent = Title;
-
+                    indexSong = e.target.closest('.play_audio').getAttribute("id")
 
                 }
             }
@@ -342,6 +384,7 @@ var isCheckExist;
             clearInterval(timer);
         }
         console.log(musics);
+        console.log(indexSong);
     }
 
     /*testPlay[indexSong].addEventListener("click", play_Test);*/
@@ -427,7 +470,7 @@ var isCheckExist;
             init(indexSong);
         }
     }
-    Khoitao();
+    
 })
 
 
