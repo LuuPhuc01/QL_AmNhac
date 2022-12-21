@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using QLBH.Models;
+using QLBH.Models.ModelLink;
 using System.Net.Http.Headers;
 
 namespace QLBH.Areas.User.Controllers
@@ -11,7 +12,7 @@ namespace QLBH.Areas.User.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(string search)
         {
-            IList<BaiHatLink> bh = new List<BaiHatLink>();
+            TimKiemModel tk = new TimKiemModel();
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri("https://localhost:7032/api/");
@@ -19,18 +20,45 @@ namespace QLBH.Areas.User.Controllers
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                HttpResponseMessage getData = await client.GetAsync($"TimKiem/{search}");
+                //bai hat
+                HttpResponseMessage getData = await client.GetAsync($"TimKiem/Baihat/{search}");
 
                 if (getData.IsSuccessStatusCode)
                 {
                     string results = getData.Content.ReadAsStringAsync().Result;
-                    bh = JsonConvert.DeserializeObject<List<BaiHatLink>>(results);
+                    tk.BaiHats = JsonConvert.DeserializeObject<List<BaiHatLink>>(results);
                 }
                 else
                 {
                     Console.WriteLine("Error calling web API");
                 }
-                ViewData.Model = bh;
+
+                //album
+                HttpResponseMessage getDataAl = await client.GetAsync($"TimKiem/Album/{search}");
+
+                if (getDataAl.IsSuccessStatusCode)
+                {
+                    string results = getDataAl.Content.ReadAsStringAsync().Result;
+                    tk.Albums = JsonConvert.DeserializeObject<List<AlbumLink>>(results);
+                }
+                else
+                {
+                    Console.WriteLine("Error calling web API");
+                }
+                //nghe si
+                HttpResponseMessage getDataNS = await client.GetAsync($"TimKiem/NgheSi/{search}");
+
+                if (getDataAl.IsSuccessStatusCode)
+                {
+                    string results = getDataNS.Content.ReadAsStringAsync().Result;
+                    tk.NgheSis = JsonConvert.DeserializeObject<List<NgheSiLink>>(results);
+                }
+                else
+                {
+                    Console.WriteLine("Error calling web API");
+                }
+
+                ViewData.Model = tk;
 
             }
             return View();

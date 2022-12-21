@@ -1,4 +1,4 @@
-﻿@model IEnumerable<QLBH.Models.BaiHatLink>
+﻿@model QLBH.Models.TimKiemModel
 @{
     ViewBag.Title = "Index";
     Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
@@ -16,67 +16,101 @@
                         |
                     </span>
                 </div>
-                <div class="nav-search-selected">
-                    <a href="/User/Timkiem/Index">Tất cả</a>
-                </div>
-                <div >
-                    <a href="/User/Timkiem/Timkiem_Baihat">Bài hát</a>
-                </div>
-                <div>
-                    <a href="/User/Timkiem/Timkiem_Playlist_Album">Playlist/Album</a>
-                </div>
-                <div>
-                    <a href="/User/Timkiem/Timkiem_CaSy">Ca sỹ</a>
-                </div>
-                @*<div>
-                    <a href="~/Search/Search_NhacSy">Nhạc sỹ</a>
-                </div>*@
+                
             </div>
             <hr>
             <div class="search-result">
 
                 <div class="result-main baihat">
-                    <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" height="95px">
+                    @try{
+                        <img src="@Model.BaiHats[0].ANHBH" height="95px">
                     <div>
                         <p class="result-main-category">
                             Bài hát
                         </p>
                         <p class="result-main-name">
-                            Cố giang tình
+                            @Model.BaiHats[0].TENBAIHAT
+
                         </p>
                         <p class="result-main-other">
-                            X2X
+                            @Model.BaiHats[0].Casi[0].TenNS
+
                         </p>
-                    </div>
+                        </div>
+                    }
+                    catch
+                    {
+                        <p>trinh</p>
+                    }
+
+                    
                 </div>
 
                 <div class="result-main nghesy">
-                    <img src="~/Theme/images/nghesi_X2X.png" height="95px">
-                    <div>
-                        <p class="result-main-category">
-                            Nhạc sỹ
-                        </p>
-                        <p class="result-main-name">
-                            X2X
-                        </p>
-                        <p class="result-main-other">
+                    
+                        @try{
+                        <img src="@Model.NgheSis[0].AnhNS" height="95px">
+                        <div>
+                            <p class="result-main-category">
+                                Nghệ Sỹ
+                            </p>
+                            <p class="result-main-name">
+                                @Model.NgheSis[0].TenNS
+                            </p>
+                            <p class="result-main-other">
 
-                        </p>
-                    </div>
+                            </p>
+                        </div>
+
+                        }
+                        catch
+                        {
+                            <img src="@Model.BaiHats[0].Casi[0].AnhNS" height="95px">
+                            <div>
+                                <p class="result-main-category">
+                                    Nghệ Sỹ
+                                </p>
+                            <p class="result-main-name">
+                                @Model.BaiHats[0].Casi[0].TenNS
+                            </p>
+                            <p class="result-main-other">
+
+                            </p>
+                        </div>
+
+                        }
                 </div>
                 <div class="result-main album">
-                    <img src="~/Theme/images/album_CoGiangTinh.png" height="95px">
-                    <div>
-                        <p class="result-main-category">
-                            Album
-                        </p>
-                        <p class="result-main-name">
-                            Cố giang tình
-                        </p>
-                        <p class="result-main-other">
-                            X2X
-                        </p>
-                    </div>
+                    @try{
+                        <img src="@Model.Albums[0].ANHAL" height="95px">
+                        <div>
+                            <p class="result-main-category">
+                                Album
+                            </p>
+                            <p class="result-main-name">
+                                @Model.Albums[0].TENAL
+                            </p>
+                            <p class="result-main-other">
+                                @Model.Albums[0].LUOTQUANTAM
+                            </p>
+                        </div>
+                    }catch{
+                    
+                    <img src="@Model.BaiHats[0].Album.ANHAL" height="95px">
+                        <div>
+                            <p class="result-main-category">
+                                Album
+                            </p>
+                            <p class="result-main-name">
+                                @Model.BaiHats[0].Album.TENAL
+                            </p>
+                            <p class="result-main-other">
+                                @Model.BaiHats[0].Album.LUOTQUANTAM
+
+                            </p>
+                        </div>
+                    }
+                    
                 </div>
             </div>
             <div class="result-subject">
@@ -90,90 +124,58 @@
             </div>
             <div>
                 <div class="result-baihat-item item-left">
-                    @foreach (var item in Model)
+                    
+                    @for(int i = 0; i < Model.BaiHats.Count; i = i + 2)
                     {
                         <div class="result-baihat-detail">
                             <div style="flex-basis:70%" class="result-baihat-img-name">
-                                <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" width="80px">
+                                <img src="@Model.BaiHats[i].ANHBH" width="80px">
                                 <div class="result-baihat-img-name-detail">
                                     <p class="result-baihat-name">
-                                        @Html.DisplayFor(modelItem => item.TENBAIHAT)
+                                        @Model.BaiHats[i].TENBAIHAT
                                     </p>
                                     <p class="result-baihat-name-other">
-                                        @Html.DisplayFor(modelItem => item.Casi[0].TenNS)
+                                        @Model.BaiHats[i].Casi[0].TenNS
                                     </p>
                                 </div>
                             </div>
                             <div class="result-baihat-time-option">
                                 <p>
-                                    @Html.DisplayFor(modelItem => item.THOILUONG)
+                                    @Model.BaiHats[i].THOILUONG
+                                </p>
+                                <span id="icon-option" class="icon-main"><i class="fa-solid fa-ellipsis"></i></span>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="result-baihat-item item-right">
+                    @for(int i = 1; i < Model.BaiHats.Count; i = i+ 2)
+                    {
+                        <div class="result-baihat-detail">
+                            <div style="flex-basis:70%" class="result-baihat-img-name">
+                                <img src="@Model.BaiHats[i].ANHBH" width="80px">
+                                <div class="result-baihat-img-name-detail">
+                                    <p class="result-baihat-name">
+                                        @Model.BaiHats[i].TENBAIHAT
+
+                                    </p>
+                                    <p class="result-baihat-name-other">
+                                        @Model.BaiHats[i].Casi[0].TenNS
+
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="result-baihat-time-option">
+                                <p>
+                                    @Model.BaiHats[i].THOILUONG
+
                                 </p>
                                 <span id="icon-option" class="icon-main"><i class="fa-solid fa-ellipsis"></i></span>
                             </div>
                         </div>
                     }
                     
-
-                </div>
-                <div class="result-baihat-item item-right">
-                    <div class="result-baihat-detail">
-                        <div style="flex-basis:70%" class="result-baihat-img-name">
-                            <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" width="80px">
-                            <div class="result-baihat-img-name-detail">
-                                <p class="result-baihat-name">
-                                    Cố giang tình
-                                </p>
-                                <p class="result-baihat-name-other">
-                                    X2X
-                                </p>
-
-                            </div>
-                        </div>
-                        <div class="result-baihat-time-option">
-                            <p>
-                                03:57
-                            </p>
-                            <span id="icon-option" class="icon-main"><i class="fa-solid fa-ellipsis"></i></span>
-                        </div>
-                    </div>
-                    <div class="result-baihat-detail">
-                        <div style="flex-basis:70%" class="result-baihat-img-name">
-                            <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" width="80px">
-                            <div class="result-baihat-img-name-detail">
-                                <p class="result-baihat-name">
-                                    Cố giang tình
-                                </p>
-                                <p class="result-baihat-name-other">
-                                    X2X
-                                </p>
-                            </div>
-                        </div>
-                        <div class="result-baihat-time-option">
-                            <p>
-                                03:57
-                            </p>
-                            <span id="icon-option" class="icon-main"><i class="fa-solid fa-ellipsis"></i></span>
-                        </div>
-                    </div>
-                    <div class="result-baihat-detail">
-                        <div style="flex-basis:70%" class="result-baihat-img-name">
-                            <img src="~/Theme/images/mucsic_CoGiangTinh.jpg" width="80px">
-                            <div class="result-baihat-img-name-detail">
-                                <p class="result-baihat-name">
-                                    Cố giang tình
-                                </p>
-                                <p class="result-baihat-name-other">
-                                    X2X
-                                </p>
-                            </div>
-                        </div>
-                        <div class="result-baihat-time-option">
-                            <p>
-                                03:57
-                            </p>
-                            <span id="icon-option" class="icon-main"><i class="fa-solid fa-ellipsis"></i></span>
-                        </div>
-                    </div>
                 </div>
                 <div class="clearfix">
 
@@ -189,39 +191,34 @@
                 </p>
             </div>
             <div class="result-album-content">
-                <div class="result-album-item">
-                    <img src="~/Theme/images/playlist1.jpg" height="200px">
-                    <div>
-                        <p class="result-album-name">
-                            My Relax Music
-                        </p>
-                        <p class="result-album-other">
-                            Tran Tien
-                        </p>
+                @foreach(var item in Model.Albums)
+                {
+                    <div class="result-album-item">
+                        <img src="@item.ANHAL" height="200px">
+                        <div>
+                            <p class="result-album-name">
+                                @item.TENAL
+                            </p>
+                            <p class="result-album-other">
+                                @item.NgheSi.TenNS
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-album-item">
-                    <img src="~/Theme/images/maxresdefault.jpg" height="200px">
-                    <div>
-                        <p class="result-album-name">
-                            Cố giang tình ver.2
-                        </p>
-                        <p class="result-album-other">
-                            X2X
-                        </p>
+                }
+                @foreach(var item in Model.BaiHats)
+                {
+                    <div class="result-album-item">
+                        <img src="@item.Album.ANHAL" height="200px">
+                        <div>
+                            <p class="result-album-name">
+                                @item.Album.TENAL
+                            </p>
+                            <p class="result-album-other">
+                                @item.Album.LUOTQUANTAM
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-album-item">
-                    <img src="~/Theme/images/maxresdefault.jpg" height="200px">
-                    <div>
-                        <p class="result-album-name">
-                            Cố giang tình ver.1
-                        </p>
-                        <p class="result-album-other">
-                            X2X
-                        </p>
-                    </div>
-                </div>
+                }
             </div>
 
             <div class="result-other">
@@ -235,107 +232,55 @@
                         </p>
                     </div>
                     <div class="search-result-wrap">
-                        <div class="result-other-detail">
-                            <img src="~/Theme/images/nghesi_X2X.png" width="150px">
-                            <p class="result-nghesy-name">
-                                X2X
-                            </p>
-                            <p class="result-nghesy-quantam">
-                                48 quan tâm
-                            </p>
-                            <p id="btn-quantam" class="quantam-btn">
-                                Quan tâm &nbsp;<span><i class="fa-solid fa-user-plus"></i></span>
-                            </p>
-                        </div>
-                        <div class="result-other-detail">
-                            <img src="~/Theme/images/nghesi_X2X.png" width="150px">
-                            <p class="result-nghesy-name">
-                                X2X
-                            </p>
-                            <p class="result-nghesy-quantam">
-                                48 quan tâm
-                            </p>
-                            <p id="btn-quantam" class="quantam-btn-selected">
-                                Nghe nhạc &nbsp;<span><i class="fa-solid fa-music"></i></span>
-                            </p>
-                        </div>
-                        <div class="result-other-detail">
-                            <img src="~/Theme/images/nghesi_X2X.png" width="150px">
-                            <p class="result-nghesy-name">
-                                X2X
-                            </p>
-                            <p class="result-nghesy-quantam">
-                                48 quan tâm
-                            </p>
-                            <p id="btn-quantam" class="quantam-btn">
-                                Quan tâm &nbsp;<span><i class="fa-solid fa-user-plus"></i></span>
-                            </p>
-                        </div>
-                        <div class="result-other-detail">
-                            <img src="~/Theme/images/nghesi_X2X.png" width="150px">
-                            <p class="result-nghesy-name">
-                                X2X
-                            </p>
-                            <p class="result-nghesy-quantam">
-                                48 quan tâm
-                            </p>
-                            <p id="btn-quantam" class="quantam-btn">
-                                Quan tâm &nbsp;<span><i class="fa-solid fa-user-plus"></i></span>
-                            </p>
-                        </div>
-                        <div class="result-other-detail">
-                            <img src="~/Theme/images/nghesi_X2X.png" width="150px">
-                            <p class="result-nghesy-name">
-                                X2X
-                            </p>
-                            <p class="result-nghesy-quantam">
-                                48 quan tâm
-                            </p>
-                            <p id="btn-quantam" class="quantam-btn-selected">
-                                Nghe nhạc &nbsp;<span><i class="fa-solid fa-music"></i></span>
-                            </p>
-                        </div>
-                        <div class="result-other-detail">
-                            <img src="~/Theme/images/nghesi_X2X.png" width="150px">
-                            <p class="result-nghesy-name">
-                                X2X
-                            </p>
-                            <p class="result-nghesy-quantam">
-                                48 quan tâm
-                            </p>
-                            <p id="btn-quantam" class="quantam-btn">
-                                Quan tâm &nbsp;<span><i class="fa-solid fa-user-plus"></i></span>
-                            </p>
-                        </div>
+                        @foreach(var item in Model.NgheSis)
+                        {
+                            <div class="result-other-detail">
+                                <img src="@item.AnhNS" width="150px">
+                                <p class="result-nghesy-name">
+                                    @item.TenNS
+                                </p>
+                                <p class="result-nghesy-quantam">
+                                    48 quan tâm
+                                </p>
+                                <p id="btn-quantam" class="quantam-btn">
+                                    Quan tâm &nbsp;<span><i class="fa-solid fa-user-plus"></i></span>
+                                </p>
+                            </div>
+                        }
+                        @{
+                            var idNgheSis = new List<int>();
+                            foreach (var item in Model.BaiHats)
+                            {
+                                int kq = 1;
+
+                                foreach(var id in idNgheSis)
+                                {
+                                    if(item.Casi[0].Id == id)
+                                    {
+                                        kq = 0;
+                                    }
+                                }
+                                if(kq == 1)
+                                {
+                                    idNgheSis.Add(item.Casi[0].Id);
+
+                                    <div class="result-other-detail">
+                                        <img src="@item.Casi[0].AnhNS" width="150px">
+                                        <p class="result-nghesy-name">
+                                            @item.Casi[0].TenNS
+                                        </p>
+                                        <p class="result-nghesy-quantam">
+                                            48 quan tâm
+                                        </p>
+                                        <p id="btn-quantam" class="quantam-btn">
+                                            Quan tâm &nbsp;<span><i class="fa-solid fa-user-plus"></i></span>
+                                        </p>
+                                    </div>
+                                }
+                            }
+                        }
                     </div>
-                    
                 </div>
-                @*<div class="result-other-content">
-                    <div class="result-subject">
-                        <p class="subject">
-                            Nhạc sỹ
-                        </p>
-                        <p class="tatca">
-                            <span>Tất cả &nbsp;<i class="arrow glyphicon glyphicon-chevron-right"></i></span>
-                        </p>
-                    </div>
-                    <div class="result-other-item">
-                        <div class="result-other-detail">
-                            <img src="~/Theme/images/nghesi_X2X.png">
-                            <p>
-                                X2X
-                            </p>
-                        </div>
-                        <div class="result-other-detail">
-                            <img src="~/Theme/images/nghesi_X2X.png">
-                            <p>
-                                Nhạc sỹ khác
-                            </p>
-                        </div>
-                        <div>
-                        </div>
-                    </div>
-                </div>*@
             </div>
         </div>
         <div class="container-Timkiem-item2">
@@ -392,6 +337,4 @@
             </div>
         </div>
     </div>
-
-
 </div>
