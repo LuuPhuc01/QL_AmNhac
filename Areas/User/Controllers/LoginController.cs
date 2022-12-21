@@ -35,7 +35,7 @@ namespace QLBH.Areas.User.Controllers
                     var bh = JsonConvert.DeserializeObject<string>(result);
                     //Console.WriteLine(bh);
                     HttpContext.Session.SetString("tokenUser", bh);
-                    Console.WriteLine(HttpContext.Session.GetString("tokenUser"));
+                    //Console.WriteLine(HttpContext.Session.GetString("tokenUser"));
 
                     return RedirectToAction("Index", "Personal", new { area = "User" });
                 }
@@ -61,7 +61,7 @@ namespace QLBH.Areas.User.Controllers
                 var response = client.PostAsJsonAsync<NguoiDung>("Auth/register", nd);
 
                 response.Wait();
-                Console.WriteLine(response.Result);
+                //Console.WriteLine(response.Result);
 
                 //var test = response.Result;
 

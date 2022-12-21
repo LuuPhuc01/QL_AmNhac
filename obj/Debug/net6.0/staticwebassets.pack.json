@@ -381,6 +381,10 @@
       "PackagePath": "staticwebassets\\Theme\\images\\HaAnhTuan.jpg"
     },
     {
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Hanhi.jpg",
+      "PackagePath": "staticwebassets\\Theme\\images\\Hanhi.jpg"
+    },
+    {
       "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Noo.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\Noo.jpg"
     },
@@ -395,6 +399,10 @@
     {
       "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Sia-Unstoppable.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\Sia-Unstoppable.jpg"
+    },
+    {
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\Trungquan.png",
+      "PackagePath": "staticwebassets\\Theme\\images\\Trungquan.png"
     },
     {
       "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\a1.jpg",
@@ -675,6 +683,10 @@
     {
       "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\images\\v99.jpg",
       "PackagePath": "staticwebassets\\Theme\\images\\v99.jpg"
+    },
+    {
+      "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Anhtudonhungcodon.mp3",
+      "PackagePath": "staticwebassets\\Theme\\media\\Anhtudonhungcodon.mp3"
     },
     {
       "Id": "C:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\wwwroot\\Theme\\media\\Blue Browne.mp3",

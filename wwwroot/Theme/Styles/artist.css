@@ -93,10 +93,13 @@
 .main-song-text {
     padding-left: 10px;
 }
+.main-song-text p{
+        margin: 0px;
+    }
 .main-song span {
-    color: #dddddd;
-    font-size: 14px;
-}
+        color: #dddddd;
+        font-size: 14px;
+    }
 .main-song span.middle {
     line-height: 50px;
 }
@@ -105,6 +108,7 @@
 }
 .main-song  .icons{
     float: right;
+    display: flex;
 }
 .main-song .icons span{
     padding: 0 10px;
