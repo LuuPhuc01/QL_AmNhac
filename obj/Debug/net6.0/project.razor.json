@@ -16296,6 +16296,7 @@
     "CSharpLanguageVersion": 1000
   },
   "RootNamespace": "QLBH",
+<<<<<<< HEAD
   "Documents": [
     {
       "FilePath": "c:\\frontEndFramework\\Frontend_\\QL_AmNhac_FontEnd\\Areas\\Admin\\Views\\QL_Nghesy\\Index1.cshtml",
@@ -16523,5 +16524,8 @@
       "FileKind": "mvc"
     }
   ],
+=======
+  "Documents": [],
+>>>>>>> 536648a7fc23e67bc2da30a57b08c5803f4106ed
   "SerializationFormat": "0.2"
 }

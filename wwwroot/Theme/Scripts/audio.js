@@ -34,7 +34,7 @@
     closePlaylist.style.display = 'none';
     volumeMin.style.display = 'none';
     let isPlaying = true;
-    let indexSong = 0;
+    var indexSong = 0;
     let isRepeat = false;
     let isRandom = false;
     //const musics = ["holo.mp3", "summer.mp3", "spark.mp3", "home.mp3"];
@@ -69,6 +69,7 @@ let repeatCount = 0;
 let randomCount = 0;
 var isEqual;
 var isCheckExist;
+    userToken();
 
     //Detail Song
     detailSong.addEventListener('click', detailSongs)
@@ -95,12 +96,14 @@ var isCheckExist;
     modalMain.addEventListener('click', function (event) {
         event.stopPropagation()
     })
-
+    
+    
     compareArr();
     // Update new playlist
     updateAudio.addEventListener("click", update_playlist_audio)
     function update_playlist_audio() {
         for (var i = 0; i < playAudios.length; i++) {
+            
             if (musics.length >= playAudios.length) {
                 musics.length = playAudios.length;
                 musics[i].file = playAudios[i].getAttribute("link");
@@ -125,7 +128,6 @@ var isCheckExist;
         
        
         }
-
         randomSong();
         init(indexSong);
         isPlaying = true;
@@ -174,6 +176,7 @@ var isCheckExist;
 
                 }
             }
+
             isPlaying = true;
             playPause();
  
@@ -369,6 +372,14 @@ var isCheckExist;
     function handleChangeBar() {
         song.currentTime = rangeBar.value;
     }
+    function randomSong() {
+        let newIndexSong;
+        do {
+            newIndexSong = Math.floor(Math.random() * musics.length);
+        } while (indexSong === newIndexSong)
+        indexSong = newIndexSong;
+
+    }
     function init(indexSong) {
         song.setAttribute("src", `${musics[indexSong].file}`);
         musicImage.setAttribute("src", musics[indexSong].image);
@@ -378,18 +389,13 @@ var isCheckExist;
         let dangphat = [];
         dangphat.push({
             linkbh: song.getAttribute("src"),
+            anhbh: musicImage.getAttribute("src"),
+            tenbh: musicName.innerHTML,
             tg: null,
         })
         localStorage.setItem('dangphat', JSON.stringify(dangphat));
     }
-    function randomSong() {
-        let newIndexSong;
-        do {
-            newIndexSong = Math.floor(Math.random() * musics.length);
-        } while (indexSong === newIndexSong)
-        indexSong = newIndexSong;
 
-    }
 
 
     /*    init(indexSong);*/
@@ -399,12 +405,18 @@ var isCheckExist;
         if (dangphats) {
             let dangphats = JSON.parse(localStorage.getItem('dangphat'));
 
+
+
             dangphats.forEach((dangphat, index) => {
                 index++;
                 srcBaihat = dangphat.linkbh;
+                anhBaihat = dangphat.anhbh;
+                tenBaihat = dangphat.tenbh;
                 tg = dangphat.tg;
             })
             song.setAttribute("src", srcBaihat);
+            musicImage.setAttribute("src", anhBaihat);
+            musicName.textContent = tenBaihat;
             song.currentTime = tg;
             //isPlaying = true;
             //song.play();
@@ -416,6 +428,7 @@ var isCheckExist;
         }
     }
     Khoitao();
+})
 
 
     ////Luu userToken
@@ -440,7 +453,5 @@ var isCheckExist;
             logoutButton.style.display = 'none';
         }
     }
-    userToken();
 
-})
 
