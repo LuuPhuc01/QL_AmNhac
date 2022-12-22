@@ -278,9 +278,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         obj['file'] = Link;
                         obj['image'] = Img;
                         musics.push(obj);
-                        indexSong = ID;
                         console.log(musics)
                         console.log(indexSong)
+                        init(indexSong)
                     }
 
                     else {
