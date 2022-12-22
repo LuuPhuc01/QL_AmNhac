@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let dsphats = [];
         for (var i = 0; i < musics.length; i++) {
             dsphats.push({
+                id: musics[i].id,
                 title: musics[i].title,
                 image: musics[i].image,
                 file: musics[i].file,
@@ -109,7 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     const addLink = dsphat.file;
                     const addTitle = dsphat.title;
                     const addImg = dsphat.image;
-                    const id = musics.length + 1;
+                    //Phuc sua cho nay nha  const id = musics.length + 1;
+                    const id = musics.length;
                     const obj = {};
                     obj['id'] = id;
                     obj['title'] = addTitle;
@@ -221,16 +223,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 musics[i].file = playAudios[i].getAttribute("link");
                 musics[i].title = nameAudios[i].textContent;
                 musics[i].image = imgAudios[i].getAttribute("src");
-                const addLink = playAudios[i].getAttribute("link");
-                const addTitle = nameAudios[i].textContent;
-                const addImg = imgAudios[i].getAttribute("src");
-                const id = musics.length + 1;
-                const obj = {};
-                obj['id'] = id;
-                obj['title'] = addTitle;
-                obj['file'] = addLink;
-                obj['image'] = addImg;
-                musics.push(obj);
+                musics.push({
+                    title: nameAudios[i].textContent,
+                    image: imgAudios[i].getAttribute("src"),
+                    file: playAudios[i].getAttribute("link"),
+                })
             }
 
 
@@ -262,14 +259,12 @@ document.addEventListener('DOMContentLoaded', () => {
         for (var i = 0; i < playAudios.length; i++) {
 
             a[i].onclick = function (e) {
-/*            compareArr();
+            compareArr();
             if (isEqual === true) {
-                var Check = e.target.closest('.play_audio').getAttribute("id") - 1
-                indexSong = Check
-                init(indexSong);
+                alert("Bài hát đã nằm trong danh sách phát")
 
             }
-            else*/ if (isEqual === false) {
+            else if (isEqual === false) {
                     const CheckLink = e.target.closest('.add-playlist').getAttribute("name")
                     CheckExist(CheckLink);
                     if (isCheckExist === false) {
@@ -302,10 +297,68 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         updateLocalStorage();
     }
-    //add 1 song
+    //add or play 1 song
+    for (const playAudio of playAudios) {
+        playAudio.addEventListener('click', playOneSong(playAudios))
+    }
 
+    function playOneSong(playAudios) {
+        for (var i = 0; i < playAudios.length; i++) {
+            playAudios[i].onclick = function (e) {
+                compareArr();
+                if (isEqual === true) {
+                    var CheckLink = e.target.closest('.play_audio').getAttribute("name")
+                    x = CheckExist(CheckLink);
+                    console.log(x)
+                    indexSong = x;
+                    init(indexSong);
+
+                }
+                else if (isEqual === false) {
+                    var CheckLink = e.target.closest('.play_audio').getAttribute("name")
+                    x = CheckExist(CheckLink);
+                    console.log(x)
+                    indexSong = x;
+                    if (isCheckExist === false) {
+                        var Link = e.target.closest('.play_audio').getAttribute("link")
+                        var Img = e.target.closest('.play_audio').getAttribute("img")
+                        var Title = e.target.closest('.play_audio').getAttribute("name")
+                        var ID = musics.length;
+                        const obj = {};
+                        obj['id'] = ID;
+                        obj['title'] = Title;
+                        obj['file'] = Link;
+                        obj['image'] = Img;
+                        musics.push(obj);
+                        indexSong = ID;
+                        init(indexSong);
+
+                    }
+                    else {
+                        var CheckId = e.target.closest('.play_audio').getAttribute("link")
+                        var Link = e.target.closest('.play_audio').getAttribute("link")
+                        var Img = e.target.closest('.play_audio').getAttribute("img")
+                        var Title = e.target.closest('.play_audio').getAttribute("name")
+                        song.setAttribute("src", `${Link}`);
+                        musicImage.setAttribute("src", `${Img}`);
+                        musicName.textContent = Title;
+
+
+                    }
+                }
+  
+                isPlaying = true;
+                
+                playPause();
+                updateLocalStorage();
+
+            }
+
+        }
+    }
+/*
     for (var i = 0; i < playAudios.length; i++) {
-
+        updateLocalStorage();
         playAudios[i].onclick = function (e) {
             compareArr();
             if (isEqual === true) {
@@ -321,7 +374,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     var Link = e.target.closest('.play_audio').getAttribute("link")
                     var Img = e.target.closest('.play_audio').getAttribute("img")
                     var Title = e.target.closest('.play_audio').getAttribute("name")
-                    var ID = musics.length;
+  
                     const obj = {};
                     obj['id'] = ID;
                     obj['title'] = Title;
@@ -340,17 +393,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     song.setAttribute("src", `${Link}`);
                     musicImage.setAttribute("src", `${Img}`);
                     musicName.textContent = Title;
-                    indexSong = e.target.closest('.play_audio').getAttribute("id")
+
 
                 }
             }
-
+            indexSong = musics[i].id
             isPlaying = true;
-            playPause();
             updateLocalStorage();
+            playPause();
+
 
         }
-    }
+
+    }*/
 
     /*    for (const Song of playAudios) {
             Song.addEventListener('click', function (e) {
@@ -378,6 +433,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < musics.length; i++) {
             if (CheckLink == musics[i].title) {
                 isCheckExist = true;
+                return musics[i].id
                 break;
             }
             isCheckExist = false;
@@ -568,6 +624,7 @@ document.addEventListener('DOMContentLoaded', () => {
             anhbh: musicImage.getAttribute("src"),
             tenbh: musicName.innerHTML,
             tg: null,
+            index: indexSong,
         })
         localStorage.setItem('dangphat', JSON.stringify(dangphat));
     }
@@ -575,7 +632,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     var sessionCount;
     function Khoitao() {
-
+        updateMusics();
         let sessionStatus = sessionStorage.getItem('status') ? true : false;
         if (sessionStatus) {
             sessionCount = 1;
@@ -585,7 +642,7 @@ document.addEventListener('DOMContentLoaded', () => {
         else {
             sessionCount = 0;
             sessionStorage.setItem('status', sessionCount);
-            updateLocalStorage();
+            /*            updateLocalStorage();*/
 
         }
 
@@ -611,7 +668,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 tenBaihat = dangphat.tenbh;
                 tg = dangphat.tg;
                 status = dangphat.isPlayingStorage;
+                stt = dangphat.index;
             })
+            indexSong = stt;
             song.setAttribute("src", srcBaihat);
             musicImage.setAttribute("src", anhBaihat);
             musicName.textContent = tenBaihat;
@@ -658,5 +717,9 @@ function userToken() {
         logoutButton.style.display = 'none';
     }
 }
+
+//document.addEventListener("click", function () {
+//    updateLocalStorage();
+//})
 
 
