@@ -7,5 +7,7 @@
         public List<BaiHatLink>? BaiHats { get; set; }
 
         public List<BaiHat>? BaiHatYeuThichs { get; set; }
+
+        public List<PlaylistLink>? Playlists { get; set; }
     }
 }
