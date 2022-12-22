@@ -69,7 +69,7 @@
                 <p>
                     @Model.NgheSi.GioiThieu
                 </p>
-                <button class="play-all">
+                <button class="play-all  update_playlist_audio">
                     <i class="fa-solid fa-play"></i>
                     <span>Phát Nhạc</span>
                 </button>
@@ -94,12 +94,13 @@
                         <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
                             <div class="row">
                                 <div class="col-md-5 main-song-title">
-                                    <div class="main-song-cover">
-                                        <img class="main-song-img " src="@item.ANHBH" />
+                                        <div  class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">
+
+                                            <img class="img_audio main-song-img " src="@item.ANHBH" />
                                         <div class="main-song-play mini-song-play"><i class="fa-solid fa-play"></i></div>
                                     </div>
                                     <div class="main-song-text">
-                                        <p>@item.TENBAIHAT</p>
+                                            <p class="name_audio">@item.TENBAIHAT</p>
                                         <p><a href="#" class="caSi">@item.Casi[0].TenNS</a></p>
                                     </div>
                                 </div>
@@ -163,7 +164,7 @@
                                                     <i class="fa-solid fa-ellipsis"></i>
                                                 </a>
                                                 <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                                                    <li style="padding: 0px"><a href="#">Thêm vào DS phát</a></li>
+                                                        <li style="padding: 0px" ><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">Thêm vào DS phát</a></li>
 
                                                     <li style="padding: 0px" class="dropdown-submenu">
                                                         <a tabindex="-1" href="#">
