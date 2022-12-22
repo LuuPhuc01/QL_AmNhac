@@ -1,4 +1,5 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+﻿/*localStorage.clear();*/
+document.addEventListener('DOMContentLoaded', () => {
     const song = document.getElementById("song");
     const playBtn = document.querySelector(".player-inner");
     const nextBtn = document.querySelector(".play-forward");
@@ -48,28 +49,149 @@
         }
     ]
 
-let timer;
-let repeatCount = 0;
-let randomCount = 0;
-var isEqual;
-var isCheckExist;
+    let timer;
+    let repeatCount = 0;
+    let randomCount = 0;
+    var isEqual;
+    var isCheckExist;
     userToken();
     Khoitao();
     //Detail Song
     detailSong.addEventListener('click', detailSongs)
     function detailSongs() {
-        detailSong.setAttribute('href','/user/Phatnhac/Index/')
+        detailSong.setAttribute('href', '/user/Phatnhac/Index/')
     }
 
     //Open ModalPlaylist
-    expandPlaylist.addEventListener('click',showPlaylist)
+    expandPlaylist.addEventListener('click', showPlaylist)
+
+    function updateLocalStorage() {
+        //let dsphats = localStorage.getItem('dsphat') ? JSON.parse(localStorage.getItem('dsphat')) : [];
+        let dsphats = [];
+        for (var i = 0; i < musics.length; i++) {
+            dsphats.push({
+                title: musics[i].title,
+                image: musics[i].image,
+                file: musics[i].file,
+            })
+
+
+        }
+        localStorage.setItem('dsphat', JSON.stringify(dsphats));
+    }
+
+
+    function updateMusics() {
+        let dsphats = localStorage.getItem('dsphat') ? JSON.parse(localStorage.getItem('dsphat')) : [];
+        var count = 0;
+        dsphats.forEach((dsphat, index) => {
+            count = index;
+            index++;
+            console.log(dsphat.title);
+        })
+        var i = 0;
+        count = count + 1;
+        console.log('count = ' + count);
+        //    musics.length = count + 1;
+        //    console.log('dai: ' + musics.length);
+        dsphats.forEach((dsphat, index) => {
+            if (i >= 0) {
+                if (musics.length >= count) {
+                    musics.length = count;
+                    musics[i].file = dsphat.file;
+                    musics[i].title = dsphat.title;
+                    musics[i].image = dsphat.image;
+                }
+                else if (musics.length < count) {
+                    musics[i].file = dsphat.file;
+                    musics[i].title = dsphat.title;
+                    musics[i].image = dsphat.image;
+                    const addLink = dsphat.file;
+                    const addTitle = dsphat.title;
+                    const addImg = dsphat.image;
+                    const id = musics.length + 1;
+                    const obj = {};
+                    obj['id'] = id;
+                    obj['title'] = addTitle;
+                    obj['file'] = addLink;
+                    obj['image'] = addImg;
+                    musics.push(obj);
+                }
+            }
+            i++;
+        })
+        updateLocalStorage();
+    }
+    //        console.log('dai: ' + musics.length);
+    //        console.log('musics: ' + musics);
+    //        //console.log(index);
+    //        //musics[1].id = 2;
+    //        //musics[1].file = 3;
+    //        //musics[1].image = 4;
+    //        //musics[1].title = 5;
+
+    //        //let musics = [];
+    //        //musics.push({
+    //        //    id: index,
+    //        //    title: dsphat.title,
+    //        //    image: dsphat.image,
+    //        //    file: dsphat.file,
+    //        //})
+    //        //index++;
+    //        //if (i > 0) {
+    //        //    musics[i].id = i;
+    //        //    musics[i].image = dsphat.image;
+    //        //    musics[i].title = dsphat.title;
+    //        //}
+    //        //i++;
+
+
+    //    })
+    //    for (int i = 0; i < musics.length; i++) {
+    //        musics[i].id = i;
+    //    }
+    //    console.log('musics: '+musics);
+    ////    console.log('index=' + count);
+    ////    for (var i = 0; i < count; i++) {
+    ////        musics[i].file = i;
+    ////    }
+
+
+    //for (var i = 0; i < count; i++) {
+
+    //    if (musics.length >= count) {
+    //        musics.length = count;
+    //        musics[i].file = playAudios[i].getAttribute("link");
+    //        musics[i].title = nameAudios[i].textContent;
+    //        musics[i].image = imgAudios[i].getAttribute("src");
+    //    }
+    //    else if (musics.length < count) {
+    //        musics[i].file = playAudios[i].getAttribute("link");
+    //        musics[i].title = nameAudios[i].textContent;
+    //        musics[i].image = imgAudios[i].getAttribute("src");
+    //        const addLink = playAudios[i].getAttribute("link");
+    //        const addTitle = nameAudios[i].textContent;
+    //        const addImg = imgAudios[i].getAttribute("src");
+    //        const id = musics.length + 1;
+    //        const obj = {};
+    //        obj['id'] = id;
+    //        obj['title'] = addTitle;
+    //        obj['file'] = addLink;
+    //        obj['image'] = addImg;
+    //        musics.push(obj);
+    //    }
+
+
+    //}
+
+
 
     function showPlaylist() {
         modalPlaylist.classList.add('open')
         expandPlaylist.style.display = 'none';
         closePlaylist.style.display = '';
     }
-    closePlaylist.addEventListener('click',hidePlaylist)
+    closePlaylist.addEventListener('click', hidePlaylist)
     function hidePlaylist() {
         modalPlaylist.classList.remove('open')
         closePlaylist.style.display = 'none';
@@ -80,14 +202,15 @@ var isCheckExist;
     modalMain.addEventListener('click', function (event) {
         event.stopPropagation()
     })
-    
-    
+
+
     compareArr();
     // Update new playlist
     updateAudio.addEventListener("click", update_playlist_audio)
+
     function update_playlist_audio() {
         for (var i = 0; i < playAudios.length; i++) {
-            
+
             if (musics.length >= playAudios.length) {
                 musics.length = playAudios.length;
                 musics[i].file = playAudios[i].getAttribute("link");
@@ -109,14 +232,16 @@ var isCheckExist;
                 obj['image'] = addImg;
                 musics.push(obj);
             }
-        
-       
+
+
         }
         randomSong();
         init(indexSong);
         isPlaying = true;
         playPause();
         compareArr();
+        updateLocalStorage();
+
     }
 
     const indexLength = musics.length - 1
@@ -129,14 +254,14 @@ var isCheckExist;
 
 
     for (const addPlaylist of addPlaylists) {
-        addPlaylist.addEventListener('click', addOneSong(addPlaylists)) 
+        addPlaylist.addEventListener('click', addOneSong(addPlaylists))
     }
-    
+
 
     function addOneSong(a) {
-            for (var i = 0; i < playAudios.length; i++) {
+        for (var i = 0; i < playAudios.length; i++) {
 
-                a[i].onclick = function (e) {
+            a[i].onclick = function (e) {
 /*            compareArr();
             if (isEqual === true) {
                 var Check = e.target.closest('.play_audio').getAttribute("id") - 1
@@ -145,36 +270,37 @@ var isCheckExist;
 
             }
             else*/ if (isEqual === false) {
-                        const CheckLink = e.target.closest('.add-playlist').getAttribute("name")
-                        CheckExist(CheckLink);
-                        if (isCheckExist === false) {
-                            const Link = e.target.closest('.add-playlist').getAttribute("link")
-                            const Img = e.target.closest('.add-playlist').getAttribute("img")
-                            const Title = e.target.closest('.add-playlist').getAttribute("name")
-                            const ID = musics.length;
-                            const obj = {};
-                            obj['id'] = ID;
-                            obj['title'] = Title;
-                            obj['file'] = Link;
-                            obj['image'] = Img;
-                            musics.push(obj);
-                            indexSong = ID;
-                            console.log(musics)
-                            console.log(indexSong)
-                        }
-                    
-                        else {
-                            alert("Bài hát đã nằm trong danh sách phát")
-
-                        }
+                    const CheckLink = e.target.closest('.add-playlist').getAttribute("name")
+                    CheckExist(CheckLink);
+                    if (isCheckExist === false) {
+                        const Link = e.target.closest('.add-playlist').getAttribute("link")
+                        const Img = e.target.closest('.add-playlist').getAttribute("img")
+                        const Title = e.target.closest('.add-playlist').getAttribute("name")
+                        const ID = musics.length;
+                        const obj = {};
+                        obj['id'] = ID;
+                        obj['title'] = Title;
+                        obj['file'] = Link;
+                        obj['image'] = Img;
+                        musics.push(obj);
+                        indexSong = ID;
+                        console.log(musics)
+                        console.log(indexSong)
                     }
-/*
-            isPlaying = true;
-            playPause();*/
- 
- 
+
+                    else {
+                        alert("Bài hát đã nằm trong danh sách phát")
+
+                    }
+                }
+                /*
+                            isPlaying = true;
+                            playPause();*/
+
+
+            }
         }
-    }
+        updateLocalStorage();
     }
     //add 1 song
 
@@ -204,7 +330,7 @@ var isCheckExist;
                     musics.push(obj);
                     indexSong = ID;
                     init(indexSong);
-                    
+
                 }
                 else {
                     var CheckId = e.target.closest('.play_audio').getAttribute("link")
@@ -221,17 +347,17 @@ var isCheckExist;
 
             isPlaying = true;
             playPause();
- 
- 
+            updateLocalStorage();
+
         }
     }
 
-/*    for (const Song of playAudios) {
-        Song.addEventListener('click', function (e) {
-            console.log(e.target.closest('.play_audio').getAttribute("name"))
-        })
-    }
-*/  /*document.getElementById("update-playlist").innerHTML = '';*/
+    /*    for (const Song of playAudios) {
+            Song.addEventListener('click', function (e) {
+                console.log(e.target.closest('.play_audio').getAttribute("name"))
+            })
+        }
+    */  /*document.getElementById("update-playlist").innerHTML = '';*/
 
     function compareArr() {
         if (musics.length !== playAudios.length) {
@@ -246,17 +372,17 @@ var isCheckExist;
                 isEqual = true;
             }
         }
-        console.log( "Hai mang giong nhau " + isEqual);
+        console.log("Hai mang giong nhau " + isEqual);
     }
     function CheckExist(CheckLink) {
         for (let i = 0; i < musics.length; i++) {
             if (CheckLink == musics[i].title) {
-                  isCheckExist = true;
-                  break;
+                isCheckExist = true;
+                break;
             }
             isCheckExist = false;
         }
-        console.log(" Có tôn tại không? "+ isCheckExist);
+        console.log(" Có tôn tại không? " + isCheckExist);
     }
 
 
@@ -264,7 +390,7 @@ var isCheckExist;
         console.log("OK");
         song.setAttribute("src", `${musics[i].file}`);
         playPause();
-    
+
     }
     playRepeat.addEventListener("click", function () {
         if (isRepeat) {
@@ -385,6 +511,10 @@ var isCheckExist;
         }
         console.log(musics);
         console.log(indexSong);
+
+        let statusDangphat = localStorage.getItem('dangphat') ? JSON.parse(localStorage.getItem('dangphat')) : [];
+        statusDangphat[0].isPlayingStorage = isPlaying;
+        localStorage.setItem('dangphat', JSON.stringify(statusDangphat));
     }
 
     /*testPlay[indexSong].addEventListener("click", play_Test);*/
@@ -402,8 +532,11 @@ var isCheckExist;
 
         //Luu currentTime vao localStorage
         let tempDangphat = localStorage.getItem('dangphat') ? JSON.parse(localStorage.getItem('dangphat')) : [];
-        tempDangphat[0].tg = currentTime;
-        localStorage.setItem('dangphat', JSON.stringify(tempDangphat));
+        if (tempDangphat) {
+            tempDangphat[0].tg = currentTime;
+            localStorage.setItem('dangphat', JSON.stringify(tempDangphat));
+        }
+
     }
     function formatTimer(number) {
         const minutes = Math.floor(number / 60);
@@ -440,61 +573,90 @@ var isCheckExist;
     }
 
 
-
-    /*    init(indexSong);*/
+    var sessionCount;
     function Khoitao() {
+
+        let sessionStatus = sessionStorage.getItem('status') ? true : false;
+        if (sessionStatus) {
+            sessionCount = 1;
+            sessionStorage.setItem('status', sessionCount);
+            updateMusics();
+        }
+        else {
+            sessionCount = 0;
+            sessionStorage.setItem('status', sessionCount);
+            updateLocalStorage();
+
+        }
+
+        if (sessionStorage.getItem('status') == 0) {
+            let temp2 = localStorage.getItem('dangphat') ? true : false;
+            console.log('temp2 co gia tri: ' + temp2);
+            if (temp2) {
+                console.log('okokok');
+                let temp2 = JSON.parse(localStorage.getItem('dangphat'));
+                temp2[0].isPlayingStorage = false;
+                localStorage.setItem('dangphat', JSON.stringify(temp2));
+            }
+        }
+
         let dangphats = JSON.parse(localStorage.getItem('dangphat')) ? true : false;
-        console.log('ket qua: ' + dangphats);
+        //console.log('ket qua: ' + dangphats);
         if (dangphats) {
+
             let dangphats = JSON.parse(localStorage.getItem('dangphat'));
-
-
-
             dangphats.forEach((dangphat, index) => {
-                index++;
                 srcBaihat = dangphat.linkbh;
                 anhBaihat = dangphat.anhbh;
                 tenBaihat = dangphat.tenbh;
                 tg = dangphat.tg;
+                status = dangphat.isPlayingStorage;
             })
             song.setAttribute("src", srcBaihat);
             musicImage.setAttribute("src", anhBaihat);
             musicName.textContent = tenBaihat;
             song.currentTime = tg;
-            //isPlaying = true;
-            //song.play();
+            if (status == 'true') {
+                isPlaying = false;
+                console.log('dung');
+            }
+            else {
+                isPlaying = true;
+                console.log('sai');
+            }
+            if (sessionStorage.getItem('status') == 0) isPlaying = false;
             playPause();
         }
         else {
-            displayTimer();
             init(indexSong);
+            displayTimer();
         }
     }
-    
+    console.log(musics);
 })
 
 
-    ////Luu userToken
-    //let user = localStorage.setItem('user', null);
-    function userToken() {
-        var check = document.getElementById("usertoken");
-        if (check != null) {
-            sessionStorage.setItem('userToken', check.value);
-        }
-
-        const logoutButton = document.getElementById("logoutButton");
-        const loginButton = document.getElementById("loginButton2");
-
-        logoutButton.addEventListener("click", function () {
-            sessionStorage.removeItem('userToken');
-        })
-
-        let user = sessionStorage.getItem('userToken') ? true : false;
-        if (user) {
-            loginButton.style.display = 'none';
-        } else {
-            logoutButton.style.display = 'none';
-        }
+////Luu userToken
+//let user = localStorage.setItem('user', null);
+function userToken() {
+    var check = document.getElementById("usertoken");
+    if (check != null) {
+        sessionStorage.setItem('userToken', check.value);
     }
+
+    const logoutButton = document.getElementById("logoutButton");
+    const loginButton = document.getElementById("loginButton2");
+
+    logoutButton.addEventListener("click", function () {
+        sessionStorage.removeItem('userToken');
+    })
+
+    let user = sessionStorage.getItem('userToken') ? true : false;
+    if (user) {
+        loginButton.style.display = 'none';
+    } else {
+        logoutButton.style.display = 'none';
+    }
+}
 
 

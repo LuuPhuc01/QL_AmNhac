@@ -241,6 +241,47 @@ namespace QLBH.Areas.User.Controllers
             }
 
         }
+
+        [Area("User")]
+        [HttpPost]
+        public async Task<IActionResult> AddBaiHatPlaylist(BaiHatPlaylist baiHatPlaylist)
+        {
+            var Usertoken = HttpContext.Session.GetString("tokenUser");
+            if (Usertoken == null)
+            {
+                return RedirectToAction("Index", "Login", new { area = "User" });
+            }
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7032/api/");
+
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Usertoken);
+
+                var response = client.PostAsJsonAsync($"my/Playlist/BaiHat", baiHatPlaylist);
+                response.Wait();
+                //Console.WriteLine(response);
+
+                var test = response.Result;
+                //Console.WriteLine(test.StatusCode);
+                if (test.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("index", "Personal", new { area = "User" });
+                    //return PersonalPlaylist(baiHatPlaylist.BaiHatId);
+
+                }
+                else
+                {
+                    Console.WriteLine("error calling API");
+                    return RedirectToAction("Index", "Home", new { area = "User" });
+                }
+
+            }
+
+        }
     }
 
 
