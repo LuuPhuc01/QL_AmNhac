@@ -17,20 +17,11 @@
     <div class="containers">
         <div id="header">
             <a href="/User/Personal/" class="icon-back"><ion-icon name="arrow-back-circle-outline"></ion-icon></a>
-            <h2 class="text-center">DANH SÁCH PHÁT</h2>
+            <h2 class="text-center">@Model.Playlist.TENPLAYLIST</h2>
         </div>
         <div id="wp-content" class="d-flex">
             <div id="sidebar">
                 @{
-                    //if (Model.BaiHats != null)
-                    //{
-                    ////<img src="@item.BaiHats[0].ANHBH" alt="">
-                    //    <p style="color: black">trinh</p>
-                    //}
-                    //else
-                    //{
-                    //    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2Bzg9a5mY5GEuTu75CSG8NM-JCp5z8PWWQ&usqp=CAU" alt="">
-                    //}
                     try
                     {
                         <img src="@Model.BaiHats[0].ANHBH" alt="">
@@ -98,7 +89,47 @@
                                             <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
                                             <span class="middle thoiluong">@item.THOILUONG</span>
                                             <span class="middle"><i class="fa-solid fa-download"></i></span>
-                                            <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
+                                            <span class="middle">
+                                                <div class="dropdown">
+                                                    <a id="dLabel" role="button" data-toggle="dropdown" class="btn " data-target="#" href="#" style="border: 0px;">
+                                                        <i class="fa-solid fa-ellipsis"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                                        <li style="padding: 0px"><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">Thêm vào DS phát</a></li>
+
+                                                        <li style="padding: 0px" class="dropdown-submenu">
+                                                            <a tabindex="-1" href="#">
+                                                                Thêm vào playlist
+                                                            </a>
+
+                                                            <ul class="dropdown-menu" style="right: 100%; left: 0px; ">
+                                                                 @try
+                                                                {
+                                                                    foreach (var pl in Model.Playlists)
+                                                                    {
+                                                                        <form action="~/User/Personal/AddBaiHatPlaylist" method="POST" id="form-id">
+                                                                        <li>
+                                                                            <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
+                                                                            <input hidden value="@item.Id" name="baihatId" id="baihatId" />
+                                                                            <button type="submit" style="background-color: inherit;border: 0px">@pl.TENPLAYLIST</button>
+                                                                        </li>
+                                                                        </form>
+                                                                    }
+                                                                }
+                                                                catch
+                                                                {
+                                                                    <li>
+                                                                        @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
+
+                                                                    </li>
+                                                                }
+                                                            </ul>
+                                                        </li>
+                                                        <li style="padding: 0px"><a href="#">Some other action</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </span>
                                         </div>
                                     </div>
                                 </div>

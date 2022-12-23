@@ -22,94 +22,122 @@
             <div class="search-result">
 
                 <div class="result-main baihat">
-                    @try{
-                        <img src="@Model.BaiHats[0].ANHBH" height="95px">
-                    <div>
-                        <p class="result-main-category">
-                            Bài hát
-                        </p>
-                        <p class="result-main-name">
-                            @Model.BaiHats[0].TENBAIHAT
+                        @try
+                        {
+                            <img src="@Model.BaiHats[0].ANHBH" height="95px">
+                            <div>
+                                <p class="result-main-category">
+                                    Bài hát
+                                </p>
+                                <p class="result-main-name">
+                                <a class="color_hover" href="/User/BaiHat/Index/@Model.BaiHats[0].Id">
+                                    @Model.BaiHats[0].TENBAIHAT
+                                </a>
 
-                        </p>
-                        <p class="result-main-other">
-                            @Model.BaiHats[0].Casi[0].TenNS
+                                </p>
+                                <p class="result-main-other">
+                                    @Model.BaiHats[0].Casi[0].TenNS
 
-                        </p>
-                        </div>
-                    }
-                    catch
-                    {
-                        <p>trinh</p>
-                    }
-
-                    
-                </div>
-
-                <div class="result-main nghesy">
-                    
-                        @try{
-                        <img src="@Model.NgheSis[0].AnhNS" height="95px">
-                        <div>
-                            <p class="result-main-category">
-                                Nghệ Sỹ
-                            </p>
-                            <p class="result-main-name">
-                                @Model.NgheSis[0].TenNS
-                            </p>
-                            <p class="result-main-other">
-
-                            </p>
-                        </div>
+                                </p>
+                            </div>
 
                         }
                         catch
                         {
+                            <p>Không tìm thấy bài hát</p>
+                        }
+                </div>
+
+                <div class="result-main nghesy">
+                        @try
+                        {
+
+                            <img src="@Model.NgheSis[0].AnhNS" height="95px">
+                            <div>
+                                <p class="result-main-category">
+                                    Nghệ Sỹ
+                                </p>
+                                <p class="result-main-name">
+                                <a class="color_hover" href="/User/NgheSy/Index/@Model.NgheSis[0].Id">
+
+                                    @Model.NgheSis[0].TenNS
+                                </a>
+
+                                </p>
+                                <p class="result-main-other">
+
+                                </p>
+                            </div>
+
+                        }
+                        catch
+                        {
+
                             <img src="@Model.BaiHats[0].Casi[0].AnhNS" height="95px">
                             <div>
                                 <p class="result-main-category">
                                     Nghệ Sỹ
                                 </p>
-                            <p class="result-main-name">
-                                @Model.BaiHats[0].Casi[0].TenNS
-                            </p>
-                            <p class="result-main-other">
+                                <p class="result-main-name">
+                                <a class="color_hover" href="/User/NgheSy/Index/@Model.BaiHats[0].Casi[0].Id">
 
-                            </p>
-                        </div>
+                                    @Model.BaiHats[0].Casi[0].TenNS
+                                </a>
+
+                                </p>
+                                <p class="result-main-other">
+
+                                </p>
+                            </div>
 
                         }
+                        
                 </div>
                 <div class="result-main album">
-                    @try{
-                        <img src="@Model.Albums[0].ANHAL" height="95px">
-                        <div>
-                            <p class="result-main-category">
-                                Album
-                            </p>
-                            <p class="result-main-name">
-                                @Model.Albums[0].TENAL
-                            </p>
-                            <p class="result-main-other">
-                                @Model.Albums[0].LUOTQUANTAM
-                            </p>
-                        </div>
-                    }catch{
-                    
-                    <img src="@Model.BaiHats[0].Album.ANHAL" height="95px">
-                        <div>
-                            <p class="result-main-category">
-                                Album
-                            </p>
-                            <p class="result-main-name">
-                                @Model.BaiHats[0].Album.TENAL
-                            </p>
-                            <p class="result-main-other">
-                                @Model.BaiHats[0].Album.LUOTQUANTAM
+                        @try
+                        {
 
-                            </p>
-                        </div>
-                    }
+                            <img src="@Model.Albums[0].ANHAL" height="95px">
+                            <div>
+                                <p class="result-main-category">
+                                    Album
+                                </p>
+                                <p class="result-main-name">
+                                <a class="color_hover" href="/User/Album/ChiTietAlbum/@Model.Albums[0].Id">
+
+                                    @Model.Albums[0].TENAL
+                                </a>
+
+                                </p>
+                                <p class="result-main-other">
+                                    @Model.Albums[0].LUOTQUANTAM
+                                </p>
+                            </div>
+
+                        }
+                        catch
+                        {
+
+
+                            <img src="@Model.BaiHats[0].Album.ANHAL" height="95px">
+                            <div>
+                                <p class="result-main-category">
+                                    Album
+                                </p>
+                                <p class="result-main-name">
+                                <a class="color_hover" href="/User/Album/ChiTietAlbum/@Model.BaiHats[0].Album.Id">
+                                        @Model.BaiHats[0].Album.TENAL
+                                </a>
+
+                                </p>
+                                <p class="result-main-other">
+                                    @Model.BaiHats[0].Album.LUOTQUANTAM
+
+                                </p>
+                            </div>
+
+                        }
+                    
                     
                 </div>
             </div>

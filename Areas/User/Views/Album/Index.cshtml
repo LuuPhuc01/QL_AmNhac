@@ -27,17 +27,14 @@
               i++;
               <div class="col-sm-2 col-md-2">
                 <div class="thumbnail">
-                      @*<img src="~/theme/images/sia-chandelier.jpg" alt="...">*@
-                        <img src="@item.ANHAL" alt="@item.TENAL">
+                        <img class="square_img" style="height: 200px;" src="@item.ANHAL" alt="@item.TENAL">
 
                   <div class="caption">
-                    <h3 style="text-align:center">@item.TENAL</h3>
-@*                    <p>Lượt quan tâm : @item.LUOTQUANTAM</p>
-                    <p>Ngày tạo : @item.THOIGIANPH</p>*@
+                    <h5 style="text-align:center">@item.TENAL</h5>
+
                     <p>
                                 @Html.ActionLink("Xem thêm", "ChiTietAlbum","Album" , new { id=item.Id  }, new{ @class="btn btn-primary btn-block"})
 
-                        @*<a href="#" class="btn btn-primary btn-block" role="button">Xem thêm</a>*@
                         </p>
                   </div>
                 </div>
@@ -50,9 +47,6 @@
 
                 $("#flexiselDemo1").flexisel({
                     visibleItems: 5,
-                    /*                    animationSpeed: 1000,*/
-                    /*   autoPlay: true,*/
-                    /*     autoPlaySpeed: 3000,*/
                     pauseOnHover: false,
                     enableResponsiveBreakpoints: true,
                     responsiveBreakpoints: {

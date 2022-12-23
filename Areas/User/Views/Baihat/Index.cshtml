@@ -1,4 +1,5 @@
-﻿@{
+﻿@model QLBH.Models.HomeModel;
+@{
     ViewBag.Title = "Unstoppable";
     Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
 }
@@ -12,13 +13,13 @@
                         <img src="~/Theme/images/Sia-Unstoppable.jpg" width="100%">
                         <div class="baihat-detail-main">
                             <p>
-                                Ca sỹ: <span class="baihat-info-strongword">Sia</span>
+                                Ca sỹ: <span class="baihat-info-strongword">@Model.BaiHat.Casi[0].TenNS</span>
                             </p>
                             <p>
-                                Nhạc sỹ: <span class="baihat-info-strongword">Sia</span>
+                                Nhạc sỹ: <span class="baihat-info-strongword">@Model.BaiHat.Casi[0].TenNS</span>
                             </p>
                             <p>
-                                Năm phát hành: <span class="baihat-info-strongword">2020</span>
+                                Năm phát hành: <span class="baihat-info-strongword">@Model.BaiHat.Album.THOIGIANPH</span>
                             </p>
                         </div>
                     </div>
@@ -33,9 +34,10 @@
                 </div>
                 <div class="baihat-detail-2">
                     <p class="baihat-tittle">
-                        Unstoppable
+                        @Model.BaiHat.TENBAIHAT
                     </p>
                     <div class="baihat-lyric">
+                        @Model.BaiHat.LOIBAIHAT
                         <p>
                             [Verse 1]<br>
                             I'll smile, I know what it takes to fool this town<br>
@@ -56,101 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="baihat-toplist">
-                <div class="baihat-tittle">
-                    Top bài hát của <span>Sia</span>
-                </div>
-                <div class="result-baihat-detail">
-                    <div class="result-baihat-img-name">
-                        <img src="~/Theme/images/Sia-Chandelier.jpg" width="110px">
-                        <div class="result-baihat-img-name-detail">
-                            <p class="result-baihat-name">
-                                Chandelier
-                            </p>
-                            <p class="result-baihat-name-other">
-                                Sia
-                            </p>
-                            <p class="result-baihat-luotnghe">
-                                1,834,908,285 lượt nghe
-                            </p>
-                        </div>
-                    </div>
-                    <div class="result-baihat-album">
-                        <p>
-                            Chandelier ver.2
-                        </p>
-                    </div>
-                    <div class="col-md-3">
-                        <div id="song-1" class="icons">
-                            <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
-                            <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
-                            <span class="middle thoiluong">00:11</span>
-                            <span class="middle"><i class="fa-solid fa-download"></i></span>
-                            <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="result-baihat-detail">
-                    <div class="result-baihat-img-name">
-                        <img src="~/Theme/images/Sia-CheapThrills.jpg" width="110px">
-                        <div class="result-baihat-img-name-detail">
-                            <p class="result-baihat-name">
-                                Cheap Thrills
-                            </p>
-                            <p class="result-baihat-name-other">
-                                Sia
-                            </p>
-                            <p class="result-baihat-luotnghe">
-                                853,973,762 lượt nghe
-                            </p>
-                        </div>
-                    </div>
-                    <div class="result-baihat-album">
-                        <p>
-                            Cheap Thrills ver.2
-                        </p>
-                    </div>
-                    <div class="col-md-3">
-                        <div id="song-1" class="icons">
-                            <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
-                            <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
-                            <span class="middle thoiluong">00:11</span>
-                            <span class="middle"><i class="fa-solid fa-download"></i></span>
-                            <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="result-baihat-detail">
-                    <div class="result-baihat-img-name">
-                        <img src="https://i1.sndcdn.com/artworks-000192093512-ur5rts-t500x500.jpg" width="110px">
-                        <div class="result-baihat-img-name-detail">
-                            <p class="result-baihat-name">
-                                The Greatest
-                            </p>
-                            <p class="result-baihat-name-other">
-                                Sia
-                            </p>
-                            <p class="result-baihat-luotnghe">
-                                772,135,762 lượt nghe
-                            </p>
-                        </div>
-                    </div>
-                    <div class="result-baihat-album">
-                        <p>
-                            Cố giang tình ver.2
-                        </p>
-                    </div>
-                    <div class="col-md-3">
-                        <div id="song-1" class="icons">
-                            <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
-                            <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
-                            <span class="middle thoiluong">00:11</span>
-                            <span class="middle"><i class="fa-solid fa-download"></i></span>
-                            <span class="middle"><i class="fa-solid fa-ellipsis"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          
         </div>
         <div class="baihat-info-2">
             <div class="tuongtac-item">
@@ -158,7 +66,7 @@
                     Lượt nghe
                 </p>
                 <p class="baihat-tuongtac-data">
-                    937,810,094
+                    @Model.BaiHat.LUOTNGHE
                 </p>
                 <p class="baihat-tuongtac-btn">
                     Phát nhạc
@@ -169,7 +77,7 @@
                     Lượt yêu thích
                 </p>
                 <p class="baihat-tuongtac-data">
-                    9,327
+                   @Model.BaiHat.LUOTYEUTHICH
                 </p>
                 <p class="baihat-tuongtac-btn">
                     Yêu thích
@@ -177,6 +85,136 @@
             </div>
         </div>
     </div>
+    <div class="sings">
+        <div class="tittle-head">
+            <h3 class="tittle">Top bài hát của @Model.BaiHat.Casi[0].TenNS</h3>
+            <div class="clearfix"></div>
+        </div>
+        <div class="list-song scrollbar widget-side" id="style-7">
+            <ul class="songs list1">
+                @{
+                    var i = 0;
+                }
+                @foreach (var item in Model.TopBaiHats)
+                {
+                    i++;
+                    <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
+                        <div class="row">
+                            <div class="col-md-5 main-song-title">
+                                <div class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">
+
+                                    <img class="img_audio main-song-img " src="@item.ANHBH" />
+                                    <div class="main-song-play mini-song-play"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <div class="main-song-text">
+                                    <p class="name_audio">@item.TENBAIHAT</p>
+                                    <p><a href="#" class="caSi">@item.Casi[0].TenNS</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <span class="middle">@item.Album.TENAL</span>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div id="song-1" class="icons">
+                                    @{
+                                        if (Model.BaiHatYeuThichs != null)
+                                        {
+                                            int yt = 0;
+                                            foreach (var bhyt in Model.BaiHatYeuThichs)
+                                            {
+                                                if (item.Id == bhyt.Id)
+                                                {
+                                                    yt = 1;
+                                                }
+
+                                            }
+                                            if (yt == 1)
+                                            {
+                                                using (Html.BeginForm("DelBaiHatYeuThich", "Personal", FormMethod.Post))
+                                                {
+                                                    <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
+                                                    <button type="submit" name="submit" class="btn_hidden">
+                                                        <span class="middle"><i class="fa-solid fa-heart"></i></span>
+                                                    </button>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                using (Html.BeginForm("AddBaiHatYeuThich", "Personal", FormMethod.Post))
+                                                {
+                                                    <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
+                                                    <button type="submit" name="submit" class="btn_hidden">
+                                                        <span class="middle "><i class="fa-regular fa-heart "></i></span>
+                                                    </button>
+                                                }
+                                            }
+                                        }
+                                        else
+                                        {
+                                            using (Html.BeginForm("AddBaiHatYeuThich", "Personal", FormMethod.Post))
+                                            {
+                                                <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
+                                                <button type="submit" name="submit" class="btn_hidden">
+                                                    <span class="middle "><i class="fa-regular fa-heart "></i></span>
+                                                </button>
+                                            }
+                                        }
+
+                                    }
+
+                                    <span class="middle thoiluong">@item.THOILUONG</span>
+                                    <span class="middle"><i class="fa-solid fa-download"></i></span>
+                                    <div class="middle">
+                                        <div class="dropdown">
+                                            <a id="dLabel" role="button" data-toggle="dropdown" class="btn " data-target="#" href="#" style="border: 0px;">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </a>
+                                            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                                <li style="padding: 0px"><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">Thêm vào DS phát</a></li>
+
+                                                <li style="padding: 0px" class="dropdown-submenu">
+                                                    <a tabindex="-1" href="#">
+                                                        Thêm vào playlist
+                                                    </a>
+
+                                                    <ul class="dropdown-menu" style="right: 100%; left: 0px; ">
+                                                        @if (Model.Playlists != null)
+                                                        {
+                                                            foreach (var pl in Model.Playlists)
+                                                            {
+                                                                <form action="~/User/Personal/AddBaiHatPlaylist" method="POST" id="form-id">
+                                                                <li>
+                                                                    <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
+                                                                    <input hidden value="@item.Id" name="baihatId" id="baihatId" />
+                                                                    <button type="submit" style="background-color: inherit;border: 0px">@pl.TENPLAYLIST</button>
+                                                                </li>
+                                                                </form>
+                                                            }
+                                                        }
+                                                        else
+                                                        {
+                                                            <li>
+                                                                @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
+
+                                                            </li>
+
+                                                        }
+                                                    </ul>
+                                                </li>
+                                                <li style="padding: 0px"><a href="#">Some other action</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+
     <div>
         <div class="result-subject">
             <p class="subject">

@@ -81,7 +81,7 @@
         color: #fff;
         text-decoration: none;
     }
-.dropdown-toggle::after{
+/*.dropdown-toggle::after{
     display:none;
 }
 
@@ -96,4 +96,4 @@
 .dropdown-menu.show{
     margin-right:0;
     width:250px;
-}
+}*/
