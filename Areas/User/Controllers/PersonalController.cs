@@ -114,7 +114,22 @@ namespace QLBH.Areas.User.Controllers
                 {
                     Console.WriteLine("Error calling web API");
                 }
+                // playlist user
+               
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Usertoken);
 
+                    HttpResponseMessage getDataplaylist = await client.GetAsync("my/Playlist/GetAll");
+
+
+                    if (getDataplaylist.IsSuccessStatusCode)
+                    {
+                        string results = getDataplaylist.Content.ReadAsStringAsync().Result;
+                        pm.Playlists = JsonConvert.DeserializeObject<List<PlaylistLink>>(results);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error calling web API");
+                    }
                 ViewData.Model = pm;
 
             }

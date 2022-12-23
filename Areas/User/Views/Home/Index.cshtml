@@ -140,7 +140,6 @@
                 <div class="col-md-3 content-grid">
                     <a href="single.html"><img src="@item.ANHAL" title="@item.TENAL"></a>
                     <div class="inner-info">
-                        @*<a href="single.html"><h5>Xem thêm</h5></a>*@
                         <h5>
                             @Html.ActionLink("Xem thêm", "ChiTietAlbum","Album" , new { id=item.Id  })
 
@@ -185,7 +184,7 @@
 
                             </div>
                             <div class="song-text">
-                                <a style="color:white" href="/User/Baihat/Index">
+                                <a style="color:white" href="/User/Baihat/Index/@item.Id">
                                     <p class=" name_audio" style="margin:  0px;">@item.TENBAIHAT</p>
                                     <p style="margin:  0px;">
                                         <a href="/User/NgheSy/Index/@item.Casi[0].Id">
@@ -210,39 +209,19 @@
             <h3 class="tittle">Albums nổi bật <span class="new"> New</span></h3>
             <div class="clearfix"> </div>
         </div>
-       @* <ul 
-            id="flexiselDemo1"
-            class="row"
-        >
-            @foreach (var item in Model.AlbumsNoiBat)
-            {
-                <li>
-                    <a href="single.html"><img src="@item.ANHAL" alt="" /></a>
-                            <div class="slide-title" ><h4 style="height:60px">@item.TENAL</h4> </div>
-                    <div class="date-city">
-                        <h5>@item.NgheSi.TenNS</h5>
-                        <div class="buy-tickets">
-                            @Html.ActionLink("Xem thêm", "ChiTietAlbum","Album" , new { id=item.Id  })
 
-                        </div>
-                    </div>
-                </li>
-            }
-        </ul>*@
         <div class="row">
 
             @foreach (var item in Model.AlbumsNoiBat)
             {
                 <div class="col-sm-2 col-md-2">
                     <div class="thumbnail">
-                                <img src="@item.ANHAL" alt="">
+                                <img class="square_img" style="height: 200px;" src="@item.ANHAL" alt="">
 
                         <div class="caption">
                             <h3 style="text-align:center; height:70px">@item.TENAL</h3>
                             <p>
-                                @*<a href="/User/Personal/PersonalPlaylist" class="btn btn-primary btn-block" role="button">Xem thêm</a>*@
-                                @Html.ActionLink("Xem thêm", "PersonalPlaylist","Personal" , new { id=item.Id  }, new {@class = "btn btn-primary btn-block" })
-                                @*@Html.ActionLink("Xem thêm", "ChiTietAlbum","Album" , new { id=item.Id  })*@
+                                @Html.ActionLink("Xem thêm", "ChiTietAlbum","Album" , new { id=item.Id  }, new {@class = "btn btn-primary btn-block" })
 
                             </p>
                         </div>
@@ -250,36 +229,9 @@
                 </div>
             }
         </div>
-        @*<script type="text/javascript">
-            $(window).load(function () {
-
-                $("#flexiselDemo1").flexisel({
-                    visibleItems: 5,
-                    animationSpeed: 1000,
-                    autoPlay: true,
-                    autoPlaySpeed: 3000,
-                    pauseOnHover: false,
-                    enableResponsiveBreakpoints: true,
-                    responsiveBreakpoints: {
-                        portrait: {
-                            changePoint: 480,
-                            visibleItems: 2
-                        },
-                        landscape: {
-                            changePoint: 640,
-                            visibleItems: 3
-                        },
-                        tablet: {
-                            changePoint: 800,
-                            visibleItems: 4
-                        }
-                    }
-                });
-            });
-        </script>*@
+       
         <script type="text/javascript" src="~/Theme/Scripts/jquery.flexisel.js"></script>
     </div>
 
     <div class="clearfix"></div>
-    <!--body wrapper end-->
 </div>

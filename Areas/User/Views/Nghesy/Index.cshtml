@@ -5,62 +5,7 @@
     //int id = ViewBag.id;
 }
 
-<link href="~/theme/styles/personal.css" rel="stylesheet" />
-<script type="text/javascript">
-    //	window.addEventListener("resize", function() {
-    //		"use strict"; window.location.reload();
-    //	});
 
-
-    document.addEventListener("DOMContentLoaded", function () {
-
-
-        /////// Prevent closing from click inside dropdown
-        document.querySelectorAll('.dropdown-menu').forEach(function (element) {
-            element.addEventListener('click', function (e) {
-                e.stopPropagation();
-            });
-        })
-
-
-
-        // make it as accordion for smaller screens
-        if (window.innerWidth < 992) {
-
-            // close all inner dropdowns when parent is closed
-            document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
-                everydropdown.addEventListener('hidden.bs.dropdown', function () {
-                    // after dropdown is hidden, then find all submenus
-                    this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
-                        // hide every submenu as well
-                        everysubmenu.style.display = 'none';
-                    });
-                })
-            });
-
-            document.querySelectorAll('.dropdown-menu a').forEach(function (element) {
-                element.addEventListener('click', function (e) {
-
-                    let nextEl = this.nextElementSibling;
-                    if (nextEl && nextEl.classList.contains('submenu')) {
-                        // prevent opening link if link needs to open dropdown
-                        e.preventDefault();
-                        console.log(nextEl);
-                        if (nextEl.style.display == 'block') {
-                            nextEl.style.display = 'none';
-                        } else {
-                            nextEl.style.display = 'block';
-                        }
-
-                    }
-                });
-            })
-        }
-        // end if innerWidth
-
-    });
-    // DOMContentLoaded  end
-</script>
 <div class="padding-top">
     <div class="header-artist">
         <div class="mask  ">
@@ -94,10 +39,11 @@
                         <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
                             <div class="row">
                                 <div class="col-md-5 main-song-title">
-                                        <div  class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">
-
-                                            <img class="img_audio main-song-img " src="@item.ANHBH" />
-                                        <div class="main-song-play mini-song-play"><i class="fa-solid fa-play"></i></div>
+                                    <div  class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">
+                                        <img class="img_audio main-song-img " src="@item.ANHBH" />
+                                        <div class="main-song-play mini-song-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>
                                     </div>
                                     <div class="main-song-text">
                                             <p class="name_audio">@item.TENBAIHAT</p>
@@ -160,19 +106,19 @@
                                         <span class="middle"><i class="fa-solid fa-download"></i></span>
                                         <div class="middle">
                                             <div class="dropdown">
-                                                <a id="dLabel" role="button" data-toggle="dropdown" class="btn " data-target="#" href="#" style="border: 0px;" >
+                                                <a id="dLabel" role="button" data-toggle="dropdown" class="btn " data-target="#" href="#" style="border: 0px;">
                                                     <i class="fa-solid fa-ellipsis"></i>
                                                 </a>
                                                 <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                                                        <li style="padding: 0px" ><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">Thêm vào DS phát</a></li>
+                                                    <li style="padding: 0px"><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">Thêm vào DS phát</a></li>
 
                                                     <li style="padding: 0px" class="dropdown-submenu">
                                                         <a tabindex="-1" href="#">
-                                                                    Thêm vào playlist
+                                                            Thêm vào playlist
                                                         </a>
 
                                                         <ul class="dropdown-menu" style="right: 100%; left: 0px; ">
-                                                            @if(Model.Playlists != null)
+                                                            @if (Model.Playlists != null)
                                                             {
                                                                 foreach (var pl in Model.Playlists)
                                                                 {
@@ -180,52 +126,19 @@
                                                                     <li>
                                                                         <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
                                                                         <input hidden value="@item.Id" name="baihatId" id="baihatId" />
-                                                                        <button type="submit">@pl.TENPLAYLIST</button>
+                                                                        <button type="submit" style="background-color: inherit;border: 0px">@pl.TENPLAYLIST</button>
                                                                     </li>
                                                                     </form>
                                                                 }
-                                                            }else
-                                                                {
-                                                                    <li>
-                                                                    @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
-
-                                                                </li>
-
                                                             }
-                                                                @*@try
-                                                            {
-                                                                foreach(var pl in Model.Playlists)
-                                                                {
-                                                                    <form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
-                                                                    <li>
-                                                                        <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
-                                                                        <input hidden value="@item.Id" name="playlistId" id="playlistId" />
-                                                                        <button type="submit">@pl.TENPLAYLIST</button>
-                                                                    </li>
-                                                                    </form>
-                                                                }
-                                                                
-                                                            }
-                                                            catch
+                                                            else
                                                             {
                                                                 <li>
                                                                     @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
 
                                                                 </li>
 
-                                                            }*@
-                                                            @*<form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
-                                                                <li>
-                                                                    <a tabindex="-1" href="#">Second level</a>
-                                                                    <input hidden value=""/>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">Second level</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">Second level</a>
-                                                                </li>
-                                                            </form>*@
+                                                            }
                                                         </ul>
                                                     </li>
                                                     <li style="padding: 0px"><a href="#">Some other action</a></li>
@@ -248,14 +161,13 @@
             <div class="albums-content">
                 <ul class="ul-albums">
                     @foreach(var item in Model.Albums){
-                        <li class="main-album">
+                    <li class="main-album">
                         <div class="img-contain hover-img">
                             <div class="mask">
                                     <a href="/user/Album/ChiTietAlbum/@item.Id">
                                         <i class="fa-regular fa-circle-play"></i>
 
                                 </a>
-                                    @*@Html.ActionLink("Xem thêm", "ChiTietAlbum","Album" , new { id=item.Id  })*@
                             </div>
                             <img class="main-album-img " src="@item.ANHAL" />
                         </div>
