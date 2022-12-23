@@ -28,13 +28,13 @@
               <div class="col-sm-2 col-md-2">
                 <div class="thumbnail">
                       @*<img src="~/theme/images/sia-chandelier.jpg" alt="...">*@
-                        <img src="@item.ANHAL" alt="@item.TENAL">
+                        <img src="@item.ANHAL" alt="@item.TENAL" style="height:246.33px">
 
                   <div class="caption">
-                    <h3 style="text-align:center">@item.TENAL</h3>
+                        <h3 style="text-align:center; height:70px">@item.TENAL</h3>
 @*                    <p>Lượt quan tâm : @item.LUOTQUANTAM</p>
                     <p>Ngày tạo : @item.THOIGIANPH</p>*@
-                    <p>
+                    <p style="padding-top:5px">
                                 @Html.ActionLink("Xem thêm", "ChiTietAlbum","Album" , new { id=item.Id  }, new{ @class="btn btn-primary btn-block"})
 
                         @*<a href="#" class="btn btn-primary btn-block" role="button">Xem thêm</a>*@

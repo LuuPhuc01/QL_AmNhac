@@ -1,4 +1,4 @@
-﻿/*
+﻿
 html {
     box-sizing: border-box;
 }
@@ -15,9 +15,14 @@ html {
 }
 
 .card {
+    display: flex;
+    align-items: center;
+    justify-content:center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-    padding: 10px;
+    margin: 10px;
+    padding: 19px;
+    color:#000;
+    position:relative;
 }
 
 .about-section {
@@ -42,7 +47,18 @@ html {
 .title {
     color: grey;
 }
+.img-card {
+    display:inline-block;
+    height: 500px;
+    width: 500px;
+}
+.text-card{
+    margin-top:10px;
+    margin-left:0px;
+    text-align:center;
+    font-size:23px;
 
+}
 .button {
     border: none;
     outline: 0;
@@ -65,8 +81,8 @@ html {
         display: block;
     }
 }
-*/
 
+/*
 
 * {
     font-family: Nunito, sans-serif;
@@ -613,3 +629,4 @@ body {
         min-width: auto;
     }
 }  
+*/
