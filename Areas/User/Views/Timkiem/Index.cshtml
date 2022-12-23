@@ -151,15 +151,16 @@
 
             </div>
             <div>
-                <div class="result-baihat-item item-left">
+                <div class="result-baihat-item item-left " >
                     
                     @for(int i = 0; i < Model.BaiHats.Count; i = i + 2)
                     {
-                        <div class="result-baihat-detail">
-                            <div style="flex-basis:70%" class="result-baihat-img-name">
-                                <img src="@Model.BaiHats[i].ANHBH" width="80px">
+                         <div class="result-baihat-detail">
+                                                <div style="flex-basis:70%" class="result-baihat-img-name play_audio" link=" @Model.BaiHats[i].LINKBH" name="@Model.BaiHats[i].TENBAIHAT" img="@Model.BaiHats[i].ANHBH" id="@i" >
+                                    <img src="@Model.BaiHats[i].ANHBH" width="80px" class="img_audio">
+
                                 <div class="result-baihat-img-name-detail">
-                                    <p class="result-baihat-name">
+                                        <p class="result-baihat-name name_audio">
                                         @Model.BaiHats[i].TENBAIHAT
                                     </p>
                                     <p class="result-baihat-name-other">
@@ -171,7 +172,81 @@
                                 <p>
                                     @Model.BaiHats[i].THOILUONG
                                 </p>
-                                <span id="icon-option" class="icon-main"><i class="fa-solid fa-ellipsis"></i></span>
+                                <div class="middle">
+                                                        <div class="dropdown">
+                                                            <a id="dLabel" role="button" data-toggle="dropdown" class="btn " data-target="#" href="#" style="border: 0px;" >
+                                                                <i class="fa-solid fa-ellipsis"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                                                        <li style="padding: 0px" ><a class="add-playlist" link=" @Model.BaiHats[i].LINKBH" name="@Model.BaiHats[i].TENBAIHAT" img="@Model.BaiHats[i].ANHBH" id="@i">Thêm vào DS phát</a></li>
+
+                                                                <li style="padding: 0px" class="dropdown-submenu">
+                                                                    <a tabindex="-1" href="#">
+                                                                                Thêm vào playlist
+                                                                    </a>
+
+                                                                    <ul class="dropdown-menu" style="right: 100%; left: 0px; ">
+                                                    @* @if (Model.Playlists != null)
+                                                                {
+                                                                    foreach (var pl in Model.Playlists)
+                                                                    {
+                                                                                <form action="~/User/Personal/AddBaiHatPlaylist" method="POST" id="form-id">
+                                                                                <li>
+                                                                                    <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
+                                                                                    <input hidden value="@item.Id" name="baihatId" id="baihatId" />
+                                                                                    <button type="submit">@pl.TENPLAYLIST</button>
+                                                                                </li>
+                                                                                </form>
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+                                                                            <li>
+                                                                        @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
+
+                                                                        </li>
+
+                                                                }*@
+                                                    @*@try
+                                                            {
+                                                                foreach(var pl in Model.Playlists)
+                                                                {
+                                                                    <form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
+                                                                    <li>
+                                                                        <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
+                                                                        <input hidden value="@item.Id" name="playlistId" id="playlistId" />
+                                                                        <button type="submit">@pl.TENPLAYLIST</button>
+                                                                    </li>
+                                                                    </form>
+                                                                }
+
+                                                            }
+                                                            catch
+                                                            {
+                                                                <li>
+                                                                    @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
+
+                                                                </li>
+
+                                                            }*@
+                                                    @*<form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
+                                                                <li>
+                                                                    <a tabindex="-1" href="#">Second level</a>
+                                                                    <input hidden value=""/>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Second level</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Second level</a>
+                                                                </li>
+                                                            </form>*@
+                                                                    </ul>
+                                                                </li>
+                                                                <li style="padding: 0px"><a href="#">Some other action</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                             </div>
                         </div>
                     }
@@ -180,10 +255,10 @@
                     @for(int i = 1; i < Model.BaiHats.Count; i = i+ 2)
                     {
                         <div class="result-baihat-detail">
-                            <div style="flex-basis:70%" class="result-baihat-img-name">
+                                    <div style="flex-basis:70%" class="result-baihat-img-name play_audio    " link=" @Model.BaiHats[i].LINKBH" name="@Model.BaiHats[i].TENBAIHAT" img="@Model.BaiHats[i].ANHBH" id="@i">
                                 <img src="@Model.BaiHats[i].ANHBH" width="80px">
-                                <div class="result-baihat-img-name-detail">
-                                    <p class="result-baihat-name">
+                                    <div class="result-baihat-img-name-detail" class="img_audio">
+                                        <p class="result-baihat-name name_audio">
                                         @Model.BaiHats[i].TENBAIHAT
 
                                     </p>
@@ -199,7 +274,81 @@
                                     @Model.BaiHats[i].THOILUONG
 
                                 </p>
-                                <span id="icon-option" class="icon-main"><i class="fa-solid fa-ellipsis"></i></span>
+                                <div class="middle">
+                                                            <div class="dropdown">
+                                                                <a id="dLabel" role="button" data-toggle="dropdown" class="btn " data-target="#" href="#" style="border: 0px;" >
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                                                            <li style="padding: 0px" ><a class="add-playlist" link=" @Model.BaiHats[i].LINKBH" name="@Model.BaiHats[i].TENBAIHAT" img="@Model.BaiHats[i].ANHBH" id="@i">Thêm vào DS phát</a></li>
+
+                                                                    <li style="padding: 0px" class="dropdown-submenu">
+                                                                        <a tabindex="-1" href="#">
+                                                                                    Thêm vào playlist
+                                                                        </a>
+
+                                                                        <ul class="dropdown-menu" style="right: 100%; left: 0px; ">
+                                                    @* @if (Model.Playlists != null)
+                                                                {
+                                                                    foreach (var pl in Model.Playlists)
+                                                                    {
+                                                                                <form action="~/User/Personal/AddBaiHatPlaylist" method="POST" id="form-id">
+                                                                                <li>
+                                                                                    <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
+                                                                                    <input hidden value="@item.Id" name="baihatId" id="baihatId" />
+                                                                                    <button type="submit">@pl.TENPLAYLIST</button>
+                                                                                </li>
+                                                                                </form>
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+                                                                            <li>
+                                                                        @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
+
+                                                                        </li>
+
+                                                                }*@
+                                                    @*@try
+                                                            {
+                                                                foreach(var pl in Model.Playlists)
+                                                                {
+                                                                    <form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
+                                                                    <li>
+                                                                        <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
+                                                                        <input hidden value="@item.Id" name="playlistId" id="playlistId" />
+                                                                        <button type="submit">@pl.TENPLAYLIST</button>
+                                                                    </li>
+                                                                    </form>
+                                                                }
+
+                                                            }
+                                                            catch
+                                                            {
+                                                                <li>
+                                                                    @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
+
+                                                                </li>
+
+                                                            }*@
+                                                    @*<form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
+                                                                <li>
+                                                                    <a tabindex="-1" href="#">Second level</a>
+                                                                    <input hidden value=""/>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Second level</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Second level</a>
+                                                                </li>
+                                                            </form>*@
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li style="padding: 0px"><a href="#">Some other action</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                             </div>
                         </div>
                     }
