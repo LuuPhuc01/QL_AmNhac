@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const volumeCur = document.querySelector(".range-volume");
 
     const playAudios = document.querySelectorAll(".play_audio");
+    const playOneaudio = document.querySelector(".play-one-audio");
     const updateAudio = document.querySelector(".update_playlist_audio");
     const nameAudios = document.querySelectorAll(".name_audio");
     const imgAudios = document.querySelectorAll(".img_audio");
@@ -58,25 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
     var isCheckExist;
     userToken();
     Khoitao();
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     //updateLocalStorage
 
@@ -219,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                             </div>
                                             <div class="main-song-text">
                                                 <p  class="name_audio" >${musics[i].title}</p>
-                                                <p><a href="#" class="caSi">Còn cái tên NS Tiên add vô musics nha</a></p>
+                                                <p><a href="#" class="caSi">Tên nhạc sĩ</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -412,6 +394,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
     }
+
+    //Play one song ở index bài hát :(((
+    playOneaudio.addEventListener('click', function () {
+        compareArr();
+        if (isEqual === true) {
+            var CheckName = playOneaudio.getAttribute("name")
+            x = CheckExist(CheckName);
+            console.log(CheckName);
+            console.log(x)
+            indexSong = x;
+            init(indexSong);
+
+        }
+        else if (isEqual === false) {
+            var CheckLink = playOneaudio.getAttribute("name")
+            console.log(CheckLink);
+            x = CheckExist(CheckLink);
+            console.log(x)
+            indexSong = x;
+            if (isCheckExist === false) {
+                var Link = playOneaudio.getAttribute("link")
+                var Img = playOneaudio.getAttribute("img")
+                var Title = playOneaudio.getAttribute("name")
+                var ID = musics.length;
+                const obj = {};
+                obj['id'] = ID;
+                obj['title'] = Title;
+                obj['file'] = Link;
+                obj['image'] = Img;
+                musics.push(obj);
+                indexSong = ID;
+                init(indexSong);
+
+            }
+            else {
+                var CheckId = playOneaudio.getAttribute("link")
+                var Link = playOneaudio.getAttribute("link")
+                var Img = playOneaudio.getAttribute("img")
+                var Title = playOneaudio.getAttribute("name")
+                song.setAttribute("src", `${Link}`);
+                musicImage.setAttribute("src", `${Img}`);
+                musicName.textContent = Title;
+
+
+            }
+        }
+
+        isPlaying = true;
+
+        playPause();
+        updateLocalStorage();
+    })
+
+
+
 /*
     for (var i = 0; i < playAudios.length; i++) {
         updateLocalStorage();
