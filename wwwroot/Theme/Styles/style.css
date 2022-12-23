@@ -4,6 +4,10 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
+.square_img{
+	width: 200px;
+	height: !important 200px;
+}
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
@@ -2599,7 +2603,7 @@ h6.blg {
 	margin-left: 0;
 }
 h6.blg i,.icons i {
-    font-size: 1.3em;
+    /*font-size: 1.3em;*/
     margin: 0 0.3em;
     color: #999;
 }

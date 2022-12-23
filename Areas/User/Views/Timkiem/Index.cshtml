@@ -22,46 +22,53 @@
             <div class="search-result">
 
                 <div class="result-main baihat">
-                    @try{
-                        <img src="@Model.BaiHats[0].ANHBH" height="95px">
-                    <div>
-                        <p class="result-main-category">
-                            Bài hát
-                        </p>
-                        <p class="result-main-name">
-                            @Model.BaiHats[0].TENBAIHAT
+                        @try
+                        {
+                            <img src="@Model.BaiHats[0].ANHBH" height="95px">
+                            <div>
+                                <p class="result-main-category">
+                                    Bài hát
+                                </p>
+                                <p class="result-main-name">
+                                <a class="color_hover" href="/User/BaiHat/Index/@Model.BaiHats[0].Id">
+                                    @Model.BaiHats[0].TENBAIHAT
+                                </a>
 
-                        </p>
-                        <p class="result-main-other">
-                            @Model.BaiHats[0].Casi[0].TenNS
+                                </p>
+                                <p class="result-main-other">
+                                <a class="color_hover" href="/User/NgheSy/Index/@Model.BaiHats[0].Casi[0].Id">
 
-                        </p>
-                        </div>
-                    }
-                    catch
-                    {
-                        <p>trinh</p>
-                    }
+                                    @Model.BaiHats[0].Casi[0].TenNS
+                                    </a>
+                                </p>
+                            </div>
 
-                    
+                        }
+                        catch
+                        {
+                            <p>Không tìm thấy bài hát</p>
+                        }
                 </div>
 
                 <div class="result-main nghesy">
-                    
-                        @try{
-                        <img src="@Model.NgheSis[0].AnhNS" height="95px">
-                        <div>
-                            <p class="result-main-category">
-                                Nghệ Sỹ
-                            </p>
-                            <p class="result-main-name">
-                                @Model.NgheSis[0].TenNS
-                            </p>
-                            <p class="result-main-other">
+                        @try
+                        {
+                            <img src="@Model.NgheSis[0].AnhNS" height="95px">
+                            <div>
+                                <p class="result-main-category">
+                                    Nghệ Sỹ
+                                </p>
+                                <p class="result-main-name">
+                                <a class="color_hover" href="/User/NgheSy/Index/@Model.NgheSis[0].Id">
 
-                            </p>
-                        </div>
+                                    @Model.NgheSis[0].TenNS
+                                </a>
 
+                                </p>
+                                <p class="result-main-other">
+
+                                </p>
+                            </div>
                         }
                         catch
                         {
@@ -70,46 +77,65 @@
                                 <p class="result-main-category">
                                     Nghệ Sỹ
                                 </p>
-                            <p class="result-main-name">
-                                @Model.BaiHats[0].Casi[0].TenNS
-                            </p>
-                            <p class="result-main-other">
+                                <p class="result-main-name">
+                                <a class="color_hover" href="/User/NgheSy/Index/@Model.BaiHats[0].Casi[0].Id">
 
-                            </p>
-                        </div>
+                                    @Model.BaiHats[0].Casi[0].TenNS
+                                </a>
 
+                                </p>
+                                <p class="result-main-other">
+
+                                </p>
+                            </div>
                         }
+                        
                 </div>
                 <div class="result-main album">
-                    @try{
-                        <img src="@Model.Albums[0].ANHAL" height="95px">
-                        <div>
-                            <p class="result-main-category">
-                                Album
-                            </p>
-                            <p class="result-main-name">
-                                @Model.Albums[0].TENAL
-                            </p>
-                            <p class="result-main-other">
-                                @Model.Albums[0].LUOTQUANTAM
-                            </p>
-                        </div>
-                    }catch{
-                    
-                    <img src="@Model.BaiHats[0].Album.ANHAL" height="95px">
-                        <div>
-                            <p class="result-main-category">
-                                Album
-                            </p>
-                            <p class="result-main-name">
-                                @Model.BaiHats[0].Album.TENAL
-                            </p>
-                            <p class="result-main-other">
-                                @Model.BaiHats[0].Album.LUOTQUANTAM
+                   
+                        @try
+                        {
+                            <img src="@Model.Albums[0].ANHAL" height="95px">
+                            <div>
+                                <p class="result-main-category">
+                                    Album
+                                </p>
+                                <p class="result-main-name">
+                                <a class="color_hover" href="/User/Album/ChiTietAlbum/@Model.Albums[0].Id">
 
-                            </p>
-                        </div>
-                    }
+                                    @Model.Albums[0].TENAL
+                                </a>
+
+                                </p>
+                                <p class="result-main-other">
+                                    @Model.Albums[0].LUOTQUANTAM
+                                </p>
+                            </div>
+
+                        }
+                        catch
+                        {
+
+
+                            <img src="@Model.BaiHats[0].Album.ANHAL" height="95px">
+                            <div>
+                                <p class="result-main-category">
+                                    Album
+                                </p>
+                                <p class="result-main-name">
+                                <a class="color_hover" href="/User/Album/ChiTietAlbum/@Model.BaiHats[0].Album.Id">
+                                        @Model.BaiHats[0].Album.TENAL
+                                </a>
+
+                                </p>
+                                <p class="result-main-other">
+                                    @Model.BaiHats[0].Album.LUOTQUANTAM
+
+                                </p>
+                            </div>
+
+                        }
+                    
                     
                 </div>
             </div>
@@ -124,19 +150,31 @@
             </div>
             <div>
                 <div class="result-baihat-item item-left " >
-                    
+                    @{
+                        var idbh = 0;
+                    }
                     @for(int i = 0; i < Model.BaiHats.Count; i = i + 2)
                     {
-                         <div class="result-baihat-detail">
-                                                <div style="flex-basis:70%" class="result-baihat-img-name play_audio" link=" @Model.BaiHats[i].LINKBH" name="@Model.BaiHats[i].TENBAIHAT" img="@Model.BaiHats[i].ANHBH" id="@i" >
-                                    <img src="@Model.BaiHats[i].ANHBH" width="80px" class="img_audio">
+                        idbh++;
+                        <div class="result-baihat-detail" onmouseenter="mouseenterIconTK(this)" onmouseleave="mouseleaveIconTK(this)">
+                            <div style="flex-basis:70%" class="result-baihat-img-name play_audio" link=" @Model.BaiHats[i].LINKBH" name="@Model.BaiHats[i].TENBAIHAT" img="@Model.BaiHats[i].ANHBH" id="@idbh" >
+                                <div class="play_audio main-song-cover">
 
+                                    <img class="img_audio main-song-img " style="width: 80px;" src="@Model.BaiHats[i].ANHBH" />
+                                    <div class="main-song-play icon_play_search">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
                                 <div class="result-baihat-img-name-detail">
-                                        <p class="result-baihat-name name_audio">
+                                    <p class="result-baihat-name name_audio">
+                                        <a class="color_hover" href="/User/BaiHat/Index/@Model.BaiHats[i].Id">
                                         @Model.BaiHats[i].TENBAIHAT
+                                        </a>
                                     </p>
                                     <p class="result-baihat-name-other">
+                                        <a class="color_hover" href="/User/BaiHat/Index/@Model.BaiHats[i].Casi[0].Id">
                                         @Model.BaiHats[i].Casi[0].TenNS
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -158,61 +196,27 @@
                                                                     </a>
 
                                                                     <ul class="dropdown-menu" style="right: 100%; left: 0px; ">
-                                                    @* @if (Model.Playlists != null)
-                                                                {
-                                                                    foreach (var pl in Model.Playlists)
-                                                                    {
-                                                                                <form action="~/User/Personal/AddBaiHatPlaylist" method="POST" id="form-id">
-                                                                                <li>
-                                                                                    <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
-                                                                                    <input hidden value="@item.Id" name="baihatId" id="baihatId" />
-                                                                                    <button type="submit">@pl.TENPLAYLIST</button>
-                                                                                </li>
-                                                                                </form>
-                                                                    }
-                                                                }
-                                                                else
-                                                                {
-                                                                            <li>
-                                                                        @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
+                                                    @if (Model.Playlists != null)
+                                                    {
+                                                        foreach (var pl in Model.Playlists)
+                                                        {
+                                                            <form action="~/User/Personal/AddBaiHatPlaylist" method="POST" id="form-id">
+                                                            <li>
+                                                                <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
+                                                                <input hidden value="@Model.BaiHats[i].Id" name="baihatId" id="baihatId" />
+                                                                <button type="submit" style="background-color: inherit;border: 0px">@pl.TENPLAYLIST</button>
+                                                            </li>
+                                                            </form>
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        <li>
+                                                            @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
 
-                                                                        </li>
+                                                        </li>
 
-                                                                }*@
-                                                    @*@try
-                                                            {
-                                                                foreach(var pl in Model.Playlists)
-                                                                {
-                                                                    <form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
-                                                                    <li>
-                                                                        <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
-                                                                        <input hidden value="@item.Id" name="playlistId" id="playlistId" />
-                                                                        <button type="submit">@pl.TENPLAYLIST</button>
-                                                                    </li>
-                                                                    </form>
-                                                                }
-
-                                                            }
-                                                            catch
-                                                            {
-                                                                <li>
-                                                                    @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
-
-                                                                </li>
-
-                                                            }*@
-                                                    @*<form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
-                                                                <li>
-                                                                    <a tabindex="-1" href="#">Second level</a>
-                                                                    <input hidden value=""/>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">Second level</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">Second level</a>
-                                                                </li>
-                                                            </form>*@
+                                                    }
                                                                     </ul>
                                                                 </li>
                                                                 <li style="padding: 0px"><a href="#">Some other action</a></li>
@@ -226,16 +230,28 @@
                 <div class="result-baihat-item item-right">
                     @for(int i = 1; i < Model.BaiHats.Count; i = i+ 2)
                     {
-                        <div class="result-baihat-detail">
-                                    <div style="flex-basis:70%" class="result-baihat-img-name play_audio    " link=" @Model.BaiHats[i].LINKBH" name="@Model.BaiHats[i].TENBAIHAT" img="@Model.BaiHats[i].ANHBH" id="@i">
-                                <img src="@Model.BaiHats[i].ANHBH" width="80px">
+                        idbh++;
+                        <div class="result-baihat-detail" onmouseenter="mouseenterIconTK(this)" onmouseleave="mouseleaveIconTK(this)">
+                                <div style="flex-basis:70%" class="result-baihat-img-name play_audio    " link=" @Model.BaiHats[i].LINKBH" name="@Model.BaiHats[i].TENBAIHAT" img="@Model.BaiHats[i].ANHBH" id="@idbh">
+                                <div class="play_audio main-song-cover">
+
+                                    <img class="img_audio main-song-img " style="width: 80px;" src="@Model.BaiHats[i].ANHBH" />
+                                    <div class="main-song-play icon_play_search">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
                                     <div class="result-baihat-img-name-detail" class="img_audio">
                                         <p class="result-baihat-name name_audio">
-                                        @Model.BaiHats[i].TENBAIHAT
+                                        <a class="color_hover" href="/User/BaiHat/Index/@Model.BaiHats[i].Id">
 
+                                        @Model.BaiHats[i].TENBAIHAT
+                                        </a>
                                     </p>
                                     <p class="result-baihat-name-other">
+                                        <a class="color_hover" href="/User/NgheSy/Index/@Model.BaiHats[i].Casi[0].Id">
+                                        
                                         @Model.BaiHats[i].Casi[0].TenNS
+                                        </a>
 
                                     </p>
 
@@ -260,61 +276,27 @@
                                                                         </a>
 
                                                                         <ul class="dropdown-menu" style="right: 100%; left: 0px; ">
-                                                    @* @if (Model.Playlists != null)
-                                                                {
-                                                                    foreach (var pl in Model.Playlists)
-                                                                    {
-                                                                                <form action="~/User/Personal/AddBaiHatPlaylist" method="POST" id="form-id">
+                                                                            @if (Model.Playlists != null)
+                                                                            {
+                                                                                foreach (var pl in Model.Playlists)
+                                                                                {
+                                                                                    <form action="~/User/Personal/AddBaiHatPlaylist" method="POST" id="form-id">
+                                                                                    <li>
+                                                                                        <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
+                                                                <input hidden value="@Model.BaiHats[i].Id" name="baihatId" id="baihatId" />
+                                                                                        <button type="submit" style="background-color: inherit;border: 0px">@pl.TENPLAYLIST</button>
+                                                                                    </li>
+                                                                                    </form>
+                                                                                }
+                                                                            }
+                                                                            else
+                                                                            {
                                                                                 <li>
-                                                                                    <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
-                                                                                    <input hidden value="@item.Id" name="baihatId" id="baihatId" />
-                                                                                    <button type="submit">@pl.TENPLAYLIST</button>
+                                                                                    @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
+
                                                                                 </li>
-                                                                                </form>
-                                                                    }
-                                                                }
-                                                                else
-                                                                {
-                                                                            <li>
-                                                                        @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
 
-                                                                        </li>
-
-                                                                }*@
-                                                    @*@try
-                                                            {
-                                                                foreach(var pl in Model.Playlists)
-                                                                {
-                                                                    <form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
-                                                                    <li>
-                                                                        <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
-                                                                        <input hidden value="@item.Id" name="playlistId" id="playlistId" />
-                                                                        <button type="submit">@pl.TENPLAYLIST</button>
-                                                                    </li>
-                                                                    </form>
-                                                                }
-
-                                                            }
-                                                            catch
-                                                            {
-                                                                <li>
-                                                                    @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
-
-                                                                </li>
-
-                                                            }*@
-                                                    @*<form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
-                                                                <li>
-                                                                    <a tabindex="-1" href="#">Second level</a>
-                                                                    <input hidden value=""/>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">Second level</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">Second level</a>
-                                                                </li>
-                                                            </form>*@
+                                                                            }
                                                                         </ul>
                                                                     </li>
                                                                     <li style="padding: 0px"><a href="#">Some other action</a></li>
@@ -340,36 +322,44 @@
                 </p>
             </div>
             <div class="result-album-content">
-                @foreach(var item in Model.Albums)
-                {
-                    <div class="result-album-item">
-                        <img src="@item.ANHAL" height="200px">
-                        <div>
-                            <p class="result-album-name">
-                                @item.TENAL
-                            </p>
-                            <p class="result-album-other">
-                                @item.NgheSi.TenNS
-                            </p>
-                        </div>
-                    </div>
-                }
-                @foreach(var item in Model.BaiHats)
-                {
-                    <div class="result-album-item">
-                        <img src="@item.Album.ANHAL" height="200px">
-                        <div>
-                            <p class="result-album-name">
-                                @item.Album.TENAL
-                            </p>
-                            <p class="result-album-other">
-                                @item.Album.LUOTQUANTAM
-                            </p>
-                        </div>
-                    </div>
-                }
-            </div>
+                <ul class="ul-albums">
+                    @foreach (var item in Model.Albums)
+                    {
+                        <li class="main-album">
+                            <div class="img-contain hover-img">
+                                <div class="mask">
+                                    <a href="/user/Album/ChiTietAlbum/@item.Id">
+                                        <i class="fa-regular fa-circle-play"></i>
 
+                                    </a>
+                                </div>
+                                <img class="main-album-img " src="@item.ANHAL" />
+                            </div>
+                            <div>
+                                <p class="title-album">@item.TENAL</p>
+                            </div>
+                        </li>
+                    }
+                    @foreach (var item in Model.BaiHats)
+                    {
+                        <li class="main-album">
+                            <div class="img-contain hover-img">
+                                <div class="mask">
+                                    <a href="/user/Album/ChiTietAlbum/@item.Album.Id">
+                                        <i class="fa-regular fa-circle-play"></i>
+
+                                    </a>
+                                </div>
+                                <img class="main-album-img " src="@item.Album.ANHAL" />
+                            </div>
+                            <div>
+                                <p class="title-album">@item.Album.TENAL</p>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+            
             <div class="result-other">
                 <div class="result-other-content">
                     <div class="result-subject">

@@ -81,7 +81,7 @@
         color: #fff;
         text-decoration: none;
     }
-.dropdown-toggle::after{
+/*.dropdown-toggle::after{
     display:none;
 }
 
