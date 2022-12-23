@@ -39,10 +39,11 @@
                         <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
                             <div class="row">
                                 <div class="col-md-5 main-song-title">
-                                        <div  class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">
-
-                                            <img class="img_audio main-song-img " src="@item.ANHBH" />
-                                        <div class="main-song-play mini-song-play"><i class="fa-solid fa-play"></i></div>
+                                    <div  class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">
+                                        <img class="img_audio main-song-img " src="@item.ANHBH" />
+                                        <div class="main-song-play mini-song-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>
                                     </div>
                                     <div class="main-song-text">
                                             <p class="name_audio">@item.TENBAIHAT</p>
@@ -160,14 +161,13 @@
             <div class="albums-content">
                 <ul class="ul-albums">
                     @foreach(var item in Model.Albums){
-                        <li class="main-album">
+                    <li class="main-album">
                         <div class="img-contain hover-img">
                             <div class="mask">
                                     <a href="/user/Album/ChiTietAlbum/@item.Id">
                                         <i class="fa-regular fa-circle-play"></i>
 
                                 </a>
-                                    @*@Html.ActionLink("Xem thêm", "ChiTietAlbum","Album" , new { id=item.Id  })*@
                             </div>
                             <img class="main-album-img " src="@item.ANHAL" />
                         </div>
