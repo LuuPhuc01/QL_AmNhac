@@ -224,6 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 musics[i].title = nameAudios[i].textContent;
                 musics[i].image = imgAudios[i].getAttribute("src");
                 musics.push({
+                    id: musics.length,
                     title: nameAudios[i].textContent,
                     image: imgAudios[i].getAttribute("src"),
                     file: playAudios[i].getAttribute("link"),
@@ -232,6 +233,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         }
+
+        playRandom.style.color = "#ffb86c";
+        isRandom = true;
         randomSong();
         init(indexSong);
         isPlaying = true;
@@ -281,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         console.log(musics)
                         indexSong = indexSong
                         console.log(indexSong)
-
+                        alert("Đã thêm bài hát vào danh sách phát")
                     }
 
                     else {

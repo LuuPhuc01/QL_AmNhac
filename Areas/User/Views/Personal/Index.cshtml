@@ -80,7 +80,7 @@
                                 }
                                 catch 
                                 {
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2Bzg9a5mY5GEuTu75CSG8NM-JCp5z8PWWQ&usqp=CAU" alt="">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2Bzg9a5mY5GEuTu75CSG8NM-JCp5z8PWWQ&usqp=CAU" alt="" style="height:246.33px">
 
                                 }
                             }
@@ -100,9 +100,9 @@
                 <div class="text">
                     <div class="tittle-head ">
                         <h3 class="tittle" style="color:white; margin-right: 20px">BÀI HÁT YÊU THÍCH </h3>
-                        <div class="button update_playlist_audio">
+                        <div class="button ">
                             <div  class=" ">
-                            <button class="button_play_header ">
+                            <button class="button_play_header update_playlist_audio">
                                 <span class="material-symbols-outlined">
                                     play_circle
                                 </span>
@@ -153,14 +153,78 @@
                                                 <span class="middle thoiluong">@item.THOILUONG</span>
                                                 <span class="middle"><i class="fa-solid fa-download"></i></span>
                                                 <div class="middle">
-                                                    <div class="main-dropdown" style="margin-top:15px;">    
-                                                          <button class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa-solid fa-ellipsis"></i>
-                                                          </button>
-                                                              <ul class="dropdown-menu">
-                                                                <li><div class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">Thêm vào danh sách phát</div></li>
-                                                                <li><div href="#">CSS</div></li>
-                                                                <li><div href="#">JavaScript</div></li>
-                                                              </ul>
+                                                    <div class="dropdown">
+                                                        <a id="dLabel" role="button" data-toggle="dropdown" class="btn " data-target="#" href="#" style="border: 0px;">
+                                                            <i class="fa-solid fa-ellipsis"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                                                <li style="padding: 0px" ><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">Thêm vào DS phát</a></li>
+
+                                                            <li style="padding: 0px" class="dropdown-submenu">
+                                                                <a tabindex="-1" href="#">
+                                                                            Thêm vào playlist
+                                                                </a>
+
+                                                                <ul class="dropdown-menu" style="right: 100%; left: 0px; ">
+                                                                    @* @if (Model.Playlists != null)
+                                                                {
+                                                                    foreach (var pl in Model.Playlists)
+                                                                    {
+                                                                                <form action="~/User/Personal/AddBaiHatPlaylist" method="POST" id="form-id">
+                                                                                <li>
+                                                                                    <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
+                                                                                    <input hidden value="@item.Id" name="baihatId" id="baihatId" />
+                                                                                    <button type="submit">@pl.TENPLAYLIST</button>
+                                                                                </li>
+                                                                                </form>
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+                                                                            <li>
+                                                                        @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
+
+                                                                        </li>
+
+                                                                }*@
+                                                                    @*@try
+                                                            {
+                                                                foreach(var pl in Model.Playlists)
+                                                                {
+                                                                    <form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
+                                                                    <li>
+                                                                        <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
+                                                                        <input hidden value="@item.Id" name="playlistId" id="playlistId" />
+                                                                        <button type="submit">@pl.TENPLAYLIST</button>
+                                                                    </li>
+                                                                    </form>
+                                                                }
+
+                                                            }
+                                                            catch
+                                                            {
+                                                                <li>
+                                                                    @Html.ActionLink("Đăng nhập", "index","Login" , new {@class = "btn btn-primary btn-block" })
+
+                                                                </li>
+
+                                                            }*@
+                                                                    @*<form action="~/User/Personal/AddPlaylist" method="POST" id="form-id">
+                                                                <li>
+                                                                    <a tabindex="-1" href="#">Second level</a>
+                                                                    <input hidden value=""/>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Second level</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Second level</a>
+                                                                </li>
+                                                            </form>*@
+                                                                </ul>
+                                                            </li>
+                                                            <li style="padding: 0px"><a href="#">Some other action</a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
