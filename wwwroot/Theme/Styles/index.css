@@ -1,5 +1,24 @@
-﻿.color_hover:hover {
+﻿
+.color_hover:hover {
     color: #EA57A3;
+}
+.input_inherit {
+    background-color: inherit;
+
+}
+.border_bot {
+    border-bottom: 1px solid black;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+span .lnr-pencil {
+    font-size: 25px;
+    color: #EA57A3 !important;
+    cursor: pointer;
+}
+.updatePl {
+    background-color: pink;
 }
 .btn_hidden {
     background: inherit;
