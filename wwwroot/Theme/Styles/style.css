@@ -4,7 +4,8 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
-.square_img{
+
+.square_img {
 	width: 200px;
 	height: !important 200px;
 }
@@ -4551,13 +4552,9 @@ h4.tittle.two{
 	margin-top: 0px !important;
 }
 
-
-/*    add playlist */
-/*.modal-contentl {
-	background-color: #173b45;
+.color_white {
+	color: white !important;
 }
-
-	.modal-contentl input {
-		border-radius: 1px solid hsla(0,0%,100%,0.1);
-		background-color: hsla(0,0%,100%,0.1);
-	}*/
+	.color_white:hover {
+		color: #EA57A3 !important;
+	}

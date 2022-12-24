@@ -33,9 +33,45 @@
 
                     }
                 }
-                @*<img src="@Model.BaiHats[0].ANHBH" />*@
                 <div class="text-details">
-                    <div class="name-playlist">@Model.Playlist.TENPLAYLIST</div>
+                    <div class="name-playlist">
+                       <span>
+                            @Model.Playlist.TENPLAYLIST
+                            <i class="lnr lnr-pencil" data-toggle="modal" data-target="#exampleModalCenter"></i>
+                       </span> 
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="height: 100vh;">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="min-height: 500px;">
+                                <div class="modal-content" style=" background-color: #173b45; ">
+                                    <div class="modal-header" style="    border-bottom: 1px solid #173b20;">
+                                        <h4 class="modal-title color_black" id="exampleModalLongTitle">Sửa Playlist @Model.Playlist.TENPLAYLIST</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action ="~/User/Personal/UpdatePlaylist" method="post" id="form-id">
+                                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                            <div class="form-group">
+                                                <label class="control-label color_black">Tên Playlist</label>
+                                                <input hidden name="id" id="id" value="@Model.Playlist.Id" />
+                                                <input style="border-radius: 5px;
+                                                    border: 1px solid hsla(0,0%,100%,0.1);
+                                                    background-color: #173b49;"
+                                                       class="form-control" id="TENPLAYLIST" name="TENPLAYLIST" placeholder="@Model.Playlist.TENPLAYLIST" />
+                                                <span class="text-danger"></span>
+                                            </div>
+                                            <div class="modal-footer" style="border-top: 1px solid #173b20">
+                                                @*<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>*@
+                                                <input type="submit" name="submit" value="Cập nhật" class=" btn" style="background-color: #158370 " />
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                     <div class="btn  btn-phatnhac update_playlist_audio" href="#" role="button">Phát ngẫu nhiên</div>
                 </div>
 
@@ -75,7 +111,11 @@
                                             <div class="main-song-play mini-song-play"><i class="fa-solid fa-play"></i></div>
                                         </div>
                                         <div class="main-song-text">
-                                            <p class="name_audio">@item.TENBAIHAT</p>
+                                            <p class="name_audio">
+                                                <a class="color_white" href="/User/BaiHat/Index/@item.Id">
+                                                    @item.TENBAIHAT
+                                            </a> 
+                                            </p>
                                             <p><a href="/User/NgheSy/index/@item.Casi[0].Id" class="caSi">@item.Casi[0].TenNS</a></p>
                                         </div>
                                     </div>
@@ -85,8 +125,53 @@
 
                                     <div class="col-md-3">
                                         <div id="song-1" class="icons">
-                                            <span class="middle none " onclick="addFavorite(this)"><i class="fa-regular fa-heart "></i></span>
-                                            <span class="middle" onclick="removeFavorite(this)"><i class="fa-solid fa-heart"></i></span>
+                                            <span class="middle">
+                                                @{
+                                                    if (Model.BaiHatYeuThichs_Playlist != null)
+                                                    {
+                                                        int yt = 0;
+                                                        foreach (var bhyt in Model.BaiHatYeuThichs_Playlist)
+                                                        {
+                                                            if (item.Id == bhyt.Id)
+                                                            {
+                                                                yt = 1;
+                                                            }
+
+                                                        }
+                                                        if (yt == 1)
+                                                        {
+                                                            using (Html.BeginForm("DelBaiHatYeuThich", "Personal", FormMethod.Post))
+                                                            {
+                                                                <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
+                                                                <button type="submit" name="submit" class="btn_hidden">
+                                                                    <span class="middle"><i class="fa-solid fa-heart"></i></span>
+                                                                </button>
+                                                            }
+                                                        }
+                                                        else
+                                                        {
+                                                            using (Html.BeginForm("AddBaiHatYeuThich", "Personal", FormMethod.Post))
+                                                            {
+                                                                <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
+                                                                <button type="submit" name="submit" class="btn_hidden">
+                                                                    <span class="middle "><i class="fa-regular fa-heart "></i></span>
+                                                                </button>
+                                                            }
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        using (Html.BeginForm("AddBaiHatYeuThich", "Personal", FormMethod.Post))
+                                                        {
+                                                            <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
+                                                            <button type="submit" name="submit" class="btn_hidden">
+                                                                <span class="middle "><i class="fa-regular fa-heart "></i></span>
+                                                            </button>
+                                                        }
+                                                    }
+
+                                                }
+                                            </span>
                                             <span class="middle thoiluong">@item.THOILUONG</span>
                                             <span class="middle"><i class="fa-solid fa-download"></i></span>
                                             <span class="middle">
@@ -95,9 +180,9 @@
                                                         <i class="fa-solid fa-ellipsis"></i>
                                                     </a>
                                                     <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                                                        <li style="padding: 0px"><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">Thêm vào DS phát</a></li>
+                                                        <li style="padding: 5px; height: 37px;"><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">Thêm vào DS phát</a></li>
 
-                                                        <li style="padding: 0px" class="dropdown-submenu">
+                                                        <li style="padding: 5px; height: 37px;" class="dropdown-submenu">
                                                             <a tabindex="-1" href="#">
                                                                 Thêm vào playlist
                                                             </a>
@@ -107,11 +192,11 @@
                                                                 {
                                                                     foreach (var pl in Model.Playlists)
                                                                     {
-                                                                        <form action="~/User/Personal/AddBaiHatPlaylist" method="POST" id="form-id">
-                                                                        <li>
+                                                                        <form style="height: 40px;" action="~/User/Personal/AddBaiHatPlaylist" method="POST" id="form-id">
+                                                                        <li style="height: 40px;">
                                                                             <input hidden value="@pl.Id" name="playlistId" id="playlistId" />
                                                                             <input hidden value="@item.Id" name="baihatId" id="baihatId" />
-                                                                            <button type="submit" style="background-color: inherit;border: 0px">@pl.TENPLAYLIST</button>
+                                                                            <button  type="submit" style="background-color: inherit;border: 0px;">@pl.TENPLAYLIST</button>
                                                                         </li>
                                                                         </form>
                                                                     }
@@ -125,7 +210,14 @@
                                                                 }
                                                             </ul>
                                                         </li>
-                                                        <li style="padding: 0px"><a href="#">Some other action</a></li>
+                                                        <li style="padding: 5px; height: 37px;">
+                                                            <form action="~/User/Personal/DelBaiHatPlaylist" method="POST" id="form-id">
+                                                                <input hidden value="@Model.Playlist.Id" name="playlistId" id="playlistId" />
+                                                                <input hidden value="@item.Id" name="baihatId" id="baihatId" />
+                                                                <button class="btn" type="submit" style="background-color: inherit;border: 0px; position: absolute;">Xóa bài hát khỏi Playlist</button>
+                                                            </form>
+                                                            
+                                                        </li>
                                                     </ul>
                                                 </div>
                                                 

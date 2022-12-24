@@ -4,6 +4,7 @@ using NuGet.Common;
 using QLBH.Models;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
+using System.Text;
 
 namespace QLBH.Areas.User.Controllers
 {
@@ -130,6 +131,22 @@ namespace QLBH.Areas.User.Controllers
                     {
                         Console.WriteLine("Error calling web API");
                     }
+                //bai hat yeu thich
+
+                HttpResponseMessage getData = await client.GetAsync("my/BaihatUser/GetAll");
+
+
+                if (getData.IsSuccessStatusCode)
+                {
+                    string results = getData.Content.ReadAsStringAsync().Result;
+                    //Console.WriteLine(results);
+                    pm.BaiHatYeuThichs_Playlist = JsonConvert.DeserializeObject<List<BaiHatLink>>(results);
+                }
+                else
+                {
+                    Console.WriteLine("Error calling web API");
+                }
+
                 ViewData.Model = pm;
 
             }
@@ -277,6 +294,7 @@ namespace QLBH.Areas.User.Controllers
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Usertoken);
 
                 var response = client.PostAsJsonAsync($"my/Playlist/BaiHat", baiHatPlaylist);
+
                 response.Wait();
                 //Console.WriteLine(response);
 
@@ -284,7 +302,7 @@ namespace QLBH.Areas.User.Controllers
                 //Console.WriteLine(test.StatusCode);
                 if (test.IsSuccessStatusCode)
                 {
-                    return RedirectToAction("index", "Personal", new { area = "User" });
+                    return RedirectToAction("PersonalPlaylist", "Personal", new {id = baiHatPlaylist.PlaylistId, area = "User" });
                     //return PersonalPlaylist(baiHatPlaylist.BaiHatId);
 
                 }
@@ -292,6 +310,91 @@ namespace QLBH.Areas.User.Controllers
                 {
                     Console.WriteLine("error calling API");
                     return RedirectToAction("Index", "Home", new { area = "User" });
+                }
+
+            }
+
+        }
+
+
+        [Area("User")]
+        [HttpPost]
+        public async Task<IActionResult> DelBaiHatPlaylist(BaiHatPlaylist baiHatPlaylist)
+        {
+            var Usertoken = HttpContext.Session.GetString("tokenUser");
+            if (Usertoken == null)
+            {
+                return RedirectToAction("Index", "Login", new { area = "User" });
+            }
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7032/api/");
+
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Usertoken);
+
+                var request = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Delete,
+                    RequestUri = new Uri("https://localhost:7032/api/my/Playlist/BaiHat"),
+                    Content = new StringContent(JsonConvert.SerializeObject(baiHatPlaylist), Encoding.UTF8, "application/json")
+                };
+                var response =  client.SendAsync(request);
+
+                response.Wait();
+
+                var test = response.Result;
+                if (test.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("PersonalPlaylist", "Personal", new {id = baiHatPlaylist.PlaylistId,  area = "User" }) ;
+
+                }
+                else
+                {
+                    Console.WriteLine("error calling API");
+                    return RedirectToAction("Index", "Home", new { area = "User" });
+                }
+
+            }
+
+        }
+
+        [Area("User")]
+
+        [HttpPost]
+        public async Task<IActionResult> UpdatePlaylist(Playlist playlist)
+        {
+            var Usertoken = HttpContext.Session.GetString("tokenUser");
+            if (Usertoken == null)
+            {
+                return RedirectToAction("Index", "Login", new { area = "User" });
+            }
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7032/api/");
+
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Usertoken);
+
+                var response = client.PutAsJsonAsync<Playlist>("my/Playlist", playlist);
+                response.Wait();
+                //Console.WriteLine(response);
+
+                var test = response.Result;
+                //Console.WriteLine(test.StatusCode);
+                if (test.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("PersonalPlaylist", "Personal", new {id = playlist.Id, area = "User" });
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Personal", new { area = "User" });
                 }
 
             }
