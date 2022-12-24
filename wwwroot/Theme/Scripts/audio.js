@@ -19,10 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const volumeCur = document.querySelector(".range-volume");
 
     const playAudios = document.querySelectorAll(".play_audio");
+    const playOneaudio = document.querySelector(".play-one-audio");
     const updateAudio = document.querySelector(".update_playlist_audio");
     const nameAudios = document.querySelectorAll(".name_audio");
     const imgAudios = document.querySelectorAll(".img_audio");
-    const playSong = document.querySelectorAll(".play_song");
+
 
     const addPlaylists = document.querySelectorAll(".add-playlist");
 
@@ -31,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const closePlaylist = document.querySelector(".playlist-close");
     const modalPlaylist = document.querySelector(".modal-playlist");
     const modalMain = document.querySelector(".modal-playlist-main");
+
+    const updateModal = document.querySelector(".js-update");
 
     closePlaylist.style.display = 'none';
     volumeMin.style.display = 'none';
@@ -56,14 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
     var isCheckExist;
     userToken();
     Khoitao();
-    //Detail Song
-    detailSong.addEventListener('click', detailSongs)
-    function detailSongs() {
-        detailSong.setAttribute('href', '/user/Phatnhac/Index/')
-    }
 
-    //Open ModalPlaylist
-    expandPlaylist.addEventListener('click', showPlaylist)
+    //updateLocalStorage
 
     function updateLocalStorage() {
         //let dsphats = localStorage.getItem('dsphat') ? JSON.parse(localStorage.getItem('dsphat')) : [];
@@ -185,19 +182,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     //}
+    //Open ModalPlaylist
+    expandPlaylist.addEventListener('click', showPlaylist)
 
+    function updateModalplaylist() {
+        // Index Modal Playlist
 
+        for (var i = 0; i < musics.length; i++) {
+            const ul = document.createElement('ul');
+            ul.classList.add('songs');
+            ul.classList.add('list1')
+            ul.innerHTML = `<li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
+                                    <div class="row" style="margin-left:0px">
+                                        <div class="main-song-title">
+                                            <div class="play_audio main-song-cover">
+                                                <img class="img_audio main-song-img " src="${musics[i].image}"/>
+                                                <div class="main-song-play mini-song-play"><i class="fa-solid fa-play"></i></div>
+                                            </div>
+                                            <div class="main-song-text">
+                                                <p  class="name_audio" >${musics[i].title}</p>
+                                                <p><a href="#" class="caSi">Tên nhạc sĩ</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>`
+            updateModal.appendChild(ul);
+        }
+    }
+    function delModalplaylist() {
+        for (var i = 0; i < musics.length; i++) {
+            if (updateModal.hasChildNodes()) {
+                updateModal.removeChild(updateModal.children[0]);
+            }
+        }
+    }
 
     function showPlaylist() {
         modalPlaylist.classList.add('open')
         expandPlaylist.style.display = 'none';
         closePlaylist.style.display = '';
+
+        updateModalplaylist()
+
     }
     closePlaylist.addEventListener('click', hidePlaylist)
     function hidePlaylist() {
         modalPlaylist.classList.remove('open')
         closePlaylist.style.display = 'none';
         expandPlaylist.style.display = '';
+        delModalplaylist();
     }
     modalPlaylist.addEventListener('click', hidePlaylist)
 
@@ -361,6 +394,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
     }
+
+    //Play one song ở index bài hát :(((
+    playOneaudio.addEventListener('click', function () {
+        compareArr();
+        if (isEqual === true) {
+            var CheckName = playOneaudio.getAttribute("name")
+            x = CheckExist(CheckName);
+            console.log(CheckName);
+            console.log(x)
+            indexSong = x;
+            init(indexSong);
+
+        }
+        else if (isEqual === false) {
+            var CheckLink = playOneaudio.getAttribute("name")
+            console.log(CheckLink);
+            x = CheckExist(CheckLink);
+            console.log(x)
+            indexSong = x;
+            if (isCheckExist === false) {
+                var Link = playOneaudio.getAttribute("link")
+                var Img = playOneaudio.getAttribute("img")
+                var Title = playOneaudio.getAttribute("name")
+                var ID = musics.length;
+                const obj = {};
+                obj['id'] = ID;
+                obj['title'] = Title;
+                obj['file'] = Link;
+                obj['image'] = Img;
+                musics.push(obj);
+                indexSong = ID;
+                init(indexSong);
+
+            }
+            else {
+                var CheckId = playOneaudio.getAttribute("link")
+                var Link = playOneaudio.getAttribute("link")
+                var Img = playOneaudio.getAttribute("img")
+                var Title = playOneaudio.getAttribute("name")
+                song.setAttribute("src", `${Link}`);
+                musicImage.setAttribute("src", `${Img}`);
+                musicName.textContent = Title;
+
+
+            }
+        }
+
+        isPlaying = true;
+
+        playPause();
+        updateLocalStorage();
+    })
+
+
+
 /*
     for (var i = 0; i < playAudios.length; i++) {
         updateLocalStorage();

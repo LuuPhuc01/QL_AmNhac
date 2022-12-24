@@ -3,14 +3,15 @@
     ViewBag.Title = "Unstoppable";
     Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
 }
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 <div id="page-wrapper">
     <div class="baihat">
         <div class="baihat-info-1">
             <div class="baihat-info-detail">
                 <div class="baihat-detail-1">
                     <div>
-                        <img src="~/Theme/images/Sia-Unstoppable.jpg" width="100%">
+                        <img class="img_audio"  src="@Model.BaiHat.Casi[0].AnhNS" width="100%">
                         <div class="baihat-detail-main">
                             <p>
                                 Ca sỹ: <span class="baihat-info-strongword">@Model.BaiHat.Casi[0].TenNS</span>
@@ -68,9 +69,9 @@
                 <p class="baihat-tuongtac-data">
                     @Model.BaiHat.LUOTNGHE
                 </p>
-                <p class="baihat-tuongtac-btn">
+                <div class="baihat-tuongtac-btn play-one-audio"  link="@Model.BaiHat.LINKBH" name="@Model.BaiHat.TENBAIHAT" img="@Model.BaiHat.ANHBH">
                     Phát nhạc
-                </p>
+                </div>
             </div>
             <div class="tuongtac-item">
                 <p class="baihat-tuongtac">
@@ -88,6 +89,13 @@
     <div class="sings">
         <div class="tittle-head">
             <h3 class="tittle">Top bài hát của @Model.BaiHat.Casi[0].TenNS</h3>
+            <div >
+                            <button class="button_play_header update_playlist_audio" style="margin-left:0px;margin-top:5px">
+                                <span class="material-symbols-outlined">
+                                    play_circle
+                                </span>
+                            </button>
+                            </div>
             <div class="clearfix"></div>
         </div>
         <div class="list-song scrollbar widget-side" id="style-7">
@@ -101,8 +109,7 @@
                     <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
                         <div class="row">
                             <div class="col-md-5 main-song-title">
-                                <div class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">
-
+                                    <div class="play_audio main-song-cover" link=" @item.LINKBH" name="@item.TENBAIHAT" img="@item.ANHBH">
                                     <img class="img_audio main-song-img " src="@item.ANHBH" />
                                     <div class="main-song-play mini-song-play"><i class="fa-solid fa-play"></i></div>
                                 </div>
@@ -137,20 +144,20 @@
                                             {
                                                 using (Html.BeginForm("DelBaiHatYeuThich", "Personal", FormMethod.Post))
                                                 {
-                                                    <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
-                                                    <button type="submit" name="submit" class="btn_hidden">
-                                                        <span class="middle"><i class="fa-solid fa-heart"></i></span>
-                                                    </button>
+                                                        <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
+                                                        <button type="submit" name="submit" class="btn_hidden">
+                                                            <span class="middle"><i class="fa-solid fa-heart"></i></span>
+                                                        </button>
                                                 }
                                             }
                                             else
                                             {
                                                 using (Html.BeginForm("AddBaiHatYeuThich", "Personal", FormMethod.Post))
                                                 {
-                                                    <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
-                                                    <button type="submit" name="submit" class="btn_hidden">
-                                                        <span class="middle "><i class="fa-regular fa-heart "></i></span>
-                                                    </button>
+                                                        <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
+                                                        <button type="submit" name="submit" class="btn_hidden">
+                                                            <span class="middle "><i class="fa-regular fa-heart "></i></span>
+                                                        </button>
                                                 }
                                             }
                                         }
@@ -158,10 +165,10 @@
                                         {
                                             using (Html.BeginForm("AddBaiHatYeuThich", "Personal", FormMethod.Post))
                                             {
-                                                <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
-                                                <button type="submit" name="submit" class="btn_hidden">
-                                                    <span class="middle "><i class="fa-regular fa-heart "></i></span>
-                                                </button>
+                                                    <input hidden value="@Html.DisplayFor(modelItem => item.Id)" name="id" id="id" />
+                                                    <button type="submit" name="submit" class="btn_hidden">
+                                                        <span class="middle "><i class="fa-regular fa-heart "></i></span>
+                                                    </button>
                                             }
                                         }
 
