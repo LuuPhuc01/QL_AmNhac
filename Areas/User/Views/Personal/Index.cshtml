@@ -123,7 +123,7 @@
                                     <div class="row">
 
                                         <div class="col-md-5 main-song-title">
-                                                    <div  class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">
+                                                        <div  class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" nameart="@item.Casi[0].TenNS">
                                                     <img class="img_audio main-song-img" src="@item.ANHBH"/>
                                                     <div class=" main-song-play mini-song-play">
                                                         <i class="play_song fa-solid fa-play" ></i>
@@ -132,7 +132,7 @@
 
                                             <div class="main-song-text">
                                                 <p class="name_audio">@item.TENBAIHAT</p>
-                                                <p><a href="/User/NgheSy/Index/@item.Casi[0].Id" class="caSi" style="color: white;">@item.Casi[0].TenNS</a></p>
+                                                <p><a href="/User/NgheSy/Index/@item.Casi[0].Id" class="caSi js-name_art" style="color: white;">@item.Casi[0].TenNS</a></p>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -157,7 +157,7 @@
                                                             <i class="fa-solid fa-ellipsis"></i>
                                                         </a>
                                                         <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                                                            <li style="padding: 0px"><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" id="@i">Thêm vào DS phát</a></li>
+                                                                <li style="padding: 0px"><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" nameart="@item.Casi[0].TenNS">Thêm vào DS phát</a></li>
 
                                                             <li style="padding: 0px" class="dropdown-submenu">
                                                                 <a tabindex="-1" href="#">
