@@ -15,11 +15,11 @@
             <div class="baihat-info-detail">
                 <div class="baihat-detail-1">
                     <div>
-<<<<<<< HEAD
-                        <img  src="@Model.BaiHat.Casi[0].AnhNS" width="100%">
-=======
+
+@*                        <img class="img_audio"   src="@Model.BaiHat.Casi[0].AnhNS" width="100%">
+*@
                         <img class="img_audio"  src="@Model.BaiHat.ANHBH" width="100%">
->>>>>>> trinh-superstar
+
                         <div class="baihat-detail-main">
                             <p>
                                 Ca sỹ: <span class="baihat-info-strongword">@Model.BaiHat.Casi[0].TenNS</span>
@@ -77,7 +77,7 @@
                 <p class="baihat-tuongtac-data">
                     @Model.BaiHat.LUOTNGHE
                 </p>
-                <div class="baihat-tuongtac-btn play-one-audio"  link="@Model.BaiHat.LINKBH" name="@Model.BaiHat.TENBAIHAT" img="@Model.BaiHat.ANHBH" nameart="@Model.BaiHat.Casi[0].TenNS">
+                <div class="baihat-tuongtac-btn play-one-audio"  link="@Model.BaiHat.LINKBH" name="@Model.BaiHat.TENBAIHAT" img="@Model.BaiHat.ANHBH" nameart="@Model.BaiHat.Casi[0].TenNS" idbh="@Model.BaiHat.Id">
                     Phát nhạc
                 </div>
             </div>
@@ -117,7 +117,7 @@
                     <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
                         <div class="row">
                             <div class="col-md-5 main-song-title">
-                                        <div class="play_audio main-song-cover" link=" @item.LINKBH" name="@item.TENBAIHAT" img="@item.ANHBH" nameart="@item.Casi[0].TenNS">
+                                                <div class="play_audio main-song-cover" link=" @item.LINKBH" name="@item.TENBAIHAT" img="@item.ANHBH" nameart="@item.Casi[0].TenNS" idbh="@item.Id">
                                     <img class="img_audio main-song-img " src="@item.ANHBH" />
                                     <div class="main-song-play mini-song-play"><i class="fa-solid fa-play"></i></div>
                                 </div>
@@ -190,7 +190,7 @@
                                                 <i class="fa-solid fa-ellipsis"></i>
                                             </a>
                                             <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                                                    <li style="padding: 0px"><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" nameart="@item.Casi[0].TenNS">Thêm vào DS phát</a></li>
+                                                            <li style="padding: 0px"><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" nameart="@item.Casi[0].TenNS" idbh="@item.Id">Thêm vào DS phát</a></li>
 
                                                 <li style="padding: 0px" class="dropdown-submenu">
                                                     <a tabindex="-1" href="#">
