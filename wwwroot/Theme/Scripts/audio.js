@@ -137,8 +137,8 @@ document.addEventListener('DOMContentLoaded', () => {
         for (var i = 0; i < musics.length; i++) {
             var ul = document.createElement('ul');
             ul.classList.add('songs');
-            ul.classList.add('list1')
-            ul.innerHTML = `<li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
+            ul.classList.add('list1');
+            ul.innerHTML = `<li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)" data-music-index="` + musics[i].id + `">
                                     <div class="row" style="margin-left:0px">
                                         <div class="main-song-title">
                                             <div class="play_audio main-song-cover" link="${musics[i].file}" name="${musics[i].title}" img="${musics[i].image}" nameart="${musics[i].name_art}">
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                             </div>
                                         </div>
                                         <div class="col-md-1">
-                                            <span style="font-size:20px"><i class="fa-solid fa-trash-can"></i></span>
+                                            <span style="font-size:20px" class="songId"><i class="fa-solid fa-trash-can"></i></span>
                                         </div>
                                     </div>
                                 </li>`
@@ -159,7 +159,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         //Click to Play
         const playInplaylist = document.querySelectorAll(".play_audio")
-        playOneSong(playInplaylist); 
+        playOneSong(playInplaylist);
+
+        const songId = document.querySelectorAll(".songId");
+        for (const singlesongId of songId) {
+            singlesongId.addEventListener("click", xoaBHDSPhat(songId))
+        }
     }
     //Delete Modalplaylist
     function delModalplaylist() {
@@ -170,12 +175,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function xoaBHDSPhat(songId) {
+        for (var j = 0; j < songId.length; j++) {
+            songId[j].onclick = function (e) {
+                console.log("ok nha");
+                var a = e.target.closest('.main-song').getAttribute("data-music-index");
+                if (a == (musics.length - 1)) {
+                    musics.pop();
+                }
+                else {
+                    musics.splice(a, 1);
+                    for (var i = a; i < musics.length; i++) {
+                        musics[i].id = parseInt(i);
+                    }
+                }
+                updateLocalStorage();
+                console.log(musics);
+                window.location.reload();
+            }
+        }
+    }
+
     function showPlaylist() {
         modalPlaylist.classList.add('open')
         expandPlaylist.style.display = 'none';
         closePlaylist.style.display = '';
 
-        updateModalplaylist()
+        updateModalplaylist();
 
     }
     closePlaylist.addEventListener('click', hidePlaylist)
@@ -239,16 +265,16 @@ document.addEventListener('DOMContentLoaded', () => {
         for (var i = 0; i < playAudios.length; i++) {
 
             a[i].onclick = function (e) {
-            compareArr();
-            if (isEqual === true) {
-                alert("Bài hát đã nằm trong danh sách phát")
+                compareArr();
+                if (isEqual === true) {
+                    alert("Bài hát đã nằm trong danh sách phát")
 
-            }
-            else if (isEqual === false) {
+                }
+                else if (isEqual === false) {
                     const CheckLink = e.target.closest('.add-playlist').getAttribute("name")
                     CheckExist(CheckLink);
-                if (isCheckExist === false) {
-                    
+                    if (isCheckExist === false) {
+
                         const Link = e.target.closest('.add-playlist').getAttribute("link")
                         const Img = e.target.closest('.add-playlist').getAttribute("img")
                         const Title = e.target.closest('.add-playlist').getAttribute("name")
@@ -328,7 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         musicName.textContent = Title;
                     }
                 }
-                isPlaying = true;               
+                isPlaying = true;
                 playPause();
                 updateLocalStorage();
             }
