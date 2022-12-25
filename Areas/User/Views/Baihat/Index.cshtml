@@ -4,8 +4,9 @@
     Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
 }
 @{
-    var StringTHOIGIANPH = (Model.BaiHat.Album.THOIGIANPH).ToString();
-    var YearTHOIGIANPH = StringTHOIGIANPH.Substring(5, 5);
+    DateTime dateTimeTHOIGIANPH =  Convert.ToDateTime(Model.BaiHat.Album.THOIGIANPH);
+    string stringTHOIGIANPH = dateTimeTHOIGIANPH.ToString("MM/dd/yyyy");
+    var YearTHOIGIANPH = stringTHOIGIANPH.Substring(6, 4);
 }
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
