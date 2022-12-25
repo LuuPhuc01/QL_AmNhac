@@ -1,0 +1,102 @@
+﻿@model IEnumerable<QLBH.Models.NgheSi>
+
+
+@{
+    ViewData["Title"] = "ThemAlbum";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>ThemAlbum</h1>
+
+<h4>Album</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form action="~/admin/QL_Album/ThemAlbum" method="POST" id="form-id">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="TENAL" class="control-label">Tên Album</label>
+                <input asp-for="TENAL" class="form-control" id="TENAL" name="TENAL" />
+                <span asp-validation-for="TENAL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LUOTQUANTAM" class="control-label">Lượt quan tâm</label>
+                <input asp-for="LUOTQUANTAM" class="form-control" id="LUOTQUANTAM" name="LUOTQUANTAM" />
+                <span asp-validation-for="LUOTQUANTAM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="THOIGIANPH" class="control-label">Thời gian phát hàng</label>
+                <input asp-for="THOIGIANPH" class="form-control" id="THOIGIANPH" name="THOIGIANPH" />
+                <span asp-validation-for="THOIGIANPH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ANHAL" class="control-label">Ảnh Album</label>
+                <input type="file" asp-for="ANHAL" class="form-control" name="fileAnh" id="fileAnh" />
+                <input hidden id="ANHAL" name="ANHAL" />
+                <span asp-validation-for="ANHAL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ALBUM" class="control-label">Nghệ sĩ</label>
+                <select asp-for="ALBUM" class="form-control" id="ngheSiId" name="ngheSiId">
+                    
+                    @foreach (var item in Model)
+                    {
+                        <option id="@item.Id" value="@item.Id">@item.TenNS</option>
+                    }
+                </select>
+                <span asp-validation-for="ALBUM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+<script>
+    async function uploadFile(file) {
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('upload_preset', 't1pu4dpc');
+        formData.append('cloud_name', 'dccswqs2m');
+        const res = await fetch(
+            'https://api.cloudinary.com/v1_1/dccswqs2m/upload',
+            {
+                method: 'POST',
+                body: formData,
+            }
+        );
+        const data = await res.json();
+        return data;
+    }
+    const fileAnh = document.getElementById('fileAnh');
+    const form = document.getElementById('form-id');
+    var LINKanhNS;
+
+    fileAnh.addEventListener('change', (e) => {
+        e.preventDefault();
+        Array.from(e.target.files).forEach(async (file) => {
+            if (file.size <= 52428800) {
+                const data = await uploadFile(file);
+                LINKanhNS = data.url;
+                document.getElementById('ANHAL').value = LINKanhNS;
+                console.log(document.getElementById('ANHAL').value);
+
+            } else {
+                alert('Size of this file is so big!!');
+            }
+        });
+    });
+
+    form.addEventListener('submit', (e) => {
+        //e.preventDefault();
+        console.log(e);
+    });
+</script>

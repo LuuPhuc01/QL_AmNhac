@@ -39,5 +39,48 @@ namespace QLBH.Areas.Admin.Controllers
                 return View();
             }
         }
+        [Area("admin")]
+
+        public async Task<IActionResult> ThemNgheSi()
+        {
+            if (HttpContext.Session.GetString("token") == null)
+            {
+                return RedirectToAction("dangnhap", "ql", new { area = "Admin" });
+            }
+            else
+            {
+                    return View();
+            }
+        }
+        [Area("admin")]
+
+        [HttpPost]
+        public async Task<IActionResult> ThemNgheSi(NgheSi ngheSi)
+        {
+            if (HttpContext.Session.GetString("token") == null)
+            {
+                return RedirectToAction("dangnhap", "ql", new { area = "Admin" });
+            }
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7032/api/");
+
+                var response = client.PostAsJsonAsync<NgheSi>("NgheSi", ngheSi);
+                response.Wait();
+
+                var test = response.Result;
+                //Console.WriteLine(response.Result);
+                if (test.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("index");
+                }
+                else
+                {
+                    Console.WriteLine("error");
+                }
+
+            }
+            return View("~/admin/QL_NgheSi/ThemNgheSi");
+        }
     }
 }
