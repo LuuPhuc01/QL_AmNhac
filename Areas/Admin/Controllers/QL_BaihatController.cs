@@ -105,7 +105,7 @@ namespace QLBH.Areas.Admin.Controllers
                     {
                         Console.WriteLine("Error calling web API");
                     }
-
+                    //the loai
                     HttpResponseMessage getDataTL = await client.GetAsync("TheLoai/GetAll");
 
                     if (getDataTL.IsSuccessStatusCode)
@@ -128,20 +128,29 @@ namespace QLBH.Areas.Admin.Controllers
                     {
                         Console.WriteLine("Error calling web API");
                     }
+                    //ca si
+                    HttpResponseMessage getDataCS = await client.GetAsync("NgheSi/GetAll");
+
+                    if (getDataCS.IsSuccessStatusCode)
+                    {
+                        string results = getDataCS.Content.ReadAsStringAsync().Result;
+                        modelView.NgheSi = JsonConvert.DeserializeObject<List<NgheSi>>(results);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error calling web API");
+                    }
+                    
                     ViewData.Model = modelView;
                     return View();
                 }
 
             }
-            IList<QuocGia> qg = new List<QuocGia>();
-            IList<TheLoai> tl = new List<TheLoai>();
-
-            
         }
         [Area("admin")]
 
         [HttpPost]
-        public async Task<IActionResult> ThemBaiHat(BaiHat BaiHat)
+        public async Task<IActionResult> ThemBaiHat(QLBaiHatModel BaiHat)
         {
             if (HttpContext.Session.GetString("token") == null)
             {
@@ -151,7 +160,7 @@ namespace QLBH.Areas.Admin.Controllers
             {
                 client.BaseAddress = new Uri("https://localhost:7032/api/");
 
-                var response = client.PostAsJsonAsync<BaiHat>("BaiHat", BaiHat);
+                var response = client.PostAsJsonAsync<QLBaiHatModel>("BaiHat", BaiHat);
                 response.Wait();
 
                 var test = response.Result;
@@ -163,6 +172,92 @@ namespace QLBH.Areas.Admin.Controllers
 
             }
             return View("~/admin/QL_Baihat/ThemBaiHat");
+        }
+
+        [Area("admin")]
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            if (HttpContext.Session.GetString("token") == null)
+            {
+                return RedirectToAction("dangnhap", "ql", new { area = "Admin" });
+            }
+            else
+            {
+                ModelViewQgTlAl modelView = new ModelViewQgTlAl();
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri("https://localhost:7032/api/");
+
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+
+                        HttpResponseMessage getDatabh = await client.GetAsync($"BaiHat/{id}");
+
+                        if (getDatabh.IsSuccessStatusCode)
+                        {
+                            string results = getDatabh.Content.ReadAsStringAsync().Result;
+                            modelView.BaiHatLink = JsonConvert.DeserializeObject<BaiHatLink>(results);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Error calling web API");
+                        }
+
+                    //quoc gia
+                    HttpResponseMessage getData = await client.GetAsync("QuocGia/GetAll");
+
+                    if (getData.IsSuccessStatusCode)
+                    {
+                        string results = getData.Content.ReadAsStringAsync().Result;
+                        modelView.QuocGia = JsonConvert.DeserializeObject<List<QuocGia>>(results);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error calling web API");
+                    }
+                    //the loai
+                    HttpResponseMessage getDataTL = await client.GetAsync("TheLoai/GetAll");
+
+                    if (getDataTL.IsSuccessStatusCode)
+                    {
+                        string results = getDataTL.Content.ReadAsStringAsync().Result;
+                        modelView.TheLoai = JsonConvert.DeserializeObject<List<TheLoai>>(results);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error calling web API");
+                    }
+                    HttpResponseMessage getDataAl = await client.GetAsync("Album/GetAll");
+
+                    if (getDataTL.IsSuccessStatusCode)
+                    {
+                        string results = getDataAl.Content.ReadAsStringAsync().Result;
+                        modelView.Album = JsonConvert.DeserializeObject<List<Album>>(results);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error calling web API");
+                    }
+                    //ca si
+                    HttpResponseMessage getDataCS = await client.GetAsync("NgheSi/GetAll");
+
+                    if (getDataCS.IsSuccessStatusCode)
+                    {
+                        string results = getDataCS.Content.ReadAsStringAsync().Result;
+                        modelView.NgheSi = JsonConvert.DeserializeObject<List<NgheSi>>(results);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error calling web API");
+                    }
+
+                    ViewData.Model = modelView;
+                    return View();
+                }
+
+            }
         }
     }
 }

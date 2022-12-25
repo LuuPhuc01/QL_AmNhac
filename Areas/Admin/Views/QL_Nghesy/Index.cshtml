@@ -11,7 +11,7 @@
             <h2>
                 Danh sách Nghệ sỹ
             </h2>
-            <a href="~/Admin/NguoiDung/ThemNguoiDung"><button type="submit" class="btn btn-success">Thêm mới</button></a>
+            <a href="~/Admin/QL_NgheSy/ThemNgheSi"><button type="submit" class="btn btn-success">Thêm mới</button></a>
         </div>
         <div class="genre">
             <table id="dtDynamicVerticalScrollExample" class=" table table-hover table table-striped table-bordered table-sm" cellspacing="0">
@@ -40,11 +40,12 @@
                             <td>
                                 @Html.DisplayFor(modelItem => item.TenNS)
                             </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.GioiThieu)
-                            </td>
+                            
                             <td>
                                 @Html.DisplayFor(modelItem => item.AnhNS)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.GioiThieu)
                             </td>
                             <td>
                                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
