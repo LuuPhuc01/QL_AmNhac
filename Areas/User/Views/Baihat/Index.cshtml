@@ -75,8 +75,24 @@
                 <p class="baihat-tuongtac">
                     Lượt nghe
                 </p>
+                @{
+                    int intluotnghe = Convert.ToInt32(Model.BaiHat.LUOTNGHE);
+                    string stringluotnghe = intluotnghe.ToString();
+                    if (intluotnghe > 999999999)
+                    {
+                        stringluotnghe = intluotnghe.ToString(@"#\,###\,###\,##0");
+                    }
+                    else if (intluotnghe > 999999)
+                    {
+                        stringluotnghe = intluotnghe.ToString(@"#\,###\,##0");
+                    }
+                    else if (intluotnghe >999)
+                    {
+                        stringluotnghe = intluotnghe.ToString(@"#\,##0");
+                    }
+                }
                 <p class="baihat-tuongtac-data">
-                    @Model.BaiHat.LUOTNGHE
+                    @stringluotnghe
                 </p>
                 <div class="baihat-tuongtac-btn play-one-audio"  link="@Model.BaiHat.LINKBH" name="@Model.BaiHat.TENBAIHAT" img="@Model.BaiHat.ANHBH" nameart="@Model.BaiHat.Casi[0].TenNS" idbh="@Model.BaiHat.Id">
                     Phát nhạc
@@ -86,8 +102,24 @@
                 <p class="baihat-tuongtac">
                     Lượt yêu thích
                 </p>
+                 @{
+                    int intluotyeuthich = Convert.ToInt32(Model.BaiHat.LUOTYEUTHICH);
+                    string stringluotyeuthich = intluotyeuthich.ToString();
+                    if (intluotyeuthich > 999999999)
+                    {
+                        stringluotyeuthich = intluotyeuthich.ToString(@"#\,###\,###\,##0");
+                    }
+                    else if (intluotyeuthich > 999999)
+                    {
+                        stringluotyeuthich = intluotyeuthich.ToString(@"#\,###\,##0");
+                    }
+                    else if (intluotyeuthich > 999)
+                    {
+                        stringluotyeuthich = intluotyeuthich.ToString(@"#\,##0");
+                    }
+                 }
                 <p class="baihat-tuongtac-data">
-                   @Model.BaiHat.LUOTYEUTHICH
+                   @stringluotyeuthich
                 </p>
                 <p class="baihat-tuongtac-btn">
                     Yêu thích
