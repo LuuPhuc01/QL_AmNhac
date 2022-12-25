@@ -1,7 +1,11 @@
 ﻿@model QLBH.Models.HomeModel;
 @{
-    ViewBag.Title = "Unstoppable";
+    ViewBag.Title = Model.BaiHat.TENBAIHAT;
     Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
+}
+@{
+    var StringTHOIGIANPH = (Model.BaiHat.Album.THOIGIANPH).ToString();
+    var YearTHOIGIANPH = StringTHOIGIANPH.Substring(5, 5);
 }
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -11,7 +15,7 @@
             <div class="baihat-info-detail">
                 <div class="baihat-detail-1">
                     <div>
-                        <img class="img_audio"  src="@Model.BaiHat.Casi[0].AnhNS" width="100%">
+                        <img class="img_audio"  src="@Model.BaiHat.ANHBH" width="100%">
                         <div class="baihat-detail-main">
                             <p>
                                 Ca sỹ: <span class="baihat-info-strongword">@Model.BaiHat.Casi[0].TenNS</span>
@@ -20,7 +24,7 @@
                                 Nhạc sỹ: <span class="baihat-info-strongword">@Model.BaiHat.Casi[0].TenNS</span>
                             </p>
                             <p>
-                                Năm phát hành: <span class="baihat-info-strongword">@Model.BaiHat.Album.THOIGIANPH</span>
+                                Năm phát hành: <span class="baihat-info-strongword">@YearTHOIGIANPH</span>
                             </p>
                         </div>
                     </div>
@@ -118,7 +122,7 @@
                                         <a href="/User/BaiHat/Index/@item.Id" class="color_white">
                                             @item.TENBAIHAT
                                         </a>
-                                    </p>
+                                    </p>    
                                     <p><a href="/User/NgheSy/Index/@item.Casi[0].Id" class="caSi">@item.Casi[0].TenNS</a></p>
                                 </div>
                             </div>

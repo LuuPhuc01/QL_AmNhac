@@ -1,0 +1,83 @@
+﻿@model QLBH.Models.NgheSi
+
+@{
+    ViewData["Title"] = "ThemNgheSi";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Thêm nghệ sĩ</h1>
+
+@*<h4>NgheSi</h4>*@
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form action="~/admin/Ql_NgheSy/ThemNgheSi" method="POST" id="form-id">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="TenNS" class="control-label">Tên nghệ sĩ</label>
+                <input asp-for="TenNS" class="form-control" id="tenNS" name="tenNS" />
+                <span asp-validation-for="TenNS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GioiThieu" class="control-label">Giới thiệu</label>
+                <input asp-for="GioiThieu" class="form-control" id="gioithieu" name="gioithieu" />
+                <span asp-validation-for="GioiThieu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnhNS" class="control-label">Ảnh nghệ sĩ</label>
+                <input type="file" asp-for="AnhNS" class="form-control" id="fileAnh" />
+                <input hidden id="AnhNS" name="AnhNS" />
+                <span asp-validation-for="AnhNS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<script>
+    async function uploadFile(file) {
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('upload_preset', 't1pu4dpc');
+        formData.append('cloud_name', 'dccswqs2m');
+        const res = await fetch(
+            'https://api.cloudinary.com/v1_1/dccswqs2m/upload',
+            {
+                method: 'POST',
+                body: formData,
+            }
+        );
+        const data = await res.json();
+        return data;
+    }
+    const fileAnh = document.getElementById('fileAnh');
+    const form = document.getElementById('form-id');
+    var LINKanhNS;
+
+    fileAnh.addEventListener('change', (e) => {
+        e.preventDefault();
+        Array.from(e.target.files).forEach(async (file) => {
+            if (file.size <= 52428800) {
+                const data = await uploadFile(file);
+                LINKanhNS = data.url;
+                document.getElementById('AnhNS').value = LINKanhNS;
+                console.log(document.getElementById('AnhNS').value);
+
+            } else {
+                alert('Size of this file is so big!!');
+            }
+        });
+    });
+   
+    form.addEventListener('submit', (e) => {
+        //e.preventDefault();
+        console.log(e);
+    });
+</script>
