@@ -4,6 +4,7 @@ using NuGet.Common;
 using QLBH.Models;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
+using System.Reflection;
 using System.Text;
 
 namespace QLBH.Areas.User.Controllers
@@ -193,8 +194,9 @@ namespace QLBH.Areas.User.Controllers
 
         [Area("User")]
         [HttpPost]
-        public async Task<IActionResult> AddBaiHatYeuThich(int id)
+        public async Task<IActionResult> AddBaiHatYeuThich(int id, string previous)
         {
+            
             var Usertoken = HttpContext.Session.GetString("tokenUser");
             if (Usertoken == null)
             {
@@ -219,6 +221,7 @@ namespace QLBH.Areas.User.Controllers
                 if (test.IsSuccessStatusCode)
                 {
                     return RedirectToAction("Index", "Personal", new { area = "User" });
+                    //return Redirect(previous);
                 }
                 else
                 {

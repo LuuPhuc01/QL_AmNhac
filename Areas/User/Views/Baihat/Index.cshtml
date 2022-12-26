@@ -31,9 +31,15 @@
                         </div>
                     </div>
                     <div class="baihat-option">
-                        <p class="btn-baihat">
-                            Tải xuống <span><i class="fa-solid fa-download"></i></span>
-                        </p>
+                        <div class="btn-baihat">
+                            <form action="#">
+                                <a class="atag" download="@Model.BaiHat.TENBAIHAT" ></a>
+                                <input class="fileInput" type="url" hidden value="@Model.BaiHat.LINKBH" />
+                                <button class="btn-download btn_hidden">
+                                    Tải xuống <span><i class="fa-solid fa-download"></i></span>
+                                </button>
+                            </form>
+                        </div>
                         <p class="btn-baihat">
                             Chia sẻ <span><i class="fa-solid fa-share"></i></span>
                         </p>
@@ -102,9 +108,57 @@
                 <p class="baihat-tuongtac-data">
                    @stringluotyeuthich
                 </p>
-                <p class="baihat-tuongtac-btn">
-                    Yêu thích
-                </p>
+                @{
+                    if (Model.BaiHatYeuThichs != null)
+                    {
+                        int yt = 0;
+                        foreach (var bhyt in Model.BaiHatYeuThichs)
+                        {
+                            if (Model.BaiHat.Id == bhyt.Id)
+                            {
+                                yt = 1;
+                            }
+
+                        }
+                        if (yt == 1)
+                        {
+                            using (Html.BeginForm("DelBaiHatYeuThich", "Personal", FormMethod.Post))
+                            {
+                                <input hidden value="@Html.DisplayFor(modelItem => Model.BaiHat.Id)" name="id" id="id" />
+                                <button type="submit" name="submit" class="btn_hidden">
+                                    <p class="baihat-tuongtac-btn">
+                                        Bỏ yêu thích
+                                    </p>
+                                </button>
+                            }
+                        }
+                        else
+                        {
+                            using (Html.BeginForm("AddBaiHatYeuThich", "Personal", FormMethod.Post))
+                            {
+                                <input hidden value="@Html.DisplayFor(modelItem => Model.BaiHat.Id)" name="id" id="id" />
+                                <button type="submit" name="submit" class="btn_hidden">
+                                    <p class="baihat-tuongtac-btn">
+                                        Yêu thích
+                                    </p>
+                                </button>
+                            }
+                        }
+                    }
+                    else
+                    {
+                        using (Html.BeginForm("AddBaiHatYeuThich", "Personal", FormMethod.Post))
+                        {
+                            <input hidden value="@Html.DisplayFor(modelItem => Model.BaiHat.Id)" name="id" id="id" />
+                            <button type="submit" name="submit" class="btn_hidden">
+                                <p class="baihat-tuongtac-btn">
+                                    Yêu thích
+                                </p>
+                            </button>
+                        }
+                    }
+                }
+                
             </div>
         </div>
     </div>
