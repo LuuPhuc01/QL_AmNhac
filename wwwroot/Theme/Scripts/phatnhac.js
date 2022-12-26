@@ -368,10 +368,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 $(document).ready(function () {
     $("#icon-lyric").click(function () {
-        $("#lyric-more").removeClass("lyric-background-hidden");
-        $("#lyric-more").addClass("lyric-background");
-        $("#lyric").removeClass("lyric-detail-hidden");
-        $("#lyric").addClass("lyric-detail");
+        if ($("#lyric-more").hasClass("lyric-background-hidden")) {
+            $("#lyric-more").removeClass("lyric-background-hidden");
+            $("#lyric-more").addClass("lyric-background");
+            $("#lyric").removeClass("lyric-detail-hidden");
+            $("#lyric").addClass("lyric-detail");
+        }
+        else {
+            $("#lyric-more").removeClass("lyric-background");
+            $("#lyric-more").addClass("lyric-background-hidden");
+            $("#lyric").removeClass("lyric-detail");
+            $("#lyric").addClass("lyric-detail-hidden");
+        }
     });
 
 });
