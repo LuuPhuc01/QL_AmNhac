@@ -5,12 +5,13 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
 .row_dsp {
-	position: relative
+	position: relative !important;
 }
+
 .icon_trash_dsp {
-	position: absolute;
-	right: 10px;
-	top: 10px;
+	position: absolute !important;
+	right: 10px !important;
+	top: 10px !important;
 }
 .lnr-trash {
 	color: red;

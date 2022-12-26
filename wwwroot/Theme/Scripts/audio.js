@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addPlaylists = document.querySelectorAll(".add-playlist");
 
     const detailSong = document.querySelector(".play-expand");
+
     const expandPlaylist = document.querySelector(".playlist-expand");
     const closePlaylist = document.querySelector(".playlist-close");
     const modalPlaylist = document.querySelector(".modal-playlist");
@@ -172,6 +173,15 @@ document.addEventListener('DOMContentLoaded', () => {
             singlesongId.addEventListener("click", xoaBHDSPhat(songId))
         }
     }
+    //Detail Song
+
+    detailSong.addEventListener('click', detailSongs)
+    function detailSongs() {
+        detailSong.setAttribute("href","/user/Phatnhac/Index/"+`${musics[indexSong].idbh}`)
+    }
+
+
+
     //Delete Modalplaylist
     function delModalplaylist() {
         for (var i = 0; i < musics.length; i++) {

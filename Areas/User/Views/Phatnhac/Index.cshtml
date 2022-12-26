@@ -1,4 +1,6 @@
-﻿@{
+﻿@model QLBH.Models.HomeModel;
+
+@{
     ViewBag.Title = "Đang phát Chandelier";
     Layout = null;
 }
@@ -12,6 +14,8 @@
     <link href="~/Theme/Styles/bootstrap.css" rel="stylesheet" />
     <link href="~/Theme/Styles/general.css" rel="stylesheet">
     <link href="~/Theme/Styles/phatnhac.css" rel="stylesheet">
+    <link href="~/Theme/Styles/audio.css" rel="stylesheet">
+
 
     <link href="~/Theme/Styles/icon-font.css" rel="stylesheet" />
         <script type="module"
@@ -33,12 +37,56 @@
             <div class="playbar-info">
                 <img src="https://i.pinimg.com/736x/c2/f7/88/c2f788197471e6596e94ac1f1df1cf37.jpg" width="23%">
                 <div>
-                    <p class="playbar-song-name">Chanderlier</p>
-                    <p class="playbar-song-artist">Sia</p>
+                    <p class="playbar-song-name">@Model.BaiHat.TENBAIHAT</p>
+                    <p class="playbar-song-artist">@Model.BaiHat.Casi[0].TenNS</p>
                 </div>
                 <div class="playbar-info-more">
                     <span id="icon-heart" class="icon-main">
-                        <i class="fa-regular fa-heart"></i>
+                       @* <i class="fa-regular fa-heart"></i>*@
+                        @{
+                            if (Model.BaiHatYeuThichs != null)
+                            {
+                                int yt = 0;
+                                foreach (var bhyt in Model.BaiHatYeuThichs)
+                                {
+                                    if (Model.BaiHat.Id == bhyt.Id)
+                                    {
+                                        yt = 1;
+                                    }
+
+                                }
+                                if (yt == 1)
+                                {
+                                    using (Html.BeginForm("DelBaiHatYeuThich", "Personal", FormMethod.Post))
+                                    {
+                                                                        <input hidden value="@Html.DisplayFor(modelItem => modelItem.BaiHat.Id)" name="id" id="id" />
+                                                                        <button type="submit" name="submit" class="btn_hidden">
+                                                                            <span class="middle"><i class="fa-solid fa-heart"></i></span>
+                                                                        </button>
+                                    }
+                                }
+                                else
+                                {
+                                    using (Html.BeginForm("AddBaiHatYeuThich", "Personal", FormMethod.Post))
+                                    {
+                                                                        <input hidden value="@Html.DisplayFor(modelItem => modelItem.BaiHat.Id)" name="id" id="id" />
+                                                                        <button type="submit" name="submit" class="btn_hidden">
+                                                                            <span class="middle "><i class="fa-regular fa-heart "></i></span>
+                                                                        </button>
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                using (Html.BeginForm("AddBaiHatYeuThich", "Personal", FormMethod.Post))
+                                {
+                                                                <input hidden value="@Html.DisplayFor(modelItem => modelItem.BaiHat.Id)" name="id" id="id" />
+                                                                <button type="submit" name="submit" class="btn_hidden">
+                                                                    <span class="middle "><i class="fa-regular fa-heart "></i></span>
+                                                                </button>
+                                }
+                            }
+                        }
                     </span>
 
                     <div class="dropup">
@@ -84,70 +132,27 @@
                 </div>
             </div>
             <div class="playbar-option">
-                <a><i class="fa-solid fa-volume-high black-icon"></i></a>
-                <div class="progress progress-trangphatnhac progress-sound">
-                    <div class="progress-bar progress-bar-trangphatnhac" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+                    <div class="volume">
+                        <div class="volume-btn">
+                        <ion-icon name="volume-mute-outline" class="min-volume"></ion-icon>     
+                        <ion-icon name="volume-high-outline" class="max-volume"></ion-icon>
+                        </div>
+                        <div>
+                        <input type="range" id="volume" min="0" max="100" value="50" class="range-volume"/>
+                        </div>
+                    </div>
                 <a><i class="fa-solid fa-music black-icon" id="icon-lyric"></i></a>
-                <a><i class="fa-solid fa-list black-icon"></i></a>
             </div>
+
             <div class="playbar-expand">
                 <!-- Expand -->
                 <!-- <i class="fa-solid fa-maximize"></i> -->
                 <!-- Collapse -->
-                <a href="/user/baihat/index"><i class="fa-solid fa-minimize black-icon " id="icon-expand"></i></a>
+                <a href="~/"><i class="fa-solid fa-minimize black-icon close-expand" id="icon-expand"></i></a>
             </div>
         </div>
         <div class="lyric-detail-hidden" id="lyric">
-            <p>
-                [Verse 1]<br>
-                Party girls don't get hurt<br>
-                Can't feel anything, when will I learn?<br>
-                I push it down, push it down<br>
-                I'm the one "for a good time call"<br>
-                Phone's blowin' up, ringin' my doorbell<br>
-                I feel the love, feel the love<br>
-            </p>
-
-            <p>
-                [Pre-Chorus]<br>
-                One, two, three, one, two, three, drink<br>
-                One, two, three, one, two, three, drink<br>
-                One, two, three, one, two, three, drink<br>
-                Throw 'em back till I lose count<br>
-            </p>
-
-            <p>
-                [Chorus]<br>
-                I'm gonna swing from the chandelier<br>
-                From the chandelier<br>
-                I'm gonna live like tomorrow doesn't exist<br>
-                Like it doesn't exist<br>
-                I'm gonna fly like a bird through the night<br>
-                Feel my tears as they dry<br>
-                I'm gonna swing from the chandelier<br>
-                From the chandelier<br>
-            </p>
-
-            <p>
-                [Post-Chorus]<br>
-                But I'm holding on for dear life<br>
-                Won't look down, won't open my eyes<br>
-                Keep my glass full until morning light<br>
-                'Cause I'm just holding on for tonight<br>
-                Help me, I'm holding on for dear life<br>
-                Won't look down, won't open my eyes<br>
-                Keep my glass full until morning light<br>
-                'Cause I'm just holding on for tonight<br>
-                On for tonight
-            </p>
-
-            <p>
-                [Verse 2]<br>
-                Sun is up, I'm a mess<br>
-                Gotta get out now, gotta run from this<br>
-                Here comes the shame, here comes the shame<br>
-            </p>
+            @Model.BaiHat.LOIBAIHAT
         </div>
     </div>
 </body>
