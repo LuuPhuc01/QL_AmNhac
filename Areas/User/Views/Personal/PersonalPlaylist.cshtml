@@ -125,8 +125,24 @@
                                                 <p><a href="/User/NgheSy/index/@item.Casi[0].Id" class="caSi js-name_art">@item.Casi[0].TenNS</a></p>
                                         </div>
                                     </div>
+                                     @{
+                                        int intluotnghe = Convert.ToInt32(item.LUOTNGHE);
+                                        string stringluotnghe = intluotnghe.ToString();
+                                        if (intluotnghe > 999999999)
+                                        {
+                                            stringluotnghe = intluotnghe.ToString(@"#\,###\,###\,##0");
+                                        }
+                                        else if (intluotnghe > 999999)
+                                        {
+                                            stringluotnghe = intluotnghe.ToString(@"#\,###\,##0");
+                                        }
+                                        else if (intluotnghe >999)
+                                        {
+                                            stringluotnghe = intluotnghe.ToString(@"#\,##0");
+                                        }
+                                    }
                                     <div class="col-md-4">
-                                        <span class="middle">@item.LUOTNGHE</span>
+                                        <span class="middle">@stringluotnghe</span>
                                     </div>
 
                                     <div class="col-md-3">
