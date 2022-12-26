@@ -1957,3 +1957,4 @@ C:\frontEndFramework\frontend_new\obj\Debug\net6.0\QLBH.pdb
 C:\frontEndFramework\frontend_new\obj\Debug\net6.0\QLBH.genruntimeconfig.cache
 C:\frontEndFramework\frontend_new\obj\Debug\net6.0\ref\QLBH.dll
 C:\frontEndFramework\frontend_new\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
+D:\LUUPHUC\19522034\HK7\C#\QLAN\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll

@@ -40,7 +40,7 @@
                         <li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)">
                             <div class="row">
                                 <div class="col-md-5 main-song-title">
-                                            <div  class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" nameart="@item.Casi[0].TenNS">
+                                                <div  class="play_audio main-song-cover" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" nameart="@item.Casi[0].TenNS" idbh="@item.Id">
                                         <img class="img_audio main-song-img " src="@item.ANHBH" />
                                         <div class="main-song-play mini-song-play">
                                             <i class="fa-solid fa-play"></i>
@@ -125,7 +125,7 @@
                                                     <i class="fa-solid fa-ellipsis"></i>
                                                 </a>
                                                 <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                                                            <li style="padding: 0px"><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" nameart="@item.Casi[0].TenNS">Thêm vào DS phát</a></li>
+                                                                <li style="padding: 0px"><a class="add-playlist" link=" @Html.DisplayFor(modelItem => item.LINKBH)" name="@item.TENBAIHAT" img="@item.ANHBH" nameart="@item.Casi[0].TenNS" idbh="@item.Id">Thêm vào DS phát</a></li>
 
                                                     <li style="padding: 0px" class="dropdown-submenu">
                                                         <a tabindex="-1" href="#">

@@ -89,11 +89,11 @@
     background-color: inherit;
     border:0px;
     display:block;
-}
+}*/
 .add-playlist{
     cursor:pointer;
 }
-.dropdown-menu.show{
+/*.dropdown-menu.show{
     width:200px;
 }*/
 .scrollbars {

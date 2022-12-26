@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     closePlaylist.style.display = 'none';
     volumeMin.style.display = 'none';
     let isPlaying = true;
-    var indexSong = 0;
+    let indexSong = 0;
     let isRepeat = false;
     let isRandom = false;
     //const musics = ["holo.mp3", "summer.mp3", "spark.mp3", "home.mp3"];
@@ -50,7 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Anh Chưa Thương Em Đến Vậy Đâu',
             file: ' http://res.cloudinary.com/dccswqs2m/video/upload/v1671346705/osakynpjqygtjpp9q8ga.mp3',
             image: 'https://res.cloudinary.com/dsh8zkuek/image/upload/v1671456977/Myra_nyhvtl.jpg',
-            name_art: 'Noo Phước Thịnh'
+            name_art: 'Noo Phước Thịnh',
+            idbh: 0
         }
     ]
 
@@ -73,7 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: musics[i].title,
                 image: musics[i].image,
                 file: musics[i].file,
-                name_art: musics[i].name_art
+                name_art: musics[i].name_art,
+                idbh: musics[i].idbh
             })
 
 
@@ -103,16 +105,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     musics[i].title = dsphat.title;
                     musics[i].image = dsphat.image;
                     musics[i].name_art = dsphat.name_art;
+                    musics[i].idbh = dsphat.idbh;
                 }
                 else if (musics.length < count) {
                     musics[i].file = dsphat.file;
                     musics[i].title = dsphat.title;
                     musics[i].image = dsphat.image;
                     musics[i].name_art = dsphat.name_art;
+                    musics[i].idbh = dsphat.idbh;
                     const addLink = dsphat.file;
                     const addTitle = dsphat.title;
                     const addImg = dsphat.image;
                     const nameArt = dsphat.name_art;
+                    const idBh = dsphat.idbh;
                     //Phuc sua cho nay nha  const id = musics.length + 1;
                     const id = musics.length;
                     const obj = {};
@@ -121,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     obj['file'] = addLink;
                     obj['image'] = addImg;
                     obj['name_art'] = nameArt;
+                    obj['idbh'] = idBh;
                     musics.push(obj);
                 }
             }
@@ -146,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                                 <div class="main-song-play mini-song-play"><i class="fa-solid fa-play"></i></div>
                                             </div>
                                             <div class="main-song-text">
-                                                <p  class="name_audio" >${musics[i].title}</p>
+                                                <p  class="name_audio"><a href="/User/BaiHat/Index/${musics[i].idbh}" class="color_white">${musics[i].title}</a></p>
                                                 <p><a href="#" class="caSi js-name_art">${musics[i].name_art}</a></p>
                                             </div>
                                         </div>
@@ -227,21 +233,24 @@ document.addEventListener('DOMContentLoaded', () => {
             if (musics.length >= playAudios.length) {
                 musics.length = playAudios.length;
                 musics[i].file = playAudios[i].getAttribute("link");
-                musics[i].title = nameAudios[i].textContent;
+                musics[i].title = playAudios[i].getAttribute("name");
                 musics[i].image = imgAudios[i].getAttribute("src");
-                musics[i].name_art = nameArt[i].textContent;
+                musics[i].name_art = playAudios[i].getAttribute("nameart");
+                musics[i].idbh = Number(playAudios[i].getAttribute("idbh"));
             }
             else if (musics.length < playAudios.length) {
                 musics[i].file = playAudios[i].getAttribute("link");
-                musics[i].title = nameAudios[i].textContent;
+                musics[i].title = playAudios[i].getAttribute("name");
                 musics[i].image = imgAudios[i].getAttribute("src");
-                musics[i].name_art = nameArt[i].textContent;
+                musics[i].name_art = playAudios[i].getAttribute("nameart");
+                musics[i].idbh = Number(playAudios[i].getAttribute("idbh"));
                 musics.push({
                     id: musics.length,
-                    title: nameAudios[i].textContent,
+                    title: playAudios[i].getAttribute("name"),
                     image: imgAudios[i].getAttribute("src"),
                     file: playAudios[i].getAttribute("link"),
-                    name_art: nameArt[i].textContent
+                    name_art: playAudios[i].getAttribute("nameart"),
+                    idbh: Number(playAudios[i].getAttribute("idbh"))
                 })
             }
         }
@@ -279,6 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const Img = e.target.closest('.add-playlist').getAttribute("img")
                         const Title = e.target.closest('.add-playlist').getAttribute("name")
                         const NameArt = e.target.closest('.add-playlist').getAttribute("nameart")
+                        const idBH = Number(e.target.closest('.add-playlist').getAttribute("idbh"))
                         const ID = musics.length;
                         const obj = {};
                         obj['id'] = ID;
@@ -286,6 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         obj['file'] = Link;
                         obj['image'] = Img;
                         obj['name_art'] = NameArt;
+                        obj['idbh'] = idBH;
                         musics.push(obj);
                         console.log(musics)
                         indexSong = indexSong
@@ -313,6 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 compareArr();
                 if (isEqual === true) {
                     var CheckLink = e.target.closest('.play_audio').getAttribute("name")
+                    console.log(CheckLink)
                     x = CheckExist(CheckLink);
                     console.log(x)
                     indexSong = x;
@@ -330,6 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         var Img = e.target.closest('.play_audio').getAttribute("img")
                         var Title = e.target.closest('.play_audio').getAttribute("name")
                         var NameArt = e.target.closest('.play_audio').getAttribute("nameart")
+                        const idBH = Number(e.target.closest('.play_audio').getAttribute("idbh"))
                         var ID = musics.length;
                         const obj = {};
                         obj['id'] = ID;
@@ -337,6 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         obj['file'] = Link;
                         obj['image'] = Img;
                         obj['name_art'] = NameArt;
+                        obj['idbh'] = idBH;
                         musics.push(obj);
                         indexSong = ID;
                         init(indexSong);
@@ -383,6 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 var Img = playOneaudio.getAttribute("img")
                 var Title = playOneaudio.getAttribute("name")
                 const NameArt = playOneaudio.getAttribute("nameart")
+                const idBH = Number(playOneaudio.getAttribute("idbh"))
                 var ID = musics.length;
                 const obj = {};
                 obj['id'] = ID;
@@ -390,16 +405,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 obj['file'] = Link;
                 obj['image'] = Img;
                 obj['name_art'] = NameArt;
+                obj['idbh'] = idBH;
                 musics.push(obj);
                 indexSong = ID;
                 init(indexSong);
             }
             else {
-                var CheckId = playOneaudio.getAttribute("link")
                 var Link = playOneaudio.getAttribute("link")
                 var Img = playOneaudio.getAttribute("img")
                 var Title = playOneaudio.getAttribute("name")
-                const NameArt = playOneaudio.getAttribute("nameart")
                 song.setAttribute("src", `${Link}`);
                 musicImage.setAttribute("src", `${Img}`);
                 musicName.textContent = Title;
@@ -427,7 +441,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // Kiểm tra bài hát có tồn tại trong danh sách đang phát không
     function CheckExist(CheckLink) {
-        for (let i = 0; i < musics.length; i++) {
+        for (var i = 0; i < musics.length; i++) {
             if (CheckLink == musics[i].title) {
                 isCheckExist = true;
                 return musics[i].id
