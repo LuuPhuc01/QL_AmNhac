@@ -706,6 +706,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log('sai');
             }
             if (sessionStorage.getItem('status') == 0) isPlaying = false;
+            displayTimer();
             playPause();
         }
         else {
