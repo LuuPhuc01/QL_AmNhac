@@ -249,7 +249,6 @@
                                     </p>
                                     <p class="result-baihat-name-other">
                                         <a class="color_hover js-name_art" href="/User/NgheSy/Index/@Model.BaiHats[i].Casi[0].Id">
-                                        
                                         @Model.BaiHats[i].Casi[0].TenNS
                                         </a>
 
@@ -376,7 +375,9 @@
                             <div class="result-other-detail">
                                 <img src="@item.AnhNS" width="150px">
                                 <p class="result-nghesy-name">
-                                    @item.TenNS
+                                    <a class="color_hover " href="/User/BaiHat/Index/@item.Id">
+                                        @item.TenNS
+                                    </a>
                                 </p>
                                 <p class="result-nghesy-quantam">
                                     48 quan tâm
@@ -406,8 +407,11 @@
                                     <div class="result-other-detail">
                                         <img src="@item.Casi[0].AnhNS" width="150px">
                                         <p class="result-nghesy-name">
-                                            @item.Casi[0].TenNS
+                                            <a class="color_hover " href="/User/BaiHat/Index/@item.Casi[0].Id">
+                                                @item.Casi[0].TenNS
+                                            </a>
                                         </p>
+                                        
                                         <p class="result-nghesy-quantam">
                                             48 quan tâm
                                         </p>

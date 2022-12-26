@@ -5,7 +5,6 @@
     //int id = ViewBag.id;
 }
 
-
 <div class="padding-top">
     <div class="header-artist">
         <div class="mask  ">
@@ -14,6 +13,8 @@
                 <p>
                     @Model.NgheSi.GioiThieu
                 </p>
+                <input class="anhBHHidden"  hidden value="@Model.NgheSi.AnhNS"/>
+                
                 <button class="play-all  update_playlist_audio">
                     <i class="fa-solid fa-play"></i>
                     <span>Phát Nhạc</span>
@@ -46,8 +47,19 @@
                                         </div>
                                     </div>
                                     <div class="main-song-text">
-                                            <p class="name_audio">@item.TENBAIHAT</p>
-                                        <p><a href="#" class="caSi js-name_art">@item.Casi[0].TenNS</a></p>
+                                            <p class="name_audio">
+                                            <a href="/User/BaiHat/Index/@item.Id" class="caSi js-name_art">@item.TENBAIHAT</a>
+
+                                        </p>
+                                            <p style="display: flex;">
+                                                <a href="/User/NgheSy/Index/@item.Casi[0].Id" class="caSi js-name_art">@item.Casi[0].TenNS</a>
+                                              @*  @try{
+                                                    <a href="/User/NgheSy/@item.Casi[1].Id" class="caSi js-name_art"><span>,</span>@item.Casi[1].TenNS</a>
+                                                }catch
+                                                {
+                                                    <a></a>
+                                                }*@
+                                            </p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -103,7 +115,10 @@
                                         }
                                     
                                         <span class="middle thoiluong">@item.THOILUONG</span>
-                                        <span class="middle"><i class="fa-solid fa-download"></i></span>
+                                        <span class="middle">
+                                            <a style="line-height: 40px" class="middle" href="@item.LINKBH" download="@item.TENBAIHAT"><i class="fa-solid fa-download"></i></a>
+                                            
+                                            </span>
                                         <div class="middle">
                                             <div class="dropdown">
                                                 <a id="dLabel" role="button" data-toggle="dropdown" class="btn " data-target="#" href="#" style="border: 0px;">

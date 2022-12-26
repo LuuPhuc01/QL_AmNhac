@@ -52,7 +52,7 @@
     padding: 0 5em;
 }
 .header-artist {
-    background: no-repeat center url(https://photo-cms-sggp.zadn.vn/Uploaded/2022/zfdrereyxq/2022_08_07/1_mgos.png);
+    /*background: no-repeat center url(https://photo-cms-sggp.zadn.vn/Uploaded/2022/zfdrereyxq/2022_08_07/1_mgos.png);*/
     height: 300px;
     background-size: cover;
 }
@@ -149,7 +149,7 @@
         color: #dddddd;
         font-size: 14px;
     }
-.main-song span.middle {
+.main-song .middle {
     line-height: 50px;
 }
 .main-song .col-md-3{
@@ -207,8 +207,10 @@
 .main-album {
     cursor: pointer;
 }
-.main-song-text p{
+.main-song-text .name_audio a {
     font-size: 20px !important;
+    outline: none;
+    text-decoration: none;
 }
 .caSi {
     color: white !important;

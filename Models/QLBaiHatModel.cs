@@ -2,6 +2,7 @@
 {
     public class QLBaiHatModel
     {
+        public int? Id { get; set; }
         public string TENBAIHAT { get; set; } 
         public string? LOIBAIHAT { get; set; }
         public int? LUOTYEUTHICH { get; set; }

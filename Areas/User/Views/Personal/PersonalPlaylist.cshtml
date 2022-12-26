@@ -18,6 +18,12 @@
         <div id="header">
             <a href="/User/Personal/" class="icon-back"><ion-icon name="arrow-back-circle-outline"></ion-icon></a>
             <h2 class="text-center">Playlist @Model.Playlist.TENPLAYLIST</h2>
+
+            <form  action="~/User/Personal/DelPlaylist" method="POST" id="form-id-delplaylist">
+                    <input hidden value="@Model.Playlist.Id" name="Id" id="Id" />
+                    <button type="submit" style="background-color: inherit;border: 0px;"><i class="lnr lnr-trash"></i></button>
+            </form>
+            
         </div>
         <div id="wp-content" class="d-flex">
             <div id="sidebar">

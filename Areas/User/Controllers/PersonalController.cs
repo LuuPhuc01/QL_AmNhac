@@ -153,13 +153,7 @@ namespace QLBH.Areas.User.Controllers
             return View();
         }
 
-        //[Area("User")]
-        //public async Task<IActionResult> AddPlaylist()
-        //{
-        //    return View();
-        //}
         [Area("User")]
-
         [HttpPost]
         public async Task<IActionResult> AddPlaylist(Playlist playlist)
         {
@@ -357,7 +351,6 @@ namespace QLBH.Areas.User.Controllers
                     Console.WriteLine("error calling API");
                     return RedirectToAction("Index", "Home", new { area = "User" });
                 }
-
             }
 
         }
@@ -400,7 +393,40 @@ namespace QLBH.Areas.User.Controllers
             }
 
         }
+        [Area("User")]
+        [HttpPost]
+        public async Task<IActionResult> DelPlaylist(int id)
+        {
+            var Usertoken = HttpContext.Session.GetString("tokenUser");
+            //if (Usertoken == null)
+            //{
+            //    return RedirectToAction("Index", "Login", new { area = "User" });
+            //}
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7032/api/");
+
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Usertoken);
+
+                var response = client.DeleteAsync($"my/Playlist/{id}");
+                response.Wait();
+
+                var test = response.Result;
+                if (test.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("index", "Personal", new { area = "User" });
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Home", new { area = "User" });
+                }
+
+            }
+
+        }
     }
-
-
 }
