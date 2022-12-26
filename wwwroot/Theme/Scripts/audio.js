@@ -368,6 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         musicName.textContent = Title;
                     }
                 }
+                init(indexSong);
                 isPlaying = true;
                 playPause();
                 updateLocalStorage();
@@ -376,7 +377,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     //Play one song ở index bài hát :(((
-    playOneaudio.addEventListener('click', function () {
+    playOneaudio.addEventListener('click', playOnesongindex)
+
+        function playOnesongindex() {
         compareArr();
         if (isEqual === true) {
             var CheckName = playOneaudio.getAttribute("name")
@@ -411,9 +414,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 init(indexSong);
             }
             else {
+
                 var Link = playOneaudio.getAttribute("link")
                 var Img = playOneaudio.getAttribute("img")
                 var Title = playOneaudio.getAttribute("name")
+      
                 song.setAttribute("src", `${Link}`);
                 musicImage.setAttribute("src", `${Img}`);
                 musicName.textContent = Title;
@@ -422,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
         isPlaying = true;
         playPause();
         updateLocalStorage();
-    })
+    }
     // So sánh musics hiện tại mà danh sách phát nhạc mới
     function compareArr() {
         if (musics.length !== playAudios.length) {
