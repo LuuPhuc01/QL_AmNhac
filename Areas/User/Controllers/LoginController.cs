@@ -107,7 +107,6 @@ namespace QLBH.Areas.User.Controllers
             if (HttpContext.Session.GetString("tokenUser") == null)
             {
                 return RedirectToAction("Index", "Home", new { area = "User" });
-
             }
             return RedirectToAction("Index", "Personal", new { area = "User" });
 

@@ -46,26 +46,32 @@ namespace QLBH.Areas.Admin.Controllers
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://localhost:7032/");
+                //client.BaseAddress = new Uri("https://localhost:7032/");
 
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                //client.DefaultRequestHeaders.Accept.Clear();
+                //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                var response = client.PostAsJsonAsync<NguoiDung>("Auth/login", nd);
+                //var response = client.PostAsJsonAsync<NguoiDung>("Auth/login", nd);
 
-                response.Wait();
+                //response.Wait();
 
-                var test = response.Result;
-                
-                if (test.IsSuccessStatusCode)
+                //var test = response.Result;
+
+                //if (test.IsSuccessStatusCode)
+                //{
+                //    var result = await response.Result.Content.ReadAsStringAsync();
+
+                //    var bh = JsonConvert.DeserializeObject<string>(result);
+                //    //Console.WriteLine(bh);
+                //    //_contextAccessor.HttpContext.Session.SetString("token", bh);
+                //    HttpContext.Session.SetString("token", bh);
+                //    return RedirectToAction("index");
+                //}
+                if (nd.Username == "admin" && nd.Password == "12345")
                 {
-                    var result = await response.Result.Content.ReadAsStringAsync();
+                    HttpContext.Session.SetString("token", nd.Username);
 
-                    var bh = JsonConvert.DeserializeObject<string>(result);
-                    //Console.WriteLine(bh);
-                    //_contextAccessor.HttpContext.Session.SetString("token", bh);
-                    HttpContext.Session.SetString("token", bh);
-                    return RedirectToAction("index");
+                    return RedirectToAction("Index", "QL_BaiHat", new { area = "admin" });
                 }
                 else
                 {

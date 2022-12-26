@@ -7,5 +7,7 @@
         public int? LUOTQUANTAM { get; set; } = 0;
         public DateTime? THOIGIANPH { get; set; } = DateTime.Today;
         public string? ANHAL { get; set; } = string.Empty;
+
+        public int? NgheSiId { get; set; }
     }
 }

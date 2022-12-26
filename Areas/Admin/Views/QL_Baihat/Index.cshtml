@@ -13,36 +13,37 @@
             </h2>
             <a href="~/Admin/QL_BaiHat/ThemBaiHat"><button type="submit" class="btn btn-success">Thêm mới</button></a>
         </div>
-        <div class="genre">
+        <div class="genre" style="overflow: scroll">
             <table id="dtDynamicVerticalScrollExample" class=" table table-hover table table-striped table-bordered table-sm" cellspacing="0">
                 <thead>
                     <tr>
+                        <th>STT</th>
                         <th>
-                @Html.DisplayNameFor(model => model.Id)
+                ID
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TENBAIHAT)
+                Tên bài hát
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LOIBAIHAT)
+                Lời bài hát
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LUOTYEUTHICH)
+                Lượt yêu thích
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LUOTNGHE)
+                Lượt nghe
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.THOILUONG)
+                Thời lượng
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ANHBH)
+                Ảnh bài hát
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LINKBH)
+                Link nhạc
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LINKANHPN)
+                Ảnh phát nhạc
             </th>
             <th></th>
                     </tr>
@@ -74,13 +75,13 @@
                             <td>
                                 @Html.DisplayFor(modelItem => item.THOILUONG)
                             </td>
-                            <td>
+                            <td class="link">
                                 @Html.DisplayFor(modelItem => item.ANHBH)
                             </td>
-                            <td>
+                            <td class="link">
                                 @Html.DisplayFor(modelItem => item.LINKBH)
                             </td>
-                            <td>
+                            <td class="link">
                                 @Html.DisplayFor(modelItem => item.LINKANHPN)
                             </td>
                             <td>
