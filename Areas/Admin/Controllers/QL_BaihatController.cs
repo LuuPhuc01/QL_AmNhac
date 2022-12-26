@@ -258,6 +258,36 @@ namespace QLBH.Areas.Admin.Controllers
                 }
 
             }
+
+        }
+
+        [Area("admin")]
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(QLBaiHatModel BaiHat)
+        {
+            if (HttpContext.Session.GetString("token") == null)
+            {
+                return RedirectToAction("dangnhap", "ql", new { area = "Admin" });
+            }
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7032/api/");
+
+                var response = client.PutAsJsonAsync<QLBaiHatModel>("BaiHat", BaiHat);
+
+                response.Wait();
+
+                var test = response.Result;
+                //Console.WriteLine(response.Result);
+                if (test.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("ChiTietBaiHat", "QL_BaiHat", new{id  = BaiHat.Id, area ="admin"});
+                }
+
+            }
+            return RedirectToAction("index", "QL_BaiHat", new { area = "admin" });
         }
     }
+
 }

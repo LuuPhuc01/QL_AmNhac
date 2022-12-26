@@ -1,61 +1,135 @@
-﻿@model QLBH.Models.BaiHatLink
+﻿@model QLBH.Models.ModelViewQgTlAl
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewBag.Title = "Sửa bài hát";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1>Edit</h1>
+<h2>
+    Thêm bài hát mới
+</h2>
 
-<h4>BaiHatLink</h4>
-<hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
+    <div class="col-md-9">
+        <form action="~/admin/Ql_BaiHat/Edit" method="POST" id="form-id">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
+                <label asp-for="Id" class="control-label">ID</label>
+                <input readonly asp-for="Id" class="form-control" value="@Model.BaiHatLink.Id" id="Id" name="Id" />
                 <span asp-validation-for="Id" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="TENBAIHAT" class="control-label"></label>
-                <input asp-for="TENBAIHAT" class="form-control" />
+             <div class="form-group">
+                <label asp-for="TENBAIHAT" class="control-label">Tên bài hát</label>
+                <input asp-for="TENBAIHAT" class="form-control" id="TENBAIHAT" name="TENBAIHAT" value="@Model.BaiHatLink.TENBAIHAT"/>
                 <span asp-validation-for="TENBAIHAT" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LOIBAIHAT" class="control-label"></label>
-                <input asp-for="LOIBAIHAT" class="form-control" />
+                <label asp-for="LOIBAIHAT" class="control-label">lời bài hát</label>
+                <textarea asp-for="LOIBAIHAT" class="form-control" id="LOIBAIHAT" name="LOIBAIHAT" cols="4" rows="5" >@Model.BaiHatLink.LOIBAIHAT</textarea>
                 <span asp-validation-for="LOIBAIHAT" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LUOTYEUTHICH" class="control-label"></label>
-                <input asp-for="LUOTYEUTHICH" class="form-control" />
+                <label asp-for="LUOTYEUTHICH" class="control-label">Lượt yêu thích</label>
+                <input  asp-for="LUOTYEUTHICH" class="form-control" id="LUOTYEUTHICH" name="LUOTYEUTHICH" value="@Model.BaiHatLink.LUOTYEUTHICH" />
                 <span asp-validation-for="LUOTYEUTHICH" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LUOTNGHE" class="control-label"></label>
-                <input asp-for="LUOTNGHE" class="form-control" />
+                <label asp-for="LUOTNGHE" class="control-label">Lượt nghe</label>
+                <input asp-for="LUOTNGHE" class="form-control" id="LUOTNGHE" name="LUOTNGHE" value="@Model.BaiHatLink.LUOTNGHE" />
                 <span asp-validation-for="LUOTNGHE" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="THOILUONG" class="control-label"></label>
-                <input asp-for="THOILUONG" class="form-control" />
+                <label asp-for="THOILUONG" class="control-label">Thời lượng</label>
+                <input asp-for="THOILUONG" class="form-control" id="THOILUONG" name="THOILUONG" value="@Model.BaiHatLink.THOILUONG" />
                 <span asp-validation-for="THOILUONG" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ANHBH" class="control-label"></label>
-                <input asp-for="ANHBH" class="form-control" />
-                <span asp-validation-for="ANHBH" class="text-danger"></span>
+                <label asp-for="QUOCGIA" class="control-label">Quốc gia</label>
+                <select asp-for="QUOCGIA" class="form-control" id="QUOCGIAID" name="QUOCGIAID">
+                    @foreach (var item in Model.QuocGia)
+                    {
+                        if(item.Id == Model.BaiHatLink.QuocGia.Id)
+                        {
+                            <option selected id="@item.Id" value="@item.Id">@item.TenQG</option>
+                        }
+                        else{
+                            <option id="@item.Id" value="@item.Id">@item.TenQG</option>
+                        }
+                    }
+                    </select>
+                <span asp-validation-for="QUOCGIA" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LINKBH" class="control-label"></label>
-                <input asp-for="LINKBH" class="form-control" />
+                <label asp-for="THELOAI" class="control-label">Thể loại</label>
+                <select asp-for="THELOAI" class="form-control" id="THELOAIID" name="THELOAIID">
+                    @foreach (var item in Model.TheLoai)
+                    {
+                        if (item.Id == Model.BaiHatLink.TheLoai.Id)
+                        {
+                            <option selected id="@item.Id" value="@item.Id">@item.TenTL</option>
+
+                        }
+                        else
+                        {
+                            <option id="@item.Id" value="@item.Id">@item.TenTL</option>
+
+                        }
+                    }
+                    </select>
+                <span asp-validation-for="THELOAI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ALBUM" class="control-label">ALbum</label>
+                <select asp-for="ALBUM" class="form-control" id="ALBUMID" name="ALBUMID">
+                    @foreach (var item in Model.Album)
+                    {
+                        if(item.Id == Model.BaiHatLink.Album.Id)
+                        {
+                            <option selected id="@item.Id" value="@item.Id">@item.TENAL</option>
+                        }
+                        else{
+
+                            <option id="@item.Id" value="@item.Id">@item.TENAL</option>
+                            
+                        }
+                    }
+                </select>
+                <span asp-validation-for="ALBUM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ALBUM" class="control-label">Ca sĩ</label>
+                <select asp-for="ALBUM" class="form-control" id="CaSiID" name="CaSiID">
+                    @foreach (var item in Model.NgheSi)
+                    {
+                        if(item.Id == Model.BaiHatLink.Casi[0].Id)
+                        {
+                            <option selected id="@item.Id" value="@item.Id">@item.TenNS</option>
+                        }
+                        else{
+
+                            <option id="@item.Id" value="@item.Id">@item.TenNS</option>
+                            
+                        }
+                    }
+                </select>
+                <span asp-validation-for="ALBUM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LINKBH" class="control-label">Link nhạc bài hát</label>
+                <input hidden asp-for="LINKBH" type="text" value="nhac" id="linkNhac" name="LINKBH" />
+                <input type="file" id="linkaudio" />
                 <span asp-validation-for="LINKBH" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LINKANHPN" class="control-label"></label>
-                <input asp-for="LINKANHPN" class="form-control" />
+                <label asp-for="ANHBH" class="control-label">Ảnh bài hát</label>
+                <input hidden asp-for="ANHBH"  type="text" value="anh" id="linkanhBH" name="ANHBH" />
+                <input type="file" id="linkimage" />
+                <span asp-validation-for="ANHBH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LINKANHPN" class="control-label">Ảnh phát nhạc bài hát</label>
+                <input hidden asp-for="LINKANHPN"  type="text" value="anhPN" id="linkanhBHPN" name="LINKANHPN" />
+                <input type="file" id="linkimagephatnhac" />
                 <span asp-validation-for="LINKANHPN" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -66,6 +140,78 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a href="~/Admin/QL_BaiHat/Index">Back to List</a>
 </div>
 
+
+<script>
+    async function uploadFile(file) {
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('upload_preset', 't1pu4dpc');
+        formData.append('cloud_name', 'dccswqs2m');
+        const res = await fetch(
+            'https://api.cloudinary.com/v1_1/dccswqs2m/upload',
+            {
+                method: 'POST',
+                body: formData,
+            }
+        );
+        const data = await res.json();
+        return data;
+    }
+    const audio = document.getElementById('linkaudio');
+
+    const image = document.getElementById('linkimage');
+    const form = document.getElementById('form-id');
+    const imagePN = document.getElementById('linkimagephatnhac');
+
+    var LINKBH;
+    var ANHBH;
+    var LINKANHPN;
+    audio.addEventListener('change', (e) => {
+        e.preventDefault();
+        Array.from(e.target.files).forEach(async (file) => {
+            if (file.size <= 52428800) {
+                const data = await uploadFile(file);
+                LINKBH = data.url;
+                document.getElementById('linkNhac').value = LINKBH;
+                console.log(document.getElementById('linkNhac').value);
+
+            } else {
+                alert('Size of this file is so big!!');
+            }
+        });
+    });
+    image.addEventListener('change', (e) => {
+        e.preventDefault();
+        Array.from(e.target.files).forEach(async (file) => {
+            if (file.size <= 52428800) {
+                const data = await uploadFile(file);
+                ANHBH = data.url;
+                document.getElementById('linkanhBH').value = ANHBH;
+                console.log(document.getElementById('linkanhBH').value);
+            } else {
+                alert('Size of this file is so big!!');
+            }
+        });
+    });
+    imagePN.addEventListener('change', (e) => {
+        e.preventDefault();
+        Array.from(e.target.files).forEach(async (file) => {
+            if (file.size <= 52428800) {
+                const data = await uploadFile(file);
+                console.log(data.url);
+                LINKANHPN = data.url;
+                document.getElementById('linkanhBHPN').value = LINKANHPN;
+                console.log(document.getElementById('linkanhBHPN').value);
+            } else {
+                alert('Size of this file is so big!!');
+            }
+        });
+    });
+    form.addEventListener('submit', (e) => {
+        //e.preventDefault();
+        console.log(e);
+    });
+</script>
