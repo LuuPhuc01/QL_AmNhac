@@ -1,7 +1,7 @@
 ﻿@model QLBH.Models.HomeModel;
 
 @{
-    ViewBag.Title = "Đang phát Chandelier";
+    ViewBag.Title = Model.BaiHat.TENBAIHAT;
     Layout = null;
 }
 <!DOCTYPE html>
@@ -16,7 +16,6 @@
     <link href="~/Theme/Styles/phatnhac.css" rel="stylesheet">
     <link href="~/Theme/Styles/audio.css" rel="stylesheet">
 
-
     <link href="~/Theme/Styles/icon-font.css" rel="stylesheet" />
         <script type="module"
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -24,7 +23,7 @@
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script defer src="~/theme/scripts/downloadsingle.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -35,7 +34,7 @@
     <div id="lyric-more" class="lyric-background-hidden">
         <div class="play-bar">
             <div class="playbar-info">
-                <img src="https://i.pinimg.com/736x/c2/f7/88/c2f788197471e6596e94ac1f1df1cf37.jpg" width="23%">
+                <img class="img_play_song" style="border-radius: 50%;" src="https://i.pinimg.com/736x/c2/f7/88/c2f788197471e6596e94ac1f1df1cf37.jpg" >
                 <div>
                     <p class="playbar-song-name">@Model.BaiHat.TENBAIHAT</p>
                     <p class="playbar-song-artist">@Model.BaiHat.Casi[0].TenNS</p>
@@ -57,34 +56,31 @@
                                 }
                                 if (yt == 1)
                                 {
-                                    using (Html.BeginForm("DelBaiHatYeuThich", "Personal", FormMethod.Post))
-                                    {
-                                                                        <input hidden value="@Html.DisplayFor(modelItem => modelItem.BaiHat.Id)" name="id" id="id" />
-                                                                        <button type="submit" name="submit" class="btn_hidden">
-                                                                            <span class="middle"><i class="fa-solid fa-heart"></i></span>
-                                                                        </button>
-                                    }
+                                    <form action="/User/Personal/DelBaiHatYeuThich" method="post" class="dropup">
+                                        <input hidden value="@Html.DisplayFor(modelItem => modelItem.BaiHat.Id)" name="id" id="id" />
+                                        <button type="submit" name="submit" class="btn_hidden">
+                                            <span class="middle"><i class="fa-solid fa-heart"></i></span>
+                                        </button>
+                                    </form>
                                 }
                                 else
                                 {
-                                    using (Html.BeginForm("AddBaiHatYeuThich", "Personal", FormMethod.Post))
-                                    {
-                                                                        <input hidden value="@Html.DisplayFor(modelItem => modelItem.BaiHat.Id)" name="id" id="id" />
-                                                                        <button type="submit" name="submit" class="btn_hidden">
-                                                                            <span class="middle "><i class="fa-regular fa-heart "></i></span>
-                                                                        </button>
-                                    }
+                                    <form action="/User/Personal/AddBaiHatYeuThich" method="post" class="dropup">
+                                        <input hidden value="@Html.DisplayFor(modelItem => modelItem.BaiHat.Id)" name="id" id="id" />
+                                        <button type="submit" name="submit" class="btn_hidden">
+                                            <span class="middle "><i class="fa-regular fa-heart "></i></span>
+                                        </button>
+                                    </form>
                                 }
                             }
                             else
                             {
-                                using (Html.BeginForm("AddBaiHatYeuThich", "Personal", FormMethod.Post))
-                                {
-                                                                <input hidden value="@Html.DisplayFor(modelItem => modelItem.BaiHat.Id)" name="id" id="id" />
-                                                                <button type="submit" name="submit" class="btn_hidden">
-                                                                    <span class="middle "><i class="fa-regular fa-heart "></i></span>
-                                                                </button>
-                                }
+                                 <form action="/User/Personal/AddBaiHatYeuThich" method="post" class="dropup">
+                                        <input hidden value="@Html.DisplayFor(modelItem => modelItem.BaiHat.Id)" name="id" id="id" />
+                                        <button type="submit" name="submit" class="btn_hidden">
+                                            <span class="middle "><i class="fa-regular fa-heart "></i></span>
+                                        </button>
+                                    </form>
                             }
                         }
                     </span>
@@ -96,9 +92,15 @@
                             </span>
                         </button>
                         <div class="dropup-content">
-                            <a href="#">Tải xuống</a>
-                            <a href="#">Thêm vào playlist</a>
-                            <a href="#">Khác</a>
+                            <div>
+                                <form action="#">
+                                    <a class="atag" download="@Model.BaiHat.TENBAIHAT" href="https://res.cloudinary.com/dccswqs2m/video/upload/v1671970554/j0uhh8sxsbtzywdykauq.mp3"></a>
+                                    <input class="fileInput" type="url" hidden value="@Model.BaiHat.LINKBH" />
+                                    <button class="btn-download_single btn_hidden">Tải xuống</button>
+                                </form>
+                            </div>
+                            <div href="#">Thêm vào playlist</div>
+                            <div href="#">Khác</div>
                         </div>
                     </div>
                 </div>

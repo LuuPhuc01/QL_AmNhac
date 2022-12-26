@@ -11,7 +11,14 @@
     background-size: cover;
     margin: 0;
 }
-
+.img_play_song{
+    width: 85px;
+    height: 85px;
+}
+.btn_hidden {
+    background: inherit;
+    border: 0px;
+}
 /* Lyric */
 .lyric-background {
     height: 100%;
@@ -29,6 +36,7 @@
     position: fixed;
     background-color: rgba(255, 255, 255, 0.5);
     height: 16%;
+    min-height: 100px;
     bottom: 0;
     width: 100%;
     justify-content: space-between;
@@ -201,7 +209,7 @@
     border-radius: 10px;
 }
 
-    .dropup-content a {
+    .dropup-content div {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
