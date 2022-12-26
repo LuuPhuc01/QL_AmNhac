@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ul.classList.add('songs');
             ul.classList.add('list1');
             ul.innerHTML = `<li class="main-song" onmouseenter="mouseenterIcon(this)" onmouseleave="mouseleaveIcon(this)" data-music-index="` + musics[i].id + `">
-                                    <div class="row" style="margin-left:0px">
+                                    <div class="row row_dsp" style="margin-left:0px">
                                         <div class="main-song-title">
                                             <div class="play_audio main-song-cover" link="${musics[i].file}" name="${musics[i].title}" img="${musics[i].image}" nameart="${musics[i].name_art}">
                                                 <img class="img_audio main-song-img " src="${musics[i].image}"/>
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                                 <p><a href="#" class="caSi js-name_art">${musics[i].name_art}</a></p>
                                             </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1 icon_trash_dsp">
                                             <span style="font-size:20px" class="songId"><i class="fa-solid fa-trash-can"></i></span>
                                         </div>
                                     </div>
