@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			const atag = btn.parentElement.children[0];
 
 			fetchFile(fileInput.value);
-			window.location.reload();
 
 			function fetchFile(url) {
 				fetch(url).then(res => res.blob()).then(file => {
