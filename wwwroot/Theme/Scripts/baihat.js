@@ -1,4 +1,4 @@
-﻿const loiBH = document.getElementById("loiBH");
+const loiBH = document.querySelector(".loiBH");
 
 function convertBR() {
     var lyricInit = loiBH.innerHTML; 
