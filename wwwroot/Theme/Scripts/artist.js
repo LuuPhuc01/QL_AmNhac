@@ -17,7 +17,7 @@ function mouseleaveIconTK(x) {
 document.addEventListener('DOMContentLoaded', () => {
     var anhBH = document.querySelector(".anhBHHidden").value;
     var mask = document.querySelector(".header-artist");
-    console.log(anhBH);
+    //console.log(anhBH);
     mask.style.background = `no-repeat center url(${anhBH})`;
 })
 

@@ -1,4 +1,4 @@
-﻿/*localStorage.clear();*/
+﻿//localStorage.clear();
 document.addEventListener('DOMContentLoaded', () => {
     const song = document.getElementById("song");
     const playBtn = document.querySelector(".player-inner");
