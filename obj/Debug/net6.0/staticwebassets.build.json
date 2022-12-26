@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+Jp0ygICNH22ai+yhzd3NHTWUzB9etNiVURkb57c0XA=",
+  "Hash": "pG3R2tupepyLGsXjrCcBp+BGsZ6VWHalh586zq3Cn4I=",
   "Source": "QLBH",
   "BasePath": "_content/QLBH",
   "Mode": "Default",
@@ -3400,6 +3400,23 @@
       "OriginalItemSpec": "wwwroot\\Theme\\Scripts\\audio.js"
     },
     {
+      "Identity": "C:\\frontEndFramework\\frontend_new\\wwwroot\\Theme\\Scripts\\baihat.js",
+      "SourceId": "QLBH",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\frontEndFramework\\frontend_new\\wwwroot\\",
+      "BasePath": "_content/QLBH",
+      "RelativePath": "Theme/Scripts/baihat.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\Scripts\\baihat.js"
+    },
+    {
       "Identity": "C:\\frontEndFramework\\frontend_new\\wwwroot\\Theme\\Scripts\\bootstrap.js",
       "SourceId": "QLBH",
       "SourceType": "Discovered",
@@ -3449,6 +3466,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Theme\\Scripts\\classie.js"
+    },
+    {
+      "Identity": "C:\\frontEndFramework\\frontend_new\\wwwroot\\Theme\\Scripts\\download.js",
+      "SourceId": "QLBH",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\frontEndFramework\\frontend_new\\wwwroot\\",
+      "BasePath": "_content/QLBH",
+      "RelativePath": "Theme/Scripts/download.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\Scripts\\download.js"
     },
     {
       "Identity": "C:\\frontEndFramework\\frontend_new\\wwwroot\\Theme\\Scripts\\easyResponsiveTabs.js",

@@ -116,9 +116,12 @@
                                     
                                         <span class="middle thoiluong">@item.THOILUONG</span>
                                         <span class="middle">
-                                            <a style="line-height: 40px" class="middle" href="@item.LINKBH" download="@item.TENBAIHAT"><i class="fa-solid fa-download"></i></a>
-                                            
-                                            </span>
+                                            <form action="#">
+                                                <a class="atag" download="@item.TENBAIHAT" href="https://res.cloudinary.com/dccswqs2m/video/upload/v1671970554/j0uhh8sxsbtzywdykauq.mp3"></a>
+                                                <input class="fileInput" type="url" hidden value="@item.LINKBH" />
+                                                <button  class="btn-download btn_hidden"><i class="fa-solid fa-download"></i></button>
+                                            </form>
+                                        </span>
                                         <div class="middle">
                                             <div class="dropdown">
                                                 <a id="dLabel" role="button" data-toggle="dropdown" class="btn " data-target="#" href="#" style="border: 0px;">

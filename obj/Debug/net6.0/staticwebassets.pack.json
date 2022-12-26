@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\Theme\\Scripts\\audio.js"
     },
     {
+      "Id": "C:\\frontEndFramework\\frontend_new\\wwwroot\\Theme\\Scripts\\baihat.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\baihat.js"
+    },
+    {
       "Id": "C:\\frontEndFramework\\frontend_new\\wwwroot\\Theme\\Scripts\\bootstrap.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\bootstrap.js"
     },
@@ -47,6 +51,10 @@
     {
       "Id": "C:\\frontEndFramework\\frontend_new\\wwwroot\\Theme\\Scripts\\classie.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\classie.js"
+    },
+    {
+      "Id": "C:\\frontEndFramework\\frontend_new\\wwwroot\\Theme\\Scripts\\download.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\download.js"
     },
     {
       "Id": "C:\\frontEndFramework\\frontend_new\\wwwroot\\Theme\\Scripts\\easyResponsiveTabs.js",
