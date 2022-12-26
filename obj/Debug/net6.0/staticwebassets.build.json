@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pG3R2tupepyLGsXjrCcBp+BGsZ6VWHalh586zq3Cn4I=",
+  "Hash": "4HPt9XoweLQY21jwmejT75C/7VzgR5/BboSS9sp6drg=",
   "Source": "QLBH",
   "BasePath": "_content/QLBH",
   "Mode": "Default",
@@ -3483,6 +3483,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Theme\\Scripts\\download.js"
+    },
+    {
+      "Identity": "C:\\frontEndFramework\\frontend_new\\wwwroot\\Theme\\Scripts\\downloadSingle.js",
+      "SourceId": "QLBH",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\frontEndFramework\\frontend_new\\wwwroot\\",
+      "BasePath": "_content/QLBH",
+      "RelativePath": "Theme/Scripts/downloadSingle.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\Scripts\\downloadSingle.js"
     },
     {
       "Identity": "C:\\frontEndFramework\\frontend_new\\wwwroot\\Theme\\Scripts\\easyResponsiveTabs.js",

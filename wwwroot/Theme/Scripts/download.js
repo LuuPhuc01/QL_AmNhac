@@ -1,6 +1,7 @@
 ﻿const downloadBtn = document.querySelectorAll(".btn-download")
 
 document.addEventListener("DOMContentLoaded", () => {
+	
 
 	downloadBtn.forEach(btn => {
 		btn.addEventListener("click", () => {

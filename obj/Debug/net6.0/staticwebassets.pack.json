@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\Theme\\Scripts\\download.js"
     },
     {
+      "Id": "C:\\frontEndFramework\\frontend_new\\wwwroot\\Theme\\Scripts\\downloadSingle.js",
+      "PackagePath": "staticwebassets\\Theme\\Scripts\\downloadSingle.js"
+    },
+    {
       "Id": "C:\\frontEndFramework\\frontend_new\\wwwroot\\Theme\\Scripts\\easyResponsiveTabs.js",
       "PackagePath": "staticwebassets\\Theme\\Scripts\\easyResponsiveTabs.js"
     },
